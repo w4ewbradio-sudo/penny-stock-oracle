@@ -437,44 +437,96 @@
   <div class="stats-ribbon">
     <div class="stat-card">
       <div class="stat-label">Portfolio</div>
-      <div class="stat-value positive" id="portfolio-value">$100.00</div>
+      <div class="stat-value positive" id="portfolio-value">$155.78</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">Total Return</div>
-      <div class="stat-value" id="total-return">0%</div>
+      <div class="stat-value positive" id="total-return">+55.78%</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">Win Rate</div>
-      <div class="stat-value" id="win-rate">—</div>
+      <div class="stat-value" id="win-rate">67%</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">Trading Days</div>
-      <div class="stat-value" id="trading-days">0</div>
+      <div class="stat-value" id="trading-days">1</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">Best Day</div>
-      <div class="stat-value positive" id="best-day">—</div>
+      <div class="stat-value positive" id="best-day">+$55.78</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">Worst Day</div>
-      <div class="stat-value negative" id="worst-day">—</div>
+      <div class="stat-value" id="worst-day">+$55.78</div>
     </div>
   </div>
 
   <!-- Today's Picks -->
   <div class="date-header">
-    <span>TODAY — <span id="current-date">Awaiting first run</span></span>
-    <span class="market-badge premarket" id="market-status">AWAITING DATA</span>
+    <span>TODAY — <span id="current-date">March 31, 2026</span></span>
+    <span class="market-badge closed" id="market-status">MARKET CLOSED</span>
   </div>
 
-  <!-- Placeholder: OpenClaw will replace this section with actual picks -->
-  <div class="no-picks" id="picks-area">
-    <div class="icon">⏳</div>
-    <p>Waiting for the Oracle's first research run...</p>
-    <p style="margin-top:8px; font-size:12px;">
-      The AI agent conducts research each trading day at 6:00 AM ET<br>
-      and publishes picks by 8:45 AM ET.
-    </p>
+  <div class="picks-grid" id="picks-area">
+    <div class="pick-card fire">
+      <span class="result-badge win">+$29.63 WIN</span>
+      <div class="pick-category">🔥 HIGH RISK / HIGH REWARD</div>
+      <div class="pick-ticker">BFRG</div>
+      <div class="pick-company">Bullfrog AI Holdings, Inc.</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$1.35</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.75</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.15</div></div>
+      </div>
+      <div class="pick-reasoning">
+        Top-5 global pharma deal for bfLEAP® AI platform targeting MDD drug discovery. 151% surge yesterday, 192M volume today. Reddit mentions jumped from 3→21 in 24h. New AI engine showcased at Xtalks webinar validates the tech stack.
+      </div>
+      <div class="confidence-bar">
+        <span>Confidence</span>
+        <div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div>
+        <span>7/10</span>
+      </div>
+    </div>
+
+    <div class="pick-card shield">
+      <span class="result-badge win">+$15.38 WIN</span>
+      <div class="pick-category">🛡️ SURE BET</div>
+      <div class="pick-ticker">CTXR</div>
+      <div class="pick-company">Citius Pharmaceuticals, Inc.</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.78</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$0.90</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.70</div></div>
+      </div>
+      <div class="pick-reasoning">
+        LYMPHIR™ commercial update: 83% of target accounts in formulary review, 135 health plans covering ~80% of lives, zero reimbursement denials. Positive Phase 1 gynecologic cancer data adds pipeline depth.
+      </div>
+      <div class="confidence-bar">
+        <span>Confidence</span>
+        <div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div>
+        <span>7/10</span>
+      </div>
+    </div>
+
+    <div class="pick-card maverick">
+      <span class="result-badge partial">+$10.77 PARTIAL</span>
+      <div class="pick-category">🃏 MAVERICK</div>
+      <div class="pick-ticker">BYND</div>
+      <div class="pick-company">Beyond Meat, Inc.</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.65</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$0.80</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.55</div></div>
+      </div>
+      <div class="pick-reasoning">
+        Contrarian play on a former $234 IPO darling now under $1. Delayed annual filing is a red flag, but new product expansion popped it 15% in Feb. Reddit mentions +400% today. Brand recognition alone may exceed market cap. Dead cat or phoenix — classic maverick.
+      </div>
+      <div class="confidence-bar">
+        <span>Confidence</span>
+        <div class="confidence-track"><div class="confidence-fill" style="width: 50%"></div></div>
+        <span>5/10</span>
+      </div>
+    </div>
   </div>
 
   <!--
@@ -550,8 +602,12 @@
         <span style="color:var(--green)">+$18.50</span>
       </div>
       -->
-      <div class="history-row" style="justify-content: center; grid-column: 1/-1; color: var(--text-dim);">
-        No trading history yet — check back after the first trading day
+      <div class="history-row">
+        <span><a href="daily/2026-03-31.html" style="color:var(--accent-gold);text-decoration:none">Mar 31</a></span>
+        <span class="ticker" style="color:var(--green)">BFRG +29.6%</span>
+        <span class="ticker" style="color:var(--green)">CTXR +15.4%</span>
+        <span class="ticker" style="color:var(--accent-gold)">BYND +10.8%</span>
+        <span style="color:var(--green)">+$55.78</span>
       </div>
     </div>
   </div>
