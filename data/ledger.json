@@ -1,0 +1,14 @@
+{
+  "starting_balance": 100,
+  "current_balance": 100,
+  "total_trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "misses": 0,
+  "win_rate": 0,
+  "best_day": null,
+  "worst_day": null,
+  "avg_daily_return": 0,
+  "trades": [],
+  "last_updated": "2026-03-31T19:45:00-04:00"
+}

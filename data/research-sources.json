@@ -1,0 +1,22 @@
+{
+  "reddit": [
+    {"name": "r/pennystocks", "url": "https://www.reddit.com/r/pennystocks/", "tier": 1},
+    {"name": "r/wallstreetbets", "url": "https://www.reddit.com/r/wallstreetbets/", "tier": 1},
+    {"name": "r/smallstreetbets", "url": "https://www.reddit.com/r/smallstreetbets/", "tier": 1},
+    {"name": "r/RaceToTenMillion", "url": "https://www.reddit.com/r/RaceToTenMillion/", "tier": 1},
+    {"name": "r/Shortsqueeze", "url": "https://www.reddit.com/r/Shortsqueeze/", "tier": 1}
+  ],
+  "screeners": [
+    {"name": "Finviz", "url": "https://finviz.com/screener.ashx", "tier": 2},
+    {"name": "TradingView Pre-Market", "url": "https://www.tradingview.com/markets/stocks-usa/market-movers-pre-market-most-active/", "tier": 2},
+    {"name": "StockAnalysis Pre-Market", "url": "https://stockanalysis.com/markets/premarket/", "tier": 2}
+  ],
+  "sentiment": [
+    {"name": "AltIndex", "url": "https://altindex.com/trending-penny-stocks", "tier": 3},
+    {"name": "Quiver Quant", "url": "https://www.quiverquant.com", "tier": 3}
+  ],
+  "news": [
+    {"name": "SEC EDGAR", "url": "https://www.sec.gov/cgi-bin/browse-edgar", "tier": 5},
+    {"name": "Benzinga Penny Stocks", "url": "https://www.benzinga.com/money/best-penny-stocks", "tier": 2}
+  ]
+}
