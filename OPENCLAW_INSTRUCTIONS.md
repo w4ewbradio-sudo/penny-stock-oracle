@@ -96,17 +96,33 @@ For EACH pick, provide:
 
 **Phase 5 — Publish (8:45 AM)**
 
-Generate the daily page HTML using the template and data, then:
+Generate the daily page HTML using the template and data, AND the blog post:
 
+**A) Daily Picks Page:**
+Generate the daily HTML page and save to `daily/YYYY-MM-DD.html`. Update `index.html` with today's picks.
+
+**B) Research Log Blog Post:**
+Write a narrative blog post to `blog/YYYY-MM-DD.html` that tells the story of the day's research in first person — the Oracle's field notes. Include:
+- What the morning mood was like (market sentiment, Reddit activity level)
+- The Reddit scan findings (which subs had signal, what was noise)
+- Pre-market data story (what stood out on gainer/loser lists)
+- Why each pick was chosen (the narrative, not just the data)
+- Lessons learned or observations for the day
+- Sources consulted
+
+Match the existing blog post template style (see `blog/2026-03-31.html` and `blog/2026-04-01.html` for reference). Use the same CSS variables and HTML structure.
+
+Then update `blog/index.html`:
+- Add the new entry at the TOP of the `<!-- BLOG_ENTRIES_START -->` section
+- Include date, title, ticker badges, preview text, and link
+- Update the previous day's post to include a "Next →" link in its post-nav
+
+**C) Hot Pick Alert:**
+If any of the day's picks has confidence ≥ 8/10 AND a strong verifiable catalyst, flag it as a HOT PICK. Add `<span class="hot-pick-badge">🔥 HOT PICK</span>` next to the title in the blog index. (This is the signal to the Telegram notification that something is worth a heads-up.)
+
+**D) Commit & Push:**
 ```bash
 cd ~/penny-stock-oracle
-
-# Generate the daily HTML page (you create this from the template)
-# Save to site/daily/YYYY-MM-DD.html
-
-# Update the main index.html with today's picks
-
-# Commit and push
 git add -A
 git commit -m "Daily picks for $(date +%Y-%m-%d)"
 git push origin main
