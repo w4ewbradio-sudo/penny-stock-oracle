@@ -92,8 +92,17 @@
         "sources": [
           "StockMarketWatch pre-market gainers (10:00 UTC snapshot)",
           "StockAnalysis pre-market screen cross-check",
-          "Reddit scan: r/pennystocks / r/Shortsqueeze / r/smallstreetbets (no dominant consensus)"
-        ]
+          "Reddit scan: r/pennystocks / r/Shortsqueeze / r/smallstreetbets (no dominant consensus)",
+          "StockAnalysis historical data"
+        ],
+        "result": "partial",
+        "actual_open": 2.34,
+        "actual_high": 2.45,
+        "actual_low": 2.13,
+        "actual_close": 2.24,
+        "actual_exit": 2.24,
+        "profit": -1.36,
+        "notes": "Entry triggered, target missed, and it faded into the close at $2.24."
       },
       "sure_bet": {
         "ticker": "DH",
@@ -110,8 +119,17 @@
         "sources": [
           "StockMarketWatch pre-market gainers (10:00 UTC snapshot)",
           "Major exchange filter: NASDAQ-listed",
-          "Reddit scan showed low hype, which is a feature here, not a bug"
-        ]
+          "Reddit scan showed low hype, which is a feature here, not a bug",
+          "StockAnalysis historical data"
+        ],
+        "result": "miss",
+        "actual_open": 1.22,
+        "actual_high": 1.22,
+        "actual_low": 1.09,
+        "actual_close": 1.13,
+        "actual_exit": 0,
+        "profit": 0.0,
+        "notes": "Entry never triggered. Day range $1.09\u2013$1.22 stayed above/below the planned buy level of $1.32."
       },
       "maverick": {
         "ticker": "KULR",
@@ -128,10 +146,19 @@
         "sources": [
           "StockMarketWatch pre-market losers (10:00 UTC snapshot)",
           "Major exchange filter: NYSE American-listed",
-          "Reddit scan: modest chatter, no broad mania confirmed"
-        ]
+          "Reddit scan: modest chatter, no broad mania confirmed",
+          "StockAnalysis historical data"
+        ],
+        "result": "partial",
+        "actual_open": 2.08,
+        "actual_high": 2.2,
+        "actual_low": 1.96,
+        "actual_close": 2.01,
+        "actual_exit": 2.01,
+        "profit": -0.77,
+        "notes": "Entry triggered, target missed, and it faded into the close at $2.01."
       },
-      "daily_balance": 118.59
+      "daily_balance": 116.46
     }
   ]
 }
