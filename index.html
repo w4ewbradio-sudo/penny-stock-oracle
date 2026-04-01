@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penny Stock Oracle — Daily AI Picks</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a28;
+    --border: #2a2a3a;
+    --text: #e0e0e8;
+    --text-dim: #7a7a8e;
+    --accent-fire: #ff4d2a;
+    --accent-fire-glow: rgba(255, 77, 42, 0.15);
+    --accent-shield: #22d68a;
+    --accent-shield-glow: rgba(34, 214, 138, 0.15);
+    --accent-maverick: #a855f7;
+    --accent-maverick-glow: rgba(168, 85, 247, 0.15);
+    --accent-gold: #fbbf24;
+    --red: #ef4444;
+    --green: #22c55e;
+    --mono: 'Space Mono', monospace;
+    --sans: 'Outfit', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grain overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.03"/></svg>');
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header {
+    padding: 40px 0 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .oracle-icon {
+    font-size: 48px;
+    margin-bottom: 8px;
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.4)); }
+    50% { filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.8)); }
+  }
+
+  h1 {
+    font-family: var(--mono);
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+
+  h1 span { color: var(--accent-gold); }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-top: 6px;
+    font-family: var(--mono);
+  }
+
+  /* Disclaimer bar */
+  .disclaimer {
+    background: linear-gradient(90deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05));
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 20px 0;
+    font-size: 11px;
+    color: #f87171;
+    font-family: var(--mono);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* Stats ribbon */
+  .stats-ribbon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin: 24px 0;
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-dim);
+    font-family: var(--mono);
+  }
+
+  .stat-value {
+    font-size: 26px;
+    font-weight: 800;
+    font-family: var(--mono);
+    margin-top: 4px;
+  }
+
+  .stat-value.positive { color: var(--green); }
+  .stat-value.negative { color: var(--red); }
+
+  /* Date header */
+  .date-header {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 30px 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .date-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .market-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 99px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .market-badge.open { background: rgba(34, 198, 94, 0.15); color: var(--green); border: 1px solid rgba(34, 198, 94, 0.3); }
+  .market-badge.closed { background: rgba(122, 122, 142, 0.15); color: var(--text-dim); border: 1px solid var(--border); }
+  .market-badge.premarket { background: rgba(251, 191, 36, 0.15); color: var(--accent-gold); border: 1px solid rgba(251, 191, 36, 0.3); }
+
+  /* Pick cards */
+  .picks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin: 16px 0 32px;
+  }
+
+  .pick-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .pick-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .pick-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+
+  .pick-card.fire::before { background: var(--accent-fire); }
+  .pick-card.fire { border-color: rgba(255, 77, 42, 0.2); }
+  .pick-card.shield::before { background: var(--accent-shield); }
+  .pick-card.shield { border-color: rgba(34, 214, 138, 0.2); }
+  .pick-card.maverick::before { background: var(--accent-maverick); }
+  .pick-card.maverick { border-color: rgba(168, 85, 247, 0.2); }
+
+  .pick-category {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pick-card.fire .pick-category { color: var(--accent-fire); }
+  .pick-card.shield .pick-category { color: var(--accent-shield); }
+  .pick-card.maverick .pick-category { color: var(--accent-maverick); }
+
+  .pick-ticker {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .pick-company {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 2px 0 14px;
+  }
+
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin: 14px 0;
+  }
+
+  .price-item {
+    background: var(--surface2);
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .price-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    font-family: var(--mono);
+  }
+
+  .price-value {
+    font-family: var(--mono);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  .price-item.entry .price-value { color: var(--accent-gold); }
+  .price-item.exit .price-value { color: var(--green); }
+  .price-item.stop .price-value { color: var(--red); }
+
+  .pick-reasoning {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-dim);
+    margin: 12px 0;
+    padding: 10px;
+    background: var(--surface2);
+    border-radius: 6px;
+    border-left: 3px solid var(--border);
+  }
+
+  .pick-card.fire .pick-reasoning { border-left-color: var(--accent-fire); }
+  .pick-card.shield .pick-reasoning { border-left-color: var(--accent-shield); }
+  .pick-card.maverick .pick-reasoning { border-left-color: var(--accent-maverick); }
+
+  .confidence-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  .confidence-track {
+    flex: 1;
+    height: 4px;
+    background: var(--surface2);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .confidence-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.6s ease;
+  }
+
+  .pick-card.fire .confidence-fill { background: var(--accent-fire); }
+  .pick-card.shield .confidence-fill { background: var(--accent-shield); }
+  .pick-card.maverick .confidence-fill { background: var(--accent-maverick); }
+
+  /* Result badge */
+  .result-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 99px;
+    letter-spacing: 0.5px;
+  }
+
+  .result-badge.win { background: rgba(34, 197, 94, 0.15); color: var(--green); border: 1px solid rgba(34, 197, 94, 0.3); }
+  .result-badge.loss { background: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid rgba(239, 68, 68, 0.3); }
+  .result-badge.miss { background: rgba(122, 122, 142, 0.15); color: var(--text-dim); border: 1px solid var(--border); }
+  .result-badge.pending { background: rgba(251, 191, 36, 0.15); color: var(--accent-gold); border: 1px solid rgba(251, 191, 36, 0.3); }
+
+  /* History section */
+  .history-section { margin: 40px 0; }
+
+  .history-section h2 {
+    font-family: var(--mono);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: var(--text-dim);
+    letter-spacing: -0.5px;
+  }
+
+  .history-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    font-family: var(--mono);
+    align-items: center;
+  }
+
+  .history-row:first-child {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    border-bottom: 2px solid var(--border);
+  }
+
+  .history-row .ticker { font-weight: 700; }
+
+  /* Balance chart placeholder */
+  .chart-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 24px 0;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chart-placeholder {
+    color: var(--text-dim);
+    font-family: var(--mono);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 0;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    line-height: 1.8;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .picks-grid { grid-template-columns: 1fr; }
+    .stats-ribbon { grid-template-columns: repeat(2, 1fr); }
+    .history-row { grid-template-columns: 80px 1fr 80px; }
+    .history-row > :nth-child(3),
+    .history-row > :nth-child(4) { display: none; }
+    h1 { font-size: 22px; }
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .pick-card { animation: fadeUp 0.5s ease both; }
+  .pick-card:nth-child(2) { animation-delay: 0.1s; }
+  .pick-card:nth-child(3) { animation-delay: 0.2s; }
+
+  /* No picks message */
+  .no-picks {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    font-size: 14px;
+  }
+
+  .no-picks .icon { font-size: 48px; margin-bottom: 16px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="oracle-icon">🔮</div>
+    <h1>PENNY STOCK <span>ORACLE</span></h1>
+    <div class="subtitle">AI-Powered Daily Picks &bull; Research &bull; Performance Tracking</div>
+  </header>
+
+  <div class="disclaimer">
+    ⚠️ NOT FINANCIAL ADVICE — This is an AI research experiment for educational purposes only.
+    Penny stocks carry extreme risk. Most day traders lose money. Never invest money you can't afford to lose.
+  </div>
+
+  <!-- Stats Ribbon -->
+  <div class="stats-ribbon">
+    <div class="stat-card">
+      <div class="stat-label">Portfolio</div>
+      <div class="stat-value positive" id="portfolio-value">$155.78</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Return</div>
+      <div class="stat-value positive" id="total-return">+55.78%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Win Rate</div>
+      <div class="stat-value" id="win-rate">67%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Trading Days</div>
+      <div class="stat-value" id="trading-days">1</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Best Day</div>
+      <div class="stat-value positive" id="best-day">+$55.78</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Worst Day</div>
+      <div class="stat-value" id="worst-day">+$55.78</div>
+    </div>
+  </div>
+
+  <!-- Today's Picks -->
+  <div class="date-header">
+    <span>TODAY — <span id="current-date">March 31, 2026</span></span>
+    <span class="market-badge closed" id="market-status">MARKET CLOSED</span>
+  </div>
+
+  <div class="picks-grid" id="picks-area">
+    <div class="pick-card fire">
+      <span class="result-badge win">+$29.63 WIN</span>
+      <div class="pick-category">🔥 HIGH RISK / HIGH REWARD</div>
+      <div class="pick-ticker">BFRG</div>
+      <div class="pick-company">Bullfrog AI Holdings, Inc.</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$1.35</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.75</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.15</div></div>
+      </div>
+      <div class="pick-reasoning">
+        Top-5 global pharma deal for bfLEAP® AI platform targeting MDD drug discovery. 151% surge yesterday, 192M volume today. Reddit mentions jumped from 3→21 in 24h. New AI engine showcased at Xtalks webinar validates the tech stack.
+      </div>
+      <div class="confidence-bar">
+        <span>Confidence</span>
+        <div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div>
+        <span>7/10</span>
+      </div>
+    </div>
+
+    <div class="pick-card shield">
+      <span class="result-badge win">+$15.38 WIN</span>
+      <div class="pick-category">🛡️ SURE BET</div>
+      <div class="pick-ticker">CTXR</div>
+      <div class="pick-company">Citius Pharmaceuticals, Inc.</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.78</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$0.90</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.70</div></div>
+      </div>
+      <div class="pick-reasoning">
+        LYMPHIR™ commercial update: 83% of target accounts in formulary review, 135 health plans covering ~80% of lives, zero reimbursement denials. Positive Phase 1 gynecologic cancer data adds pipeline depth.
+      </div>
+      <div class="confidence-bar">
+        <span>Confidence</span>
+        <div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div>
+        <span>7/10</span>
+      </div>
+    </div>
+
+    <div class="pick-card maverick">
+      <span class="result-badge partial">+$10.77 PARTIAL</span>
+      <div class="pick-category">🃏 MAVERICK</div>
+      <div class="pick-ticker">BYND</div>
+      <div class="pick-company">Beyond Meat, Inc.</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.65</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$0.80</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.55</div></div>
+      </div>
+      <div class="pick-reasoning">
+        Contrarian play on a former $234 IPO darling now under $1. Delayed annual filing is a red flag, but new product expansion popped it 15% in Feb. Reddit mentions +400% today. Brand recognition alone may exceed market cap. Dead cat or phoenix — classic maverick.
+      </div>
+      <div class="confidence-bar">
+        <span>Confidence</span>
+        <div class="confidence-track"><div class="confidence-fill" style="width: 50%"></div></div>
+        <span>5/10</span>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    OPENCLAW: Replace #picks-area with this structure when picks are ready:
+    
+    <div class="picks-grid" id="picks-area">
+      <div class="pick-card fire">
+        <span class="result-badge pending">PENDING</span>
+        <div class="pick-category">🔥 HIGH RISK / HIGH REWARD</div>
+        <div class="pick-ticker">JTAI</div>
+        <div class="pick-company">Jet.AI Inc</div>
+        <div class="price-grid">
+          <div class="price-item entry">
+            <div class="price-label">Entry</div>
+            <div class="price-value">$1.20</div>
+          </div>
+          <div class="price-item exit">
+            <div class="price-label">Target</div>
+            <div class="price-value">$1.55</div>
+          </div>
+          <div class="price-item stop">
+            <div class="price-label">Stop</div>
+            <div class="price-value">$1.05</div>
+          </div>
+        </div>
+        <div class="pick-reasoning">
+          Your reasoning text goes here. Explain the catalyst, 
+          the technical setup, and why today is the day.
+        </div>
+        <div class="confidence-bar">
+          <span>Confidence</span>
+          <div class="confidence-track">
+            <div class="confidence-fill" style="width: 70%"></div>
+          </div>
+          <span>7/10</span>
+        </div>
+      </div>
+      
+      <div class="pick-card shield">
+        ... sure bet card ...
+      </div>
+      
+      <div class="pick-card maverick">
+        ... maverick card ...
+      </div>
+    </div>
+  -->
+
+  <!-- Balance Chart -->
+  <div class="chart-section">
+    <div class="chart-placeholder">
+      📊 Portfolio balance chart will appear after the first few trading days
+    </div>
+  </div>
+
+  <!-- Recent History -->
+  <div class="history-section">
+    <h2>📜 Recent Picks & Results</h2>
+    <div id="history-table">
+      <div class="history-row">
+        <span>Date</span>
+        <span>🔥 High Risk</span>
+        <span>🛡️ Sure Bet</span>
+        <span>🃏 Maverick</span>
+        <span>Daily P&L</span>
+      </div>
+      <!-- OPENCLAW: Add rows like this:
+      <div class="history-row">
+        <span>Apr 1</span>
+        <span class="ticker" style="color:var(--green)">JTAI +24%</span>
+        <span class="ticker" style="color:var(--red)">SOUN -5%</span>
+        <span class="ticker" style="color:var(--green)">RGTI +12%</span>
+        <span style="color:var(--green)">+$18.50</span>
+      </div>
+      -->
+      <div class="history-row">
+        <span><a href="daily/2026-03-31.html" style="color:var(--accent-gold);text-decoration:none">Mar 31</a></span>
+        <span class="ticker" style="color:var(--green)">BFRG +29.6%</span>
+        <span class="ticker" style="color:var(--green)">CTXR +15.4%</span>
+        <span class="ticker" style="color:var(--accent-gold)">BYND +10.8%</span>
+        <span style="color:var(--green)">+$55.78</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>PENNY STOCK ORACLE &bull; Powered by OpenClaw AI on Mac mini</p>
+    <p>Research sources: Reddit (r/pennystocks, r/wallstreetbets, r/smallstreetbets, r/RaceToTenMillion),
+       Finviz, TradingView, AltIndex, Benzinga</p>
+    <p style="margin-top:8px; color: var(--red);">
+      ⚠️ This is NOT financial advice. For educational purposes only. Most day traders lose money.
+    </p>
+  </footer>
+
+</div>
+
+
+
+</body>
+</html>
