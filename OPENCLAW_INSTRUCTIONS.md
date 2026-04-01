@@ -128,18 +128,18 @@ After market close:
    - If entry was triggered but exit wasn't, use closing price as the exit
    - If entry was never triggered, the trade was a "miss" (no gain/no loss)
 
-3. **Calculate P&L for each pick** (assuming $100 per trade):
+3. **Calculate P&L for each pick** (splitting the portfolio equally across all 3 picks):
    ```
    If WIN (entry and exit both hit):
-     shares = 100 / entry_price
+     shares = (balance/3) / entry_price
      profit = shares * (exit_price - entry_price)
    
    If PARTIAL (entry hit, exit not hit):
-     shares = 100 / entry_price  
+     shares = (balance/3) / entry_price  
      profit = shares * (close_price - entry_price)  # could be negative!
    
    If STOPPED OUT (entry hit, stop loss hit before exit):
-     shares = 100 / entry_price
+     shares = (balance/3) / entry_price
      profit = shares * (stop_loss - entry_price)  # will be negative
    
    If MISS (entry never hit):
