@@ -11,9 +11,15 @@
         "stop_loss": 1.15,
         "confidence": 7,
         "risk": 8,
-        "reasoning": "BFRG announced a commercial agreement with a top-5 global pharmaceutical company to apply its bfLEAP AI platform to MDD drug target discovery. Stock surged 151% yesterday on the news and Reddit mentions jumped from 3 to 21 in 24 hours across r/pennystocks. The webinar with Xtalks on March 27 showcased a new AI engine, and the pharma deal validates the tech. Volume was 192M today — massive for a stock that normally trades under 1M. Entry at a pullback from the $1.96 high to test $1.35 support.",
+        "reasoning": "BFRG announced a commercial agreement with a top-5 global pharmaceutical company to apply its bfLEAP AI platform to MDD drug target discovery. Stock surged 151% yesterday on the news and Reddit mentions jumped from 3 to 21 in 24 hours across r/pennystocks. The webinar with Xtalks on March 27 showcased a new AI engine, and the pharma deal validates the tech. Volume was 192M today \u2014 massive for a stock that normally trades under 1M. Entry at a pullback from the $1.96 high to test $1.35 support.",
         "catalyst": "Top-5 pharma commercial agreement for bfLEAP AI platform (MDD targets)",
-        "sources": ["r/pennystocks (21 mentions)", "StockTitan PR", "Yahoo Finance", "Benzinga gainers list", "ChartExchange sentiment tracker"],
+        "sources": [
+          "r/pennystocks (21 mentions)",
+          "StockTitan PR",
+          "Yahoo Finance",
+          "Benzinga gainers list",
+          "ChartExchange sentiment tracker"
+        ],
         "result": "pending",
         "actual_open": 1.19,
         "actual_high": 1.96,
@@ -25,31 +31,42 @@
         "company": "Citius Pharmaceuticals, Inc.",
         "exchange": "NASDAQ",
         "entry": 0.78,
-        "exit": 0.90,
-        "stop_loss": 0.70,
+        "exit": 0.9,
+        "stop_loss": 0.7,
         "confidence": 7,
         "risk": 5,
-        "reasoning": "Citius subsidiary Citius Oncology released a LYMPHIR commercial update today showing strong early traction — 83% of target accounts progressing through formulary review, ~135 health plans covering ~80% of lives, and zero reimbursement denials. Positive Phase 1 gynecologic cancer data released March 10 adds pipeline depth. CTXR closed up 32% today on the news. Listed on NASDAQ with institutional coverage. Entry near the $0.78 pullback level with a conservative exit at $0.90.",
-        "catalyst": "LYMPHIR commercial launch update — strong payer adoption metrics",
-        "sources": ["Yahoo Finance PR", "StockTitan", "Benzinga gainers", "stock-screener.org"],
+        "reasoning": "Citius subsidiary Citius Oncology released a LYMPHIR commercial update today showing strong early traction \u2014 83% of target accounts progressing through formulary review, ~135 health plans covering ~80% of lives, and zero reimbursement denials. Positive Phase 1 gynecologic cancer data released March 10 adds pipeline depth. CTXR closed up 32% today on the news. Listed on NASDAQ with institutional coverage. Entry near the $0.78 pullback level with a conservative exit at $0.90.",
+        "catalyst": "LYMPHIR commercial launch update \u2014 strong payer adoption metrics",
+        "sources": [
+          "Yahoo Finance PR",
+          "StockTitan",
+          "Benzinga gainers",
+          "stock-screener.org"
+        ],
         "result": "pending",
         "actual_open": 0.72,
         "actual_high": 0.94,
         "actual_low": 0.72,
-        "actual_close": 0.90
+        "actual_close": 0.9
       },
       "maverick": {
         "ticker": "BYND",
         "company": "Beyond Meat, Inc.",
         "exchange": "NASDAQ",
         "entry": 0.65,
-        "exit": 0.80,
+        "exit": 0.8,
         "stop_loss": 0.55,
         "confidence": 5,
         "risk": 7,
-        "reasoning": "The ultimate contrarian play. Beyond Meat is down 75% over the past year and now trades under $1 — a former IPO darling at $234/share now in penny stock territory. The company delayed its annual filing (red flag), BUT it also announced a major product line expansion that popped the stock 15% in late February. Reddit mentions spiked today (+400% on ChartExchange). This is a 'dead cat bounce or phoenix rising' bet — the brand recognition alone might be worth more than the current market cap. Today's 18% gain on 52M volume shows life. Classic maverick territory.",
+        "reasoning": "The ultimate contrarian play. Beyond Meat is down 75% over the past year and now trades under $1 \u2014 a former IPO darling at $234/share now in penny stock territory. The company delayed its annual filing (red flag), BUT it also announced a major product line expansion that popped the stock 15% in late February. Reddit mentions spiked today (+400% on ChartExchange). This is a 'dead cat bounce or phoenix rising' bet \u2014 the brand recognition alone might be worth more than the current market cap. Today's 18% gain on 52M volume shows life. Classic maverick territory.",
         "catalyst": "Delayed earnings filing + new product expansion + extreme oversold bounce potential",
-        "sources": ["r/pennystocks (5 mentions, +400%)", "Motley Fool analysis", "TipRanks", "ChartExchange", "stock-screener.org"],
+        "sources": [
+          "r/pennystocks (5 mentions, +400%)",
+          "Motley Fool analysis",
+          "TipRanks",
+          "ChartExchange",
+          "stock-screener.org"
+        ],
         "result": "pending",
         "actual_open": 0.62,
         "actual_high": 0.73,
@@ -57,6 +74,64 @@
         "actual_close": 0.72
       },
       "daily_balance": 100
+    },
+    {
+      "date": "2026-04-01",
+      "high_risk": {
+        "ticker": "AIFF",
+        "company": "Firefly Neuroscience, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 2.41,
+        "entry": 2.32,
+        "exit": 2.78,
+        "stop_loss": 2.12,
+        "confidence": 6,
+        "risk": 8,
+        "reasoning": "AIFF showed up on the pre-market gainer list at about $2.41, up roughly 10.6% before the bell, which is exactly the sort of low-float, catalyst-sensitive setup Reddit chases when the tape is thin. I could not verify strong organic Reddit conviction this morning beyond the general AI/biotech chatter, so this stays in the high-risk bucket: good momentum, but the thesis depends on pre-market strength holding after the open.",
+        "catalyst": "Pre-market strength (+10.6%) and speculative AI/neuroscience momentum under $5.",
+        "sources": [
+          "StockMarketWatch pre-market gainers (10:00 UTC snapshot)",
+          "StockAnalysis pre-market screen cross-check",
+          "Reddit scan: r/pennystocks / r/Shortsqueeze / r/smallstreetbets (no dominant consensus)"
+        ]
+      },
+      "sure_bet": {
+        "ticker": "DH",
+        "company": "Definitive Healthcare Corp.",
+        "exchange": "NASDAQ",
+        "current_price": 1.35,
+        "entry": 1.32,
+        "exit": 1.4,
+        "stop_loss": 1.24,
+        "confidence": 7,
+        "risk": 4,
+        "reasoning": "DH was on the pre-market gainer board near $1.35, up about 9.8%, but unlike the usual penny-stock fever dream it is a real operating business with broader institutional coverage and a much less cartoonish setup than the low-float flyers. The plan here is deliberately boring by penny-stock standards: buy near support, aim for a 6% move, and leave if it loses the level.",
+        "catalyst": "Pre-market upside (~9.8%) with a more stable major-exchange profile than typical sub-$5 momentum names.",
+        "sources": [
+          "StockMarketWatch pre-market gainers (10:00 UTC snapshot)",
+          "Major exchange filter: NASDAQ-listed",
+          "Reddit scan showed low hype, which is a feature here, not a bug"
+        ]
+      },
+      "maverick": {
+        "ticker": "KULR",
+        "company": "KULR Technology Group, Inc.",
+        "exchange": "NYSE American",
+        "current_price": 2.11,
+        "entry": 2.05,
+        "exit": 2.28,
+        "stop_loss": 1.92,
+        "confidence": 5,
+        "risk": 6,
+        "reasoning": "KULR landed on the pre-market loser list around $2.11, down roughly 11%, which makes it the contrarian bounce candidate of the morning. This is the maverick pick because the setup is not \u201ceveryone loves it\u201d; it is \u201ceveryone just smacked it pre-market and sometimes that creates a tradable snapback if support near $2 holds.\u201d",
+        "catalyst": "Oversold pre-market flush (~-11%) creating a potential mean-reversion bounce setup.",
+        "sources": [
+          "StockMarketWatch pre-market losers (10:00 UTC snapshot)",
+          "Major exchange filter: NYSE American-listed",
+          "Reddit scan: modest chatter, no broad mania confirmed"
+        ]
+      },
+      "daily_balance": 118.59
     }
   ]
 }
