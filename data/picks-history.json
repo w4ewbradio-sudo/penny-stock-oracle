@@ -159,6 +159,67 @@
         "notes": "Entry triggered, target missed, and it faded into the close at $2.01."
       },
       "daily_balance": 116.46
+    },
+    {
+      "date": "2026-04-02",
+      "high_risk": {
+        "ticker": "MOBX",
+        "company": "Mobix Labs, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 0.3097,
+        "entry": 0.3,
+        "exit": 0.36,
+        "stop_loss": 0.27,
+        "confidence": 8,
+        "risk": 8,
+        "reasoning": "MOBX was on the pre-market gainer board around $0.3097, up about 10.8%, and unlike the usual penny-stock swamp it also had a stack of fresh, company-specific defense headlines behind it. StockAnalysis showed a one-day-old Business Wire item about Mobix expanding its M&A focus after drone-market wins, plus March announcements tied to an anti-drone smart munitions feasibility program and continued U.S. Navy-related production work. Reddit was not wildly in love with it this morning, which is fine; the catalyst is corporate, not purely memetic.",
+        "catalyst": "Fresh defense/drone-market PR cycle including M&A focus update after UAS wins, following recent anti-drone smart munitions and Navy-related announcements.",
+        "sources": [
+          "TradingView pre-market gainers snapshot (10:00 UTC): MOBX +10.77% at $0.3097",
+          "StockAnalysis MOBX overview/news page fetched 2026-04-02",
+          "Business Wire headlines cited on StockAnalysis: drone/UAS and defense program updates",
+          "Reddit scan: no dominant consensus, low-mania backdrop"
+        ]
+      },
+      "sure_bet": {
+        "ticker": "USEG",
+        "company": "U.S. Energy Corp.",
+        "exchange": "NASDAQ",
+        "current_price": 0.9277,
+        "entry": 0.91,
+        "exit": 1.02,
+        "stop_loss": 0.84,
+        "confidence": 7,
+        "risk": 5,
+        "reasoning": "USEG showed up on the pre-market gainer board around $0.9277, up roughly 5.6%, and this morning there was at least a coherent story: energy names have been catching a bid, and USEG also has recent company-specific reporting on its 2025 results and the transformation into an integrated industrial gas, energy, and carbon-management platform. There was also a March financing, which keeps me from calling this a sainted widow-and-orphan stock, but among sub-$1 names it is still the more orderly setup. The plan is boring on purpose: buy a pullback, aim for a realistic push through the recent pre-market level, and bail if it loses structure.",
+        "catalyst": "Energy-sector strength plus recent 2025 results/update describing transformation into an integrated industrial gas, energy, and carbon-management platform.",
+        "sources": [
+          "TradingView pre-market gainers snapshot (10:00 UTC): USEG +5.56% at $0.9277",
+          "StockAnalysis USEG overview/news page fetched 2026-04-02",
+          "GlobeNewswire items on StockAnalysis: 2025 results and platform transformation",
+          "r/pennystocks discussion reflected broader interest in volatile oil/energy names"
+        ]
+      },
+      "maverick": {
+        "ticker": "BFRG",
+        "company": "Bullfrog AI Holdings, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 1.48,
+        "entry": 1.42,
+        "exit": 1.68,
+        "stop_loss": 1.3,
+        "confidence": 5,
+        "risk": 7,
+        "reasoning": "BFRG slipped onto the pre-market loser list around $1.48, down about 9%, just two days after exploding higher on news of a commercial agreement with a top-five global pharmaceutical company. That makes it a proper maverick candidate: not because the crowd loves it, but because a violent post-news retracement can create a tradable second bounce if the original catalyst is still intact. Reddit was not loudly championing it this morning, but the earlier pharma-driven move is at least a real, sourceable catalyst rather than pure message-board alchemy.",
+        "catalyst": "Post-spike pullback after this week's top-5 pharma commercial agreement announcement; contrarian continuation/bounce setup.",
+        "sources": [
+          "TradingView pre-market losers snapshot (10:00 UTC): BFRG -8.95% at $1.48",
+          "StockAnalysis BFRG overview/news page fetched 2026-04-02",
+          "Benzinga item on StockAnalysis citing jump after top-5 pharma agreement",
+          "Cross-check against prior Oracle research on the same pharma catalyst"
+        ]
+      },
+      "daily_balance": 116.46
     }
   ]
 }

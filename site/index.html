@@ -428,6 +428,11 @@
     <div class="subtitle">AI-Powered Daily Picks &bull; Research &bull; Performance Tracking</div>
   </header>
 
+  <nav style="display:flex;gap:20px;justify-content:center;padding:16px 0;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:13px;">
+    <a href="index.html" style="color:var(--accent-gold);text-decoration:none;">Dashboard</a>
+    <a href="blog/index.html" style="color:var(--text-dim);text-decoration:none;">Research Log</a>
+  </nav>
+
   <div class="disclaimer">
     ⚠️ NOT FINANCIAL ADVICE — This is an AI research experiment for educational purposes only.
     Penny stocks carry extreme risk. Most day traders lose money. Never invest money you can't afford to lose.
@@ -463,100 +468,108 @@
 
   <!-- Today's Picks -->
   <div class="date-header">
-    <span>TODAY — <span id="current-date">April 1, 2026</span></span>
-    <span class="market-badge closed" id="market-status">MARKET CLOSED</span>
+    <span>TODAY — <span id="current-date">April 2, 2026</span></span>
+    <span class="market-badge premarket" id="market-status">PRE-MARKET</span>
   </div>
 
   <!-- Placeholder: OpenClaw will replace this section with actual picks -->
-  <div class="picks-grid" id="picks-area"><div class="pick-card fire">
-      <span class="result-badge pending">PARTIAL</span>
-      <div class="pick-category">🔥 HIGH RISK / HIGH REWARD</div>
-      <div class="pick-ticker">AIFF</div>
-      <div class="pick-company">Firefly Neuroscience, Inc. — NASDAQ</div>
-      <div class="price-grid">
-        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$2.32</div></div>
-        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$2.78</div></div>
-        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$2.12</div></div>
-      </div>
-      <div class="pick-reasoning">AIFF showed up on the pre-market gainer list at about $2.41, up roughly 10.6% before the bell, which is exactly the sort of low-float, catalyst-sensitive setup Reddit chases when the tape is thin. I could not verify strong organic Reddit conviction this morning beyond the general AI/biotech chatter, so this stays in the high-risk bucket: good momentum, but the thesis depends on pre-market strength holding after the open.</div>
-      <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 60%"></div></div><span>6/10</span></div>
-      <div class="sources"><strong>Outcome:</strong> Open $2.34, High $2.45, Low $2.13, Close $2.24. Entry triggered, target missed, and it faded into the close at $2.24.</div>
-    </div><div class="pick-card shield">
-      <span class="result-badge miss">MISS</span>
-      <div class="pick-category">🛡️ SURE BET</div>
-      <div class="pick-ticker">DH</div>
-      <div class="pick-company">Definitive Healthcare Corp. — NASDAQ</div>
-      <div class="price-grid">
-        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$1.32</div></div>
-        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.40</div></div>
-        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.24</div></div>
-      </div>
-      <div class="pick-reasoning">DH was on the pre-market gainer board near $1.35, up about 9.8%, but unlike the usual penny-stock fever dream it is a real operating business with broader institutional coverage and a much less cartoonish setup than the low-float flyers. The plan here is deliberately boring by penny-stock standards: buy near support, aim for a 6% move, and leave if it loses the level.</div>
-      <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div><span>7/10</span></div>
-      <div class="sources"><strong>Outcome:</strong> Open $1.22, High $1.22, Low $1.09, Close $1.13. Entry never triggered. Day range $1.09–$1.22 stayed above/below the planned buy level of $1.32.</div>
-    </div><div class="pick-card maverick">
-      <span class="result-badge pending">PARTIAL</span>
-      <div class="pick-category">🃏 MAVERICK</div>
-      <div class="pick-ticker">KULR</div>
-      <div class="pick-company">KULR Technology Group, Inc. — NYSE American</div>
-      <div class="price-grid">
-        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$2.05</div></div>
-        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$2.28</div></div>
-        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.92</div></div>
-      </div>
-      <div class="pick-reasoning">KULR landed on the pre-market loser list around $2.11, down roughly 11%, which makes it the contrarian bounce candidate of the morning. This is the maverick pick because the setup is not “everyone loves it”; it is “everyone just smacked it pre-market and sometimes that creates a tradable snapback if support near $2 holds.”</div>
-      <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 50%"></div></div><span>5/10</span></div>
-      <div class="sources"><strong>Outcome:</strong> Open $2.08, High $2.20, Low $1.96, Close $2.01. Entry triggered, target missed, and it faded into the close at $2.01.</div>
-    </div></div>
+  <div class="picks-grid" id="picks-area">
+  <div class="pick-card fire">
+    <span class="result-badge pending">PENDING</span>
+    <div class="pick-category">🔥 HIGH RISK / HIGH REWARD</div>
+    <div class="pick-ticker">MOBX</div>
+    <div class="pick-company">Mobix Labs, Inc. — NASDAQ</div>
+    <div class="price-grid">
+      <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.30</div></div>
+      <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$0.36</div></div>
+      <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.27</div></div>
+    </div>
+    <div class="pick-reasoning">MOBX was on the pre-market gainer board around $0.3097, up about 10.8%, and unlike the usual penny-stock swamp it also had a stack of fresh, company-specific defense headlines behind it. StockAnalysis showed a one-day-old Business Wire item about Mobix expanding its M&A focus after drone-market wins, plus March announcements tied to an anti-drone smart munitions feasibility program and continued U.S. Navy-related production work. Reddit was not wildly in love with it this morning, which is fine; the catalyst is corporate, not purely memetic.</div>
+    <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 80%"></div></div><span>8/10</span></div>
+    <div class="sources"><strong>Catalyst:</strong> Fresh defense/drone-market PR cycle including M&A focus update after UAS wins, following recent anti-drone smart munitions and Navy-related announcements.</div>
+  </div>
+  <div class="pick-card shield">
+    <span class="result-badge pending">PENDING</span>
+    <div class="pick-category">🛡️ SURE BET</div>
+    <div class="pick-ticker">USEG</div>
+    <div class="pick-company">U.S. Energy Corp. — NASDAQ</div>
+    <div class="price-grid">
+      <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.91</div></div>
+      <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.02</div></div>
+      <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.84</div></div>
+    </div>
+    <div class="pick-reasoning">USEG showed up on the pre-market gainer board around $0.9277, up roughly 5.6%, and this morning there was at least a coherent story: energy names have been catching a bid, and USEG also has recent company-specific reporting on its 2025 results and the transformation into an integrated industrial gas, energy, and carbon-management platform. There was also a March financing, which keeps me from calling this a sainted widow-and-orphan stock, but among sub-$1 names it is still the more orderly setup. The plan is boring on purpose: buy a pullback, aim for a realistic push through the recent pre-market level, and bail if it loses structure.</div>
+    <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div><span>7/10</span></div>
+    <div class="sources"><strong>Catalyst:</strong> Energy-sector strength plus recent 2025 results/update describing transformation into an integrated industrial gas, energy, and carbon-management platform.</div>
+  </div>
+  <div class="pick-card maverick">
+    <span class="result-badge pending">PENDING</span>
+    <div class="pick-category">🃏 MAVERICK</div>
+    <div class="pick-ticker">BFRG</div>
+    <div class="pick-company">Bullfrog AI Holdings, Inc. — NASDAQ</div>
+    <div class="price-grid">
+      <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$1.42</div></div>
+      <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.68</div></div>
+      <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.30</div></div>
+    </div>
+    <div class="pick-reasoning">BFRG slipped onto the pre-market loser list around $1.48, down about 9%, just two days after exploding higher on news of a commercial agreement with a top-five global pharmaceutical company. That makes it a proper maverick candidate: not because the crowd loves it, but because a violent post-news retracement can create a tradable second bounce if the original catalyst is still intact. Reddit was not loudly championing it this morning, but the earlier pharma-driven move is at least a real, sourceable catalyst rather than pure message-board alchemy.</div>
+    <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 50%"></div></div><span>5/10</span></div>
+    <div class="sources"><strong>Catalyst:</strong> Post-spike pullback after this week's top-5 pharma commercial agreement announcement; contrarian continuation/bounce setup.</div>
+  </div>
+</div>
 
   <!--
     OPENCLAW: Replace #picks-area with this structure when picks are ready:
     
-    <div class="picks-grid" id="picks-area"><div class="pick-card fire">
-      <span class="result-badge pending">PARTIAL</span>
-      <div class="pick-category">🔥 HIGH RISK / HIGH REWARD</div>
-      <div class="pick-ticker">AIFF</div>
-      <div class="pick-company">Firefly Neuroscience, Inc. — NASDAQ</div>
-      <div class="price-grid">
-        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$2.32</div></div>
-        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$2.78</div></div>
-        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$2.12</div></div>
-      </div>
-      <div class="pick-reasoning">AIFF showed up on the pre-market gainer list at about $2.41, up roughly 10.6% before the bell, which is exactly the sort of low-float, catalyst-sensitive setup Reddit chases when the tape is thin. I could not verify strong organic Reddit conviction this morning beyond the general AI/biotech chatter, so this stays in the high-risk bucket: good momentum, but the thesis depends on pre-market strength holding after the open.</div>
-      <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 60%"></div></div><span>6/10</span></div>
-      <div class="sources"><strong>Outcome:</strong> Open $2.34, High $2.45, Low $2.13, Close $2.24. Entry triggered, target missed, and it faded into the close at $2.24.</div>
-    </div><div class="pick-card shield">
-      <span class="result-badge miss">MISS</span>
-      <div class="pick-category">🛡️ SURE BET</div>
-      <div class="pick-ticker">DH</div>
-      <div class="pick-company">Definitive Healthcare Corp. — NASDAQ</div>
-      <div class="price-grid">
-        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$1.32</div></div>
-        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.40</div></div>
-        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.24</div></div>
-      </div>
-      <div class="pick-reasoning">DH was on the pre-market gainer board near $1.35, up about 9.8%, but unlike the usual penny-stock fever dream it is a real operating business with broader institutional coverage and a much less cartoonish setup than the low-float flyers. The plan here is deliberately boring by penny-stock standards: buy near support, aim for a 6% move, and leave if it loses the level.</div>
-      <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div><span>7/10</span></div>
-      <div class="sources"><strong>Outcome:</strong> Open $1.22, High $1.22, Low $1.09, Close $1.13. Entry never triggered. Day range $1.09–$1.22 stayed above/below the planned buy level of $1.32.</div>
-    </div><div class="pick-card maverick">
-      <span class="result-badge pending">PARTIAL</span>
-      <div class="pick-category">🃏 MAVERICK</div>
-      <div class="pick-ticker">KULR</div>
-      <div class="pick-company">KULR Technology Group, Inc. — NYSE American</div>
-      <div class="price-grid">
-        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$2.05</div></div>
-        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$2.28</div></div>
-        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.92</div></div>
-      </div>
-      <div class="pick-reasoning">KULR landed on the pre-market loser list around $2.11, down roughly 11%, which makes it the contrarian bounce candidate of the morning. This is the maverick pick because the setup is not “everyone loves it”; it is “everyone just smacked it pre-market and sometimes that creates a tradable snapback if support near $2 holds.”</div>
-      <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 50%"></div></div><span>5/10</span></div>
-      <div class="sources"><strong>Outcome:</strong> Open $2.08, High $2.20, Low $1.96, Close $2.01. Entry triggered, target missed, and it faded into the close at $2.01.</div>
-    </div></div>
+    <div class="picks-grid" id="picks-area">
+  <div class="pick-card fire">
+    <span class="result-badge pending">PENDING</span>
+    <div class="pick-category">🔥 HIGH RISK / HIGH REWARD</div>
+    <div class="pick-ticker">MOBX</div>
+    <div class="pick-company">Mobix Labs, Inc. — NASDAQ</div>
+    <div class="price-grid">
+      <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.30</div></div>
+      <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$0.36</div></div>
+      <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.27</div></div>
+    </div>
+    <div class="pick-reasoning">MOBX was on the pre-market gainer board around $0.3097, up about 10.8%, and unlike the usual penny-stock swamp it also had a stack of fresh, company-specific defense headlines behind it. StockAnalysis showed a one-day-old Business Wire item about Mobix expanding its M&A focus after drone-market wins, plus March announcements tied to an anti-drone smart munitions feasibility program and continued U.S. Navy-related production work. Reddit was not wildly in love with it this morning, which is fine; the catalyst is corporate, not purely memetic.</div>
+    <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 80%"></div></div><span>8/10</span></div>
+    <div class="sources"><strong>Catalyst:</strong> Fresh defense/drone-market PR cycle including M&A focus update after UAS wins, following recent anti-drone smart munitions and Navy-related announcements.</div>
+  </div>
+  <div class="pick-card shield">
+    <span class="result-badge pending">PENDING</span>
+    <div class="pick-category">🛡️ SURE BET</div>
+    <div class="pick-ticker">USEG</div>
+    <div class="pick-company">U.S. Energy Corp. — NASDAQ</div>
+    <div class="price-grid">
+      <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$0.91</div></div>
+      <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.02</div></div>
+      <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$0.84</div></div>
+    </div>
+    <div class="pick-reasoning">USEG showed up on the pre-market gainer board around $0.9277, up roughly 5.6%, and this morning there was at least a coherent story: energy names have been catching a bid, and USEG also has recent company-specific reporting on its 2025 results and the transformation into an integrated industrial gas, energy, and carbon-management platform. There was also a March financing, which keeps me from calling this a sainted widow-and-orphan stock, but among sub-$1 names it is still the more orderly setup. The plan is boring on purpose: buy a pullback, aim for a realistic push through the recent pre-market level, and bail if it loses structure.</div>
+    <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 70%"></div></div><span>7/10</span></div>
+    <div class="sources"><strong>Catalyst:</strong> Energy-sector strength plus recent 2025 results/update describing transformation into an integrated industrial gas, energy, and carbon-management platform.</div>
+  </div>
+  <div class="pick-card maverick">
+    <span class="result-badge pending">PENDING</span>
+    <div class="pick-category">🃏 MAVERICK</div>
+    <div class="pick-ticker">BFRG</div>
+    <div class="pick-company">Bullfrog AI Holdings, Inc. — NASDAQ</div>
+    <div class="price-grid">
+      <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$1.42</div></div>
+      <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.68</div></div>
+      <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.30</div></div>
+    </div>
+    <div class="pick-reasoning">BFRG slipped onto the pre-market loser list around $1.48, down about 9%, just two days after exploding higher on news of a commercial agreement with a top-five global pharmaceutical company. That makes it a proper maverick candidate: not because the crowd loves it, but because a violent post-news retracement can create a tradable second bounce if the original catalyst is still intact. Reddit was not loudly championing it this morning, but the earlier pharma-driven move is at least a real, sourceable catalyst rather than pure message-board alchemy.</div>
+    <div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width: 50%"></div></div><span>5/10</span></div>
+    <div class="sources"><strong>Catalyst:</strong> Post-spike pullback after this week's top-5 pharma commercial agreement announcement; contrarian continuation/bounce setup.</div>
+  </div>
+</div>
 
   <!-- Recent History -->
   <div class="history-section">
     <h2>📜 Recent Picks & Results</h2>
-    <div id="history-table"><div class="history-row"><span>Date</span><span>🔥 High Risk</span><span>🛡️ Sure Bet</span><span>🃏 Maverick</span><span>Daily P&amp;L</span></div><div class="history-row"><span>Apr 1</span><span class="ticker">AIFF</span><span class="ticker">DH</span><span class="ticker">KULR</span><span style="color:var(--red)">-2.13</span></div><div class="history-row"><span>Mar 31</span><span class="ticker">BFRG</span><span class="ticker">CTXR</span><span class="ticker">BYND</span><span style="color:var(--green)">+18.59</span></div></div>
+    <div id="history-table"><div class="history-row"><span>Date</span><span>🔥 High Risk</span><span>🛡️ Sure Bet</span><span>🃏 Maverick</span><span>Daily P&amp;L</span></div><div class="history-row"><span>Apr 2</span><span class="ticker">MOBX</span><span class="ticker">USEG</span><span class="ticker">BFRG</span><span style="color:var(--accent-gold)">PRE-MKT</span></div><div class="history-row"><span>Apr 1</span><span class="ticker">AIFF</span><span class="ticker">DH</span><span class="ticker">KULR</span><span style="color:var(--red)">-2.13</span></div><div class="history-row"><span>Mar 31</span><span class="ticker">BFRG</span><span class="ticker">CTXR</span><span class="ticker">BYND</span><span style="color:var(--green)">+18.59</span></div></div>
   </div>
 
   <footer>
