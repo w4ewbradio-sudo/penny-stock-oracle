@@ -244,6 +244,70 @@
         "notes": "Entry triggered but stop loss was hit. Day low of $1.13 broke the $1.30 stop before the target was reached."
       },
       "daily_balance": 117.95
+    },
+    {
+      "date": "2026-04-03",
+      "high_risk": {
+        "ticker": "COCP",
+        "company": "Cocrystal Pharma, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 1.71,
+        "entry": 1.62,
+        "exit": 1.92,
+        "stop_loss": 1.46,
+        "confidence": 8,
+        "risk": 8,
+        "reasoning": "COCP stood out because it paired actual pre-market strength with an unusually clean biotech catalyst. TradingView showed it among the strongest active sub-$5 names, and StockAnalysis surfaced multiple fresh items: FDA Fast Track designation for CDI-988 in norovirus treatment and prevention, plus a recently disclosed Phase 1b study already underway at Emory. Reddit was not overwhelmingly obsessed with it, but that is acceptable when the headline is real and recent. This is still a volatile biotech runner, so the setup belongs in high-risk territory, but unlike the average penny-stock hallucination it has both a regulator-backed catalyst and a tradable tape.",
+        "catalyst": "FDA Fast Track designation for CDI-988 plus active Phase 1b norovirus study updates.",
+        "sources": [
+          "TradingView most active pre-market stocks snapshot (10:00 UTC)",
+          "StockAnalysis COCP news page fetched 2026-04-03",
+          "Benzinga headline on Fast Track designation",
+          "GlobeNewswire company release on FDA Fast Track / Phase 1b update"
+        ],
+        "result": "pending"
+      },
+      "sure_bet": {
+        "ticker": "USEG",
+        "company": "U.S. Energy Corp.",
+        "exchange": "NASDAQ",
+        "current_price": 0.99,
+        "entry": 0.96,
+        "exit": 1.08,
+        "stop_loss": 0.89,
+        "confidence": 7,
+        "risk": 5,
+        "reasoning": "USEG returns because it is one of the few sub-$1 major-exchange names with a coherent operating story and visible pre-market interest. TradingView showed the stock back near $0.99 pre-market after yesterday's failed follow-through, and StockAnalysis still shows the same recent transformation narrative around industrial gas, energy, and carbon-management operations. Energy names also remain one of the cleaner momentum pockets on the morning boards. It is not glamorous, which in this category is a compliment.",
+        "catalyst": "Energy-sector momentum plus recent 2025 results and transformation messaging around industrial gas, energy, and carbon management.",
+        "sources": [
+          "TradingView most active pre-market stocks snapshot (10:00 UTC)",
+          "StockAnalysis USEG news page fetched 2026-04-03",
+          "Recent GlobeNewswire company updates cited on StockAnalysis",
+          "Broader energy-strength headlines noted in recent coverage"
+        ],
+        "result": "pending"
+      },
+      "maverick": {
+        "ticker": "SGMO",
+        "company": "Sangamo Therapeutics, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 0.3,
+        "entry": 0.29,
+        "exit": 0.34,
+        "stop_loss": 0.26,
+        "confidence": 6,
+        "risk": 6,
+        "reasoning": "SGMO is the contrarian choice: not the hottest thing on the board, but one of the more asymmetric sub-dollar bios once I checked the company page. StockAnalysis still shows it as a clinical-stage genomic medicine name with analyst enthusiasm wildly out of proportion to the current share price, and it appeared on the active penny-stock list with positive momentum. Reddit evidence was thin and mostly historical rather than today's mania, which is exactly why this lands in maverick rather than high-risk momentum. The thesis is a speculative rebound in a deeply beaten-down biotech that still has a pulse.",
+        "catalyst": "Sub-dollar biotech rebound setup with active trading volume and ongoing genomic-medicine pipeline narrative.",
+        "sources": [
+          "StockAnalysis active penny-stock list fetched 2026-04-03",
+          "StockAnalysis SGMO overview page fetched 2026-04-03",
+          "Reddit scan across r/pennystocks and r/wallstreetbets showed legacy awareness but no dominant hype",
+          "NASDAQ listing / major-exchange filter"
+        ],
+        "result": "pending"
+      },
+      "daily_balance": 117.95
     }
   ]
 }
