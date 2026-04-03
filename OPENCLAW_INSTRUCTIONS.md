@@ -89,10 +89,13 @@ For EACH pick, provide:
 - Stop loss price (the "get out" price if it drops)
 - Risk level (1-10)
 - Confidence level (1-10)
+- **Allocation %** (how much of the portfolio you're putting on this pick — must total ≤100%)
 - Category (High Risk, Sure Bet, or Maverick)
 - 2-3 sentence reasoning
 - Key catalyst or thesis
 - Sources consulted
+
+**Allocation guidance:** You decide how to split the money. Go heavy on conviction, light on speculation, or hold cash. If only one pick looks strong, it's fine to put 60%+ on it and minimize the rest. If nothing looks good, you can hold up to 100% cash for the day.
 
 **Phase 5 — Publish (8:45 AM)**
 
@@ -144,37 +147,50 @@ After market close:
    - If entry was triggered but exit wasn't, use closing price as the exit
    - If entry was never triggered, the trade was a "miss" (no gain/no loss)
 
-3. **Calculate P&L for each pick** (splitting the portfolio equally across all 3 picks):
+3. **Position sizing is YOUR call**:
+   - You are welcome to play however you feel is best with the options you pick each day
+   - You may weight positions by confidence (e.g. 50/30/20 instead of equal thirds)
+   - You may go heavier on high-conviction picks and lighter on speculative ones
+   - You may sit partially or fully in cash if nothing looks strong — never force bad picks
+   - You may tighten stops on low-confidence plays
+   - Document your sizing rationale in the morning picks AND the evening update so the ledger tells the full story
+
+4. **Calculate P&L for each pick** (using your chosen allocation per pick):
    ```
+   For each pick, determine its allocation (e.g. 50%, 30%, 20% of balance)
+   
    If WIN (entry and exit both hit):
-     shares = (balance/3) / entry_price
+     shares = (balance * allocation%) / entry_price
      profit = shares * (exit_price - entry_price)
    
    If PARTIAL (entry hit, exit not hit):
-     shares = (balance/3) / entry_price  
+     shares = (balance * allocation%) / entry_price  
      profit = shares * (close_price - entry_price)  # could be negative!
    
    If STOPPED OUT (entry hit, stop loss hit before exit):
-     shares = (balance/3) / entry_price
+     shares = (balance * allocation%) / entry_price
      profit = shares * (stop_loss - entry_price)  # will be negative
    
    If MISS (entry never hit):
      profit = 0
+   
+   If CASH (chose not to play a slot):
+     profit = 0
    ```
 
-4. **Update the ledger**:
+5. **Update the ledger**:
    - Read `data/ledger.json`
-   - Add each trade result
+   - Add each trade result (including allocation % used)
    - Update `current_balance`
    - Calculate running statistics (win rate, avg gain, avg loss, best day, worst day)
 
-5. **Update picks history**:
+6. **Update picks history**:
    - Read `data/picks-history.json`
    - Add today's picks with their actual results
 
-6. **Regenerate the dashboard** with updated performance data
+7. **Regenerate the dashboard** with updated performance data
 
-7. **Commit and push** the updated site
+8. **Commit and push** the updated site
 
 ---
 
@@ -265,6 +281,7 @@ Also update `site/index.html` to reflect:
 6. **Cite your sources** — mention which Reddit posts, news articles, or data points influenced the pick
 7. **If there are no good picks, say so** — better to say "no strong plays today" than force bad picks
 8. **Weekend/holiday handling** — no picks on non-trading days; publish a "market closed" page instead
+9. **Market holiday detection** — BEFORE doing any research or picks, check if today is a US stock market holiday. Known closures include: New Year's Day, MLK Day, Presidents' Day, Good Friday, Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving, Christmas. If the market is closed, skip all research/picks/scoring and respond with "Market closed today ([holiday name]). No picks." Do NOT publish picks for closed days.
 
 ---
 
