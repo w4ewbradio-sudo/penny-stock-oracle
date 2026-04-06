@@ -265,7 +265,14 @@
                     "Prior Oracle watchlist history",
                     "NYSE American listing verification"
                 ],
-                "result": "pending"
+                "result": "miss",
+                "actual_open": 2.1,
+                "actual_high": 2.3,
+                "actual_low": 2.1,
+                "actual_close": 2.19,
+                "actual_exit": 0,
+                "profit": 0.0,
+                "notes": "Entry never triggered. Day range $2.10\u2013$2.30 never traded down to the planned buy level of $1.92."
             },
             "sure_bet": {
                 "ticker": "USEG",
@@ -284,7 +291,14 @@
                     "Recent Oracle coverage",
                     "NASDAQ listing verification"
                 ],
-                "result": "pending"
+                "result": "miss",
+                "actual_open": 0.83,
+                "actual_high": 0.86,
+                "actual_low": 0.82,
+                "actual_close": 0.85,
+                "actual_exit": 0,
+                "profit": 0.0,
+                "notes": "Entry never triggered. Day range $0.82\u2013$0.86 never traded down to the planned buy level of $0.88."
             },
             "maverick": {
                 "ticker": "SGMO",
@@ -303,10 +317,19 @@
                     "Recent Oracle coverage",
                     "NASDAQ listing verification"
                 ],
-                "result": "pending"
+                "result": "miss",
+                "actual_open": 0.31,
+                "actual_high": 0.31,
+                "actual_low": 0.28,
+                "actual_close": 0.28,
+                "actual_exit": 0,
+                "profit": 0.0,
+                "notes": "Entry never triggered. Day range $0.28\u2013$0.31 never traded down to the planned buy level of $0.27."
             },
             "cash_allocation": 15,
-            "daily_balance": 117.95
+            "daily_balance": 117.95,
+            "daily_profit": 0.0,
+            "daily_balance_end": 117.95
         }
     ]
 }
