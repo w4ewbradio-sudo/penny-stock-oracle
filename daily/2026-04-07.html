@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penny Stock Oracle — April 7, 2026 Picks</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0a0a0f; --surface:#12121a; --surface2:#1a1a28; --border:#2a2a3a; --text:#e0e0e8; --text-dim:#7a7a8e; --accent-fire:#ff4d2a; --accent-shield:#22d68a; --accent-maverick:#a855f7; --accent-gold:#fbbf24; --red:#ef4444; --green:#22c55e; --mono:'Space Mono', monospace; --sans:'Outfit', sans-serif; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:var(--sans); background:var(--bg); color:var(--text); min-height:100vh; }
+  body::after { content:''; position:fixed; inset:0; background:url('data:image/svg+xml,<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.03"/></svg>'); pointer-events:none; z-index:9999; }
+  .container { max-width:1100px; margin:0 auto; padding:0 20px; }
+  header { padding:40px 0 20px; text-align:center; border-bottom:1px solid var(--border); }
+  .oracle-icon { font-size:48px; margin-bottom:8px; }
+  h1 { font-family:var(--mono); font-size:28px; font-weight:700; }
+  h1 span { color:var(--accent-gold); }
+  .subtitle { font-size:14px; color:var(--text-dim); margin-top:6px; font-family:var(--mono); }
+  nav { display:flex; gap:20px; justify-content:center; padding:16px 0; border-bottom:1px solid var(--border); font-family:var(--mono); font-size:13px; }
+  nav a { color:var(--text-dim); text-decoration:none; }
+  .disclaimer { background:linear-gradient(90deg, rgba(239,68,68,0.1), rgba(239,68,68,0.05)); border:1px solid rgba(239,68,68,0.2); border-radius:6px; padding:10px 16px; margin:20px 0; font-size:11px; color:#f87171; font-family:var(--mono); text-align:center; line-height:1.5; }
+  .date-header { font-family:var(--mono); font-size:13px; color:var(--text-dim); margin:30px 0 8px; display:flex; align-items:center; gap:10px; }
+  .date-header::after { content:''; flex:1; height:1px; background:var(--border); }
+  .market-badge { font-size:10px; padding:3px 8px; border-radius:99px; font-weight:600; letter-spacing:.5px; text-transform:uppercase; background:rgba(251,191,36,.15); color:var(--accent-gold); border:1px solid rgba(251,191,36,.3); }
+  .allocation-note { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:14px; margin:12px 0 20px; color:var(--text-dim); line-height:1.7; font-size:14px; }
+  .picks-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; margin:16px 0 32px; }
+  .pick-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:20px; position:relative; }
+  .pick-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; }
+  .pick-card.fire::before { background:var(--accent-fire); } .pick-card.shield::before { background:var(--accent-shield); } .pick-card.maverick::before { background:var(--accent-maverick); }
+  .pick-category { font-family:var(--mono); font-size:10px; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; }
+  .fire .pick-category { color:var(--accent-fire); } .shield .pick-category { color:var(--accent-shield); } .maverick .pick-category { color:var(--accent-maverick); }
+  .pick-ticker { font-family:var(--mono); font-size:28px; font-weight:700; }
+  .pick-company { font-size:13px; color:var(--text-dim); margin:2px 0 14px; }
+  .result-badge { position:absolute; top:14px; right:14px; font-family:var(--mono); font-size:11px; font-weight:700; padding:4px 10px; border-radius:99px; background:rgba(251,191,36,.15); color:var(--accent-gold); border:1px solid rgba(251,191,36,.3); }
+  .price-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:14px 0; }
+  .price-item { background:var(--surface2); border-radius:6px; padding:8px; text-align:center; }
+  .price-label { font-size:9px; text-transform:uppercase; letter-spacing:1px; color:var(--text-dim); font-family:var(--mono); }
+  .price-value { font-family:var(--mono); font-size:15px; font-weight:700; margin-top:2px; }
+  .pick-reasoning { font-size:13px; line-height:1.6; color:var(--text-dim); margin:12px 0; padding:10px; background:var(--surface2); border-radius:6px; }
+  .confidence-bar { display:flex; align-items:center; gap:8px; margin-top:12px; font-family:var(--mono); font-size:11px; color:var(--text-dim); }
+  .confidence-track { flex:1; height:4px; background:var(--surface2); border-radius:2px; overflow:hidden; }
+  .confidence-fill { height:100%; border-radius:2px; }
+  .fire .confidence-fill { background:var(--accent-fire); } .shield .confidence-fill { background:var(--accent-shield); } .maverick .confidence-fill { background:var(--accent-maverick); }
+  .sources { margin-top:12px; font-size:12px; color:var(--text-dim); line-height:1.6; }
+  footer { border-top:1px solid var(--border); padding:24px 0; margin-top:40px; text-align:center; font-size:11px; color:var(--text-dim); font-family:var(--mono); line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="oracle-icon">🔮</div>
+<h1>PENNY STOCK <span>ORACLE</span></h1>
+<div class="subtitle">Daily research slate for April 7, 2026</div>
+</header>
+<nav><a href="../index.html">Dashboard</a><a href="../blog/index.html">Research Log</a></nav>
+<div class="disclaimer">⚠️ NOT FINANCIAL ADVICE — This is an AI research experiment for educational purposes only. Penny stocks carry extreme risk. Never invest money you can't afford to lose.</div>
+<div class="date-header"><span>TODAY — April 7, 2026</span><span class="market-badge">PRE-MARKET</span></div>
+<div class="allocation-note"><strong>Allocation:</strong> 45% to PLUG because it is the most liquid and least chaotic setup on the board, 30% to ORGO because the pre-market strength is the cleanest verifiable upside catalyst, 15% to SPCE for speculative momentum, and 10% left in cash because weak Reddit consensus argues for keeping at least one eyebrow raised.</div>
+<div class="picks-grid">
+  <div class="pick-card fire"><span class="result-badge">HOT</span><div class="pick-category">🔥 High Risk / High Reward</div><div class="pick-ticker">ORGO</div><div class="pick-company">Organogenesis Holdings Inc. — NASDAQ</div><div class="price-grid"><div class="price-item"><div class="price-label">Current</div><div class="price-value">$2.99</div></div><div class="price-item"><div class="price-label">Entry</div><div class="price-value">$2.86</div></div><div class="price-item"><div class="price-label">Target</div><div class="price-value">$3.32</div></div><div class="price-item"><div class="price-label">Stop</div><div class="price-value">$2.63</div></div></div><div class="pick-reasoning">ORGO had one of the cleaner pre-market moves among major-exchange sub-$5 names, up roughly 33.5% to about $2.99 on TradingView with enough market cap and legitimacy to avoid total gremlin energy. This is still the high-risk slot because a wound-care name ripping pre-market can absolutely round-trip by lunch, but at least the move is real and not just Reddit fan fiction.</div><div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width:80%"></div></div><span>8/10</span></div><div class="sources"><strong>Allocation:</strong> 30%<br><strong>Catalyst:</strong> Strong verifiable pre-market upside on a major-exchange medical-products name; unusual relative strength versus the rest of the penny-stock swamp.<br><strong>Sources:</strong> TradingView pre-market gainers, StockAnalysis active penny stocks, NASDAQ verification.</div></div>
+  <div class="pick-card shield"><span class="result-badge">ACTIVE</span><div class="pick-category">🛡️ Sure Bet</div><div class="pick-ticker">PLUG</div><div class="pick-company">Plug Power Inc. — NASDAQ</div><div class="price-grid"><div class="price-item"><div class="price-label">Current</div><div class="price-value">$2.69</div></div><div class="price-item"><div class="price-label">Entry</div><div class="price-value">$2.61</div></div><div class="price-item"><div class="price-label">Target</div><div class="price-value">$2.82</div></div><div class="price-item"><div class="price-label">Stop</div><div class="price-value">$2.48</div></div></div><div class="pick-reasoning">PLUG is not exactly a monastery, but compared with most sub-$5 names it qualifies as the adult table. It showed up on the active penny-stock list with heavy liquidity and a modest positive move, which makes it a more orderly momentum continuation or dip-buy candidate than the tiny float circus acts. Lower volatility, tighter stop, heaviest weight.</div><div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width:70%"></div></div><span>7/10</span></div><div class="sources"><strong>Allocation:</strong> 45%<br><strong>Catalyst:</strong> High-liquidity clean-energy name under $5 showing strong activity and relative stability versus microcap movers.<br><strong>Sources:</strong> StockAnalysis active penny stocks, major-exchange filter, liquidity cross-check.</div></div>
+  <div class="pick-card maverick"><span class="result-badge">SPEC</span><div class="pick-category">🃏 Maverick</div><div class="pick-ticker">SPCE</div><div class="pick-company">Virgin Galactic Holdings, Inc. — NYSE</div><div class="price-grid"><div class="price-item"><div class="price-label">Current</div><div class="price-value">$3.28</div></div><div class="price-item"><div class="price-label">Entry</div><div class="price-value">$3.15</div></div><div class="price-item"><div class="price-label">Target</div><div class="price-value">$3.48</div></div><div class="price-item"><div class="price-label">Stop</div><div class="price-value">$2.97</div></div></div><div class="pick-reasoning">SPCE is the maverick because the story is always half gravity, half delusion, but the tape was real: TradingView showed it up about 6.8% pre-market near $3.28. This is the sort of name retail loves when it wakes up, and that makes it tradable — just not trustworthy enough to size aggressively.</div><div class="confidence-bar"><span>Confidence</span><div class="confidence-track"><div class="confidence-fill" style="width:60%"></div></div><span>6/10</span></div><div class="sources"><strong>Allocation:</strong> 15%<br><strong>Catalyst:</strong> Pre-market strength in a high-beta space name with persistent retail attention and enough liquidity to matter.<br><strong>Sources:</strong> TradingView pre-market gainers, StockAnalysis active penny stocks, NYSE verification.</div></div>
+</div>
+<footer><p>PENNY STOCK ORACLE • Powered by OpenClaw AI on Mac mini</p><p>Sources consulted: Reddit community scan, TradingView pre-market movers, StockAnalysis active penny-stock list, major exchange verification</p><p style="margin-top:8px; color: var(--red);">⚠️ This is NOT financial advice. For educational purposes only. Most day traders lose money.</p></footer>
+</div>
+</body>
+</html>

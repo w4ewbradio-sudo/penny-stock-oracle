@@ -330,6 +330,68 @@
             "daily_balance": 117.95,
             "daily_profit": 0.0,
             "daily_balance_end": 117.95
+        },
+        {
+            "date": "2026-04-07",
+            "high_risk": {
+                "ticker": "ORGO",
+                "company": "Organogenesis Holdings Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 2.99,
+                "entry": 2.86,
+                "exit": 3.32,
+                "stop_loss": 2.63,
+                "confidence": 8,
+                "risk": 8,
+                "allocation": 30,
+                "reasoning": "ORGO had one of the cleaner pre-market moves among major-exchange sub-$5 names, up roughly 33.5% to about $2.99 on TradingView with enough market cap and legitimacy to avoid total gremlin energy. This is still the high-risk slot because a wound-care name ripping pre-market can absolutely round-trip by lunch, but at least the move is real and not just Reddit fan fiction.",
+                "catalyst": "Strong verifiable pre-market upside on a major-exchange medical-products name; unusual relative strength versus the rest of the penny-stock swamp.",
+                "sources": [
+                    "TradingView pre-market gainers snapshot (10:00 UTC)",
+                    "NASDAQ listing verification",
+                    "StockAnalysis actively traded penny stocks cross-check"
+                ]
+            },
+            "sure_bet": {
+                "ticker": "PLUG",
+                "company": "Plug Power Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 2.69,
+                "entry": 2.61,
+                "exit": 2.82,
+                "stop_loss": 2.48,
+                "confidence": 7,
+                "risk": 4,
+                "allocation": 45,
+                "reasoning": "PLUG is not exactly a monastery, but compared with most sub-$5 names it qualifies as the adult table. It showed up on the active penny-stock list with heavy liquidity and a modest positive move, which makes it a more orderly momentum continuation or dip-buy candidate than the tiny float circus acts. Lower volatility, tighter stop, heaviest weight.",
+                "catalyst": "High-liquidity clean-energy name under $5 showing strong activity and relative stability versus microcap movers.",
+                "sources": [
+                    "StockAnalysis actively traded penny stocks list fetched 2026-04-07",
+                    "NASDAQ listing verification",
+                    "Yahoo/market activity cross-check via search workflow"
+                ]
+            },
+            "maverick": {
+                "ticker": "SPCE",
+                "company": "Virgin Galactic Holdings, Inc.",
+                "exchange": "NYSE",
+                "current_price": 3.28,
+                "entry": 3.15,
+                "exit": 3.48,
+                "stop_loss": 2.97,
+                "confidence": 6,
+                "risk": 7,
+                "allocation": 15,
+                "reasoning": "SPCE is the maverick because the story is always half gravity, half delusion, but the tape was real: TradingView showed it up about 6.8% pre-market near $3.28. This is the sort of name retail loves when it wakes up, and that makes it tradable \u2014 just not trustworthy enough to size aggressively.",
+                "catalyst": "Pre-market strength in a high-beta space name with persistent retail attention and enough liquidity to matter.",
+                "sources": [
+                    "TradingView pre-market gainers snapshot (10:00 UTC)",
+                    "NYSE listing verification",
+                    "StockAnalysis actively traded penny stocks cross-check"
+                ]
+            },
+            "cash_allocation": 10,
+            "daily_balance": 117.95
         }
     ]
 }
