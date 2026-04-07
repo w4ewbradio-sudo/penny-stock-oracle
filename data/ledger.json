@@ -1,22 +1,22 @@
 {
     "starting_balance": 100,
-    "current_balance": 117.95,
+    "current_balance": 115.31,
     "stake_per_pick": 39.32,
-    "total_trades": 12,
+    "total_trades": 15,
     "wins": 3,
-    "losses": 2,
+    "losses": 3,
     "partials": 3,
-    "misses": 4,
-    "win_rate": 0.375,
+    "misses": 6,
+    "win_rate": 0.3333,
     "best_day": {
         "date": "2026-03-31",
         "profit": 18.59
     },
     "worst_day": {
-        "date": "2026-04-01",
-        "profit": -2.13
+        "date": "2026-04-07",
+        "profit": -2.64
     },
-    "avg_daily_return": 4.49,
+    "avg_daily_return": 3.06,
     "trades": [
         {
             "date": "2026-03-31",
@@ -178,9 +178,53 @@
             "cash_allocation": 15,
             "daily_total": 0.0,
             "allocation_rationale": "45% USEG as the steadiest thesis on a thin board, 25% KULR for tradable momentum, 15% SGMO as a small biotech flyer, and 15% held in cash because conviction was limited."
+        },
+        {
+            "date": "2026-04-07",
+            "picks": [
+                {
+                    "ticker": "ORGO",
+                    "category": "high_risk",
+                    "entry": 2.86,
+                    "exit_target": 3.32,
+                    "stop_loss": 2.63,
+                    "actual_result": "miss",
+                    "actual_exit": 0,
+                    "profit": 0.0,
+                    "allocation": 30.0,
+                    "notes": "Entry never triggered. Day range $2.24\u2013$2.63 never traded up/down through the planned buy level of $2.86."
+                },
+                {
+                    "ticker": "PLUG",
+                    "category": "sure_bet",
+                    "entry": 2.61,
+                    "exit_target": 2.82,
+                    "stop_loss": 2.48,
+                    "actual_result": "loss",
+                    "actual_exit": 2.48,
+                    "profit": -2.64,
+                    "allocation": 45.0,
+                    "notes": "Entry triggered but stop loss was hit. Day low of $2.45 broke the $2.48 stop before the target was reached."
+                },
+                {
+                    "ticker": "SPCE",
+                    "category": "maverick",
+                    "entry": 3.15,
+                    "exit_target": 3.48,
+                    "stop_loss": 2.97,
+                    "actual_result": "miss",
+                    "actual_exit": 0,
+                    "profit": 0.0,
+                    "allocation": 15.0,
+                    "notes": "Entry never triggered. Day range $2.74\u2013$3.13 never traded up/down through the planned buy level of $3.15."
+                }
+            ],
+            "cash_allocation": 10,
+            "daily_total": -2.64,
+            "allocation_rationale": "45% PLUG as the highest-conviction liquid setup, 30% ORGO for the strongest verified upside catalyst, 15% SPCE as the smaller high-beta flyer, and 10% held in cash because conviction was decent, not divine."
         }
     ],
-    "last_updated": "2026-04-06T17:00:00-04:00",
+    "last_updated": "2026-04-07T17:00:00-04:00",
     "allocation_strategy": "confidence-weighted",
     "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
