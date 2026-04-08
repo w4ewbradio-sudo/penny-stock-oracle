@@ -419,6 +419,69 @@
             "daily_profit": -2.64,
             "daily_balance_end": 115.31,
             "allocation_rationale": "45% PLUG as the highest-conviction liquid setup, 30% ORGO for the strongest verified upside catalyst, 15% SPCE as the smaller high-beta flyer, and 10% held in cash because conviction was decent, not divine."
+        },
+        {
+            "date": "2026-04-08",
+            "high_risk": {
+                "ticker": "SES",
+                "company": "SES AI Corporation",
+                "exchange": "NYSE",
+                "current_price": 0.951,
+                "entry": 0.92,
+                "exit": 1.08,
+                "stop_loss": 0.84,
+                "confidence": 8,
+                "risk": 8,
+                "allocation": 35,
+                "reasoning": "SES showed up in fresh r/pennystocks chatter this morning and also sits on the actively traded sub-$5 list. The company has a recent first-quarter business update and still trades like a proper chaos goblin, which is exactly why it belongs in the high-risk slot rather than the sensible chair.",
+                "catalyst": "Company-issued Q1 2026 business update on April 1 plus ongoing AI-and-energy-storage narrative; fresh Reddit mention this morning.",
+                "sources": [
+                    "Reddit r/pennystocks new feed 2026-04-08 post naming SES",
+                    "StockAnalysis actively traded penny stocks list fetched 2026-04-08",
+                    "StockAnalysis SES overview/news links including BusinessWire Q1 2026 business update (2026-04-01)"
+                ]
+            },
+            "sure_bet": {
+                "ticker": "PLUG",
+                "company": "Plug Power Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 2.52,
+                "entry": 2.44,
+                "exit": 2.72,
+                "stop_loss": 2.28,
+                "confidence": 7,
+                "risk": 4,
+                "allocation": 40,
+                "reasoning": "PLUG is still the least ridiculous liquid setup in this swamp. It is heavily traded, major-exchange listed, and the pre-market tape flipped green on TradingView after yesterday's weakness. That does not make it safe in any adult sense, but within penny-stock land it is the closest thing to wearing a seatbelt.",
+                "catalyst": "Heavy liquidity, renewed pre-market strength on TradingView, and recent company-update / CEO-change narrative still in circulation.",
+                "sources": [
+                    "TradingView active pre-market stocks snapshot fetched 2026-04-08 (PLUG pre-market green near $2.70)",
+                    "StockAnalysis actively traded penny stocks list fetched 2026-04-08",
+                    "StockAnalysis PLUG overview/news links citing recent Q4 update / CEO-change coverage"
+                ]
+            },
+            "maverick": {
+                "ticker": "ONDS",
+                "company": "Ondas Holdings Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 4.99,
+                "entry": 4.78,
+                "exit": 5.42,
+                "stop_loss": 4.38,
+                "confidence": 6,
+                "risk": 7,
+                "allocation": 15,
+                "reasoning": "ONDS got a direct mention in fresh wallstreetbets chatter tied to drone infrastructure and geopolitics, and the name already had a real company-side narrative from its record-Q4 and defense/drone positioning. It is a little too story-heavy to trust with size, which is exactly what makes it the maverick instead of the core allocation.",
+                "catalyst": "Drone / autonomous systems narrative, fresh Reddit attention, and recent record-Q4-results coverage.",
+                "sources": [
+                    "Reddit r/wallstreetbets new feed 2026-04-08 post discussing ONDS",
+                    "StockAnalysis ONDS overview/news links including Benzinga coverage of record Q4 results",
+                    "NASDAQ listing / under-$5 qualification cross-check from StockAnalysis list workflow"
+                ]
+            },
+            "cash_allocation": 10,
+            "daily_balance": 115.31,
+            "allocation_rationale": "40% to PLUG as the most liquid and least feral setup, 35% to SES because the Reddit-plus-catalyst combo gives it the best upside asymmetry, 15% to ONDS as the smaller narrative flyer, and 10% left in cash because discipline is cheaper than regret."
         }
     ]
 }
