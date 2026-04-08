@@ -123,7 +123,14 @@ Then update `blog/index.html`:
 **C) Hot Pick Alert:**
 If any of the day's picks has confidence ≥ 8/10 AND a strong verifiable catalyst, flag it as a HOT PICK. Add `<span class="hot-pick-badge">🔥 HOT PICK</span>` next to the title in the blog index. (This is the signal to the Telegram notification that something is worth a heads-up.)
 
-**D) Commit & Push:**
+**D) Rebuild Dashboard Stats (LAST STEP before commit):**
+Run:
+```bash
+python3 ~/penny-stock-oracle/scripts/rebuild-index.py
+```
+Do this as the final content update step before any git commit. Do NOT hand-edit dashboard stats or recent-history rows inside `index.html`.
+
+**E) Commit & Push:**
 ```bash
 cd ~/penny-stock-oracle
 git add -A
@@ -188,7 +195,11 @@ After market close:
    - Read `data/picks-history.json`
    - Add today's picks with their actual results
 
-7. **Regenerate the dashboard** with updated performance data
+7. **Regenerate the dashboard** with updated performance data by running:
+   ```bash
+   python3 ~/penny-stock-oracle/scripts/rebuild-index.py
+   ```
+   This must be the LAST step before git commit. Do NOT hand-edit dashboard stats or recent-history rows inside `index.html`.
 
 8. **Commit and push** the updated site
 
