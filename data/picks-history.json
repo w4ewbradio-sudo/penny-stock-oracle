@@ -544,7 +544,14 @@
                     "Benzinga/GlobeNewswire items on StockAnalysis citing FDA Fast Track designation",
                     "StockMarketWatch unusual volume board (COCP listed around $1.43 at 6:01 AM EDT)"
                 ],
-                "result": "pending"
+                "result": "partial",
+                "actual_open": 1.4,
+                "actual_high": 1.52,
+                "actual_low": 1.36,
+                "actual_close": 1.43,
+                "actual_exit": 1.43,
+                "profit": 1.46,
+                "notes": "Entry triggered, target missed, and it closed at $1.43 for a partial gain."
             },
             "sure_bet": {
                 "ticker": "PLUG",
@@ -564,7 +571,14 @@
                     "GlobeNewswire item: Plug participating in RBC non-deal roadshow in Canada (April 7, 2026)",
                     "StockAnalysis active penny-stocks list / volume cross-check"
                 ],
-                "result": "pending"
+                "result": "miss",
+                "actual_open": 2.63,
+                "actual_high": 2.84,
+                "actual_low": 2.62,
+                "actual_close": 2.74,
+                "actual_exit": 0.0,
+                "profit": 0.0,
+                "notes": "Entry never triggered. Day range $2.62\u2013$2.84 never traded through the planned buy level of $2.56."
             },
             "maverick": {
                 "ticker": "HUMA",
@@ -584,11 +598,20 @@
                     "NASDAQ listing verification",
                     "StockAnalysis active penny-stocks / price cross-check"
                 ],
-                "result": "pending"
+                "result": "partial",
+                "actual_open": 0.6527,
+                "actual_high": 0.6674,
+                "actual_low": 0.607,
+                "actual_close": 0.607,
+                "actual_exit": 0.607,
+                "profit": -0.63,
+                "notes": "Entry triggered, target missed, and it closed at $0.61 for a partial loss."
             },
             "cash_allocation": 10,
             "allocation_rationale": "40% to PLUG for liquidity and cleaner execution, 35% to COCP because the FDA Fast Track catalyst is the strongest verifiable spark on the board, 15% to HUMA as the smaller speculative biotech swing, and 10% left in cash because not every morning deserves full commitment.",
-            "daily_balance": 115.31
+            "daily_balance": 115.31,
+            "daily_profit": 0.83,
+            "daily_balance_end": 116.14
         }
     ]
 }
