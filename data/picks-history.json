@@ -523,6 +523,72 @@
             "allocation_rationale": "40% to PLUG as the most liquid and least feral setup, 35% to SES because the Reddit-plus-catalyst combo gives it the best upside asymmetry, 15% to ONDS as the smaller narrative flyer, and 10% left in cash because discipline is cheaper than regret.",
             "daily_profit": 0.0,
             "daily_balance_end": 115.31
+        },
+        {
+            "date": "2026-04-09",
+            "high_risk": {
+                "ticker": "COCP",
+                "company": "Cocrystal Pharma, Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 1.43,
+                "entry": 1.38,
+                "exit": 1.62,
+                "stop_loss": 1.26,
+                "confidence": 8,
+                "risk": 8,
+                "allocation": 35.0,
+                "reasoning": "COCP still has a live, verifiable catalyst after the FDA granted Fast Track designation for CDI-988 in norovirus treatment and prevention. It also appeared on the pre-market unusual-volume board, which matters more than Reddit swagger when the tape is thin.",
+                "catalyst": "FDA Fast Track designation for CDI-988 plus ongoing Phase 1b norovirus study momentum.",
+                "sources": [
+                    "StockAnalysis COCP page fetched 2026-04-09",
+                    "Benzinga/GlobeNewswire items on StockAnalysis citing FDA Fast Track designation",
+                    "StockMarketWatch unusual volume board (COCP listed around $1.43 at 6:01 AM EDT)"
+                ],
+                "result": "pending"
+            },
+            "sure_bet": {
+                "ticker": "PLUG",
+                "company": "Plug Power Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 2.65,
+                "entry": 2.56,
+                "exit": 2.79,
+                "stop_loss": 2.39,
+                "confidence": 7,
+                "risk": 4,
+                "allocation": 40.0,
+                "reasoning": "PLUG keeps the boring chair because it is liquid, recognizable, and backed by an actual public-company update cycle rather than pure message-board fungus. The RBC non-deal roadshow note is not an earth-shaking catalyst, but it helps keep the name in play and the liquidity gives the setup more structure than the smaller gremlins.",
+                "catalyst": "RBC non-deal roadshow participation and continued post-results / leadership-change attention.",
+                "sources": [
+                    "StockAnalysis PLUG page fetched 2026-04-09",
+                    "GlobeNewswire item: Plug participating in RBC non-deal roadshow in Canada (April 7, 2026)",
+                    "StockAnalysis active penny-stocks list / volume cross-check"
+                ],
+                "result": "pending"
+            },
+            "maverick": {
+                "ticker": "HUMA",
+                "company": "Humacyte, Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 0.652,
+                "entry": 0.63,
+                "exit": 0.74,
+                "stop_loss": 0.57,
+                "confidence": 6,
+                "risk": 7,
+                "allocation": 15.0,
+                "reasoning": "HUMA makes the slate because it is a real biotech story with analyst sponsorship and enough sub-dollar volatility to matter, but without the same fresh hard catalyst COCP has. That makes it exactly the sort of controlled speculative side quest the maverick slot exists for.",
+                "catalyst": "Bioengineered-tissue platform story, analyst support, and high-beta biotech rebound setup.",
+                "sources": [
+                    "StockAnalysis HUMA page fetched 2026-04-09",
+                    "NASDAQ listing verification",
+                    "StockAnalysis active penny-stocks / price cross-check"
+                ],
+                "result": "pending"
+            },
+            "cash_allocation": 10,
+            "allocation_rationale": "40% to PLUG for liquidity and cleaner execution, 35% to COCP because the FDA Fast Track catalyst is the strongest verifiable spark on the board, 15% to HUMA as the smaller speculative biotech swing, and 10% left in cash because not every morning deserves full commitment.",
+            "daily_balance": 115.31
         }
     ]
 }
