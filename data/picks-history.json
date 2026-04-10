@@ -633,7 +633,14 @@
                     "StockAnalysis ONCY overview page fetched 2026-04-10 (NASDAQ, Roche collaboration, analyst consensus Strong Buy, target $7.33)",
                     "Reddit scan across r/pennystocks, r/wallstreetbets, r/smallstreetbets, r/RaceToTenMillion, and r/Shortsqueeze showed scattered biotech chatter but no dominant single ticker"
                 ],
-                "result": "pending"
+                "result": "loss",
+                "actual_open": 1.02,
+                "actual_high": 1.1,
+                "actual_low": 0.92,
+                "actual_close": 0.94,
+                "actual_exit": 0.93,
+                "profit": -3.22,
+                "notes": "Entry triggered but stop loss was hit. Day low of $0.92 broke the $0.93 stop before the target was reached."
             },
             "sure_bet": {
                 "ticker": "EVGO",
@@ -653,7 +660,14 @@
                     "StockAnalysis EVGO page fetched 2026-04-10 (record revenue headlines, CFO transition, major-exchange listing)",
                     "Cross-check from active penny-stock screen: EVGO remained one of the more liquid sub-$5 names on the board"
                 ],
-                "result": "pending"
+                "result": "partial",
+                "actual_open": 2.03,
+                "actual_high": 2.1,
+                "actual_low": 1.93,
+                "actual_close": 1.95,
+                "actual_exit": 1.95,
+                "profit": 0.24,
+                "notes": "Entry triggered, target missed, and it closed at $1.95 for a partial gain."
             },
             "maverick": {
                 "ticker": "CDXS",
@@ -673,11 +687,20 @@
                     "StockAnalysis CDXS page fetched 2026-04-10 (2025 revenue +18.61%, losses narrowed, Pfizer/Aldevron license references)",
                     "Major-exchange verification: NASDAQ"
                 ],
-                "result": "pending"
+                "result": "loss",
+                "actual_open": 2.4,
+                "actual_high": 2.46,
+                "actual_low": 2.16,
+                "actual_close": 2.26,
+                "actual_exit": 2.19,
+                "profit": -1.05,
+                "notes": "Entry triggered but stop loss was hit. Day low of $2.16 broke the $2.19 stop before the target was reached."
             },
             "cash_allocation": 10.0,
             "allocation_rationale": "40% to EVGO because liquidity and execution quality still matter, 35% to ONCY because the biotech tape plus analyst backing gives it the strongest upside asymmetry, 15% to CDXS as the smaller off-consensus quality flyer, and 10% left in cash because discipline is cheaper than pretending every board is full of gifts.",
-            "daily_balance": 116.14
+            "daily_balance": 116.14,
+            "daily_profit": -4.03,
+            "daily_balance_end": 112.11
         }
     ]
 }
