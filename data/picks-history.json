@@ -701,6 +701,69 @@
             "daily_balance": 116.14,
             "daily_profit": -4.03,
             "daily_balance_end": 112.11
+        },
+        {
+            "date": "2026-04-13",
+            "high_risk": {
+                "ticker": "ONCY",
+                "company": "Oncolytics Biotech Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 1.04,
+                "entry": 1.0,
+                "exit": 1.18,
+                "stop_loss": 0.92,
+                "confidence": 8,
+                "risk": 8,
+                "allocation": 30.0,
+                "reasoning": "ONCY is back on the pre-market gainer board with double-digit strength and, unlike the average biotech goblin, it still has a coherent institutional story behind it. StockAnalysis continues to show a Roche collaboration backdrop and a Strong Buy analyst consensus, which is not a guarantee of anything except that the dream at least has adult supervision.",
+                "catalyst": "11.8% pre-market gain on StockAnalysis plus ongoing oncology-program / Roche-collaboration narrative and strong analyst sponsorship.",
+                "sources": [
+                    "StockAnalysis premarket gainers fetched 2026-04-13 (ONCY +11.83% at $1.04)",
+                    "StockAnalysis ONCY overview fetched 2026-04-13 (Roche collaboration context; analyst consensus Strong Buy, target $7.33)",
+                    "Reddit scan across r/pennystocks, r/wallstreetbets, r/smallstreetbets, r/RaceToTenMillion, r/Shortsqueeze showed no dominant ticker consensus"
+                ]
+            },
+            "sure_bet": {
+                "ticker": "PLUG",
+                "company": "Plug Power Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 2.74,
+                "entry": 2.66,
+                "exit": 2.88,
+                "stop_loss": 2.52,
+                "confidence": 7,
+                "risk": 4,
+                "allocation": 45.0,
+                "reasoning": "PLUG keeps the adult-table seat because it is liquid, institutionally followed, and still attached to verifiable company updates rather than pure message-board fungus. The recent RBC roadshow item and the previously cited electrolyzer-project attention are not fireworks, but in penny-stock land they qualify as a functioning central nervous system.",
+                "catalyst": "High liquidity on the active penny-stock board plus recent RBC non-deal roadshow participation and continued attention around its GenEco electrolyzer award.",
+                "sources": [
+                    "StockAnalysis active penny-stocks list fetched 2026-04-13 (PLUG $2.74, heavy volume)",
+                    "StockAnalysis PLUG overview fetched 2026-04-13 (RBC non-deal roadshow; traders revisiting 275-megawatt GenEco electrolyzer award)",
+                    "Major exchange verification: NASDAQ"
+                ]
+            },
+            "maverick": {
+                "ticker": "MVIS",
+                "company": "MicroVision, Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 0.607,
+                "entry": 0.59,
+                "exit": 0.68,
+                "stop_loss": 0.54,
+                "confidence": 6,
+                "risk": 7,
+                "allocation": 15.0,
+                "reasoning": "MVIS is the maverick because lidar names always arrive wearing a dramatic cape and carrying more future than present. What saves it from pure nonsense is the insider-buying headline from March and the persistent autonomy/defense perception story, which is enough for a small speculative flyer but not enough to let it touch the good silverware.",
+                "catalyst": "March insider-buying headline plus ongoing lidar / autonomy / defense-perception narrative.",
+                "sources": [
+                    "StockAnalysis active penny-stocks list fetched 2026-04-13 (MVIS $0.607)",
+                    "StockAnalysis MVIS overview fetched 2026-04-13 (CEO, directors, and executives buy MVIS stock headline from Mar. 16, 2026)",
+                    "Major exchange verification: NASDAQ"
+                ]
+            },
+            "cash_allocation": 10.0,
+            "allocation_rationale": "45% to PLUG because liquidity and execution quality matter when the rest of the board looks like it was assembled by caffeinated raccoons, 30% to ONCY because it has the strongest upside asymmetry with a verifiable pre-market move and real biotech sponsorship, 15% to MVIS as the smaller narrative flyer, and 10% left in cash because cash is a position, not a moral failing.",
+            "daily_balance": 112.11
         }
     ]
 }
