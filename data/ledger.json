@@ -1,13 +1,13 @@
 {
     "starting_balance": 100,
-    "current_balance": 112.11,
+    "current_balance": 114.61,
     "stake_per_pick": 38.71,
-    "total_trades": 24,
+    "total_trades": 27,
     "wins": 3,
     "losses": 5,
-    "partials": 6,
-    "misses": 10,
-    "win_rate": 0.2143,
+    "partials": 8,
+    "misses": 11,
+    "win_rate": 0.1875,
     "best_day": {
         "date": "2026-03-31",
         "profit": 18.59
@@ -16,7 +16,7 @@
         "date": "2026-04-10",
         "profit": -4.03
     },
-    "avg_daily_return": 1.51,
+    "avg_daily_return": 1.62,
     "trades": [
         {
             "date": "2026-03-31",
@@ -354,9 +354,53 @@
             "cash_allocation": 10.0,
             "daily_total": -4.03,
             "allocation_rationale": "40% to EVGO because liquidity and execution quality still matter, 35% to ONCY because the biotech tape plus analyst backing gives it the strongest upside asymmetry, 15% to CDXS as the smaller off-consensus quality flyer, and 10% left in cash because discipline is cheaper than pretending every board is full of gifts."
+        },
+        {
+            "date": "2026-04-13",
+            "picks": [
+                {
+                    "ticker": "ONCY",
+                    "category": "high_risk",
+                    "entry": 1.0,
+                    "exit_target": 1.18,
+                    "stop_loss": 0.92,
+                    "actual_result": "partial",
+                    "actual_exit": 1.05,
+                    "profit": 1.68,
+                    "allocation": 30.0,
+                    "notes": "Entry triggered, target missed, and it closed at $1.05 for a partial gain."
+                },
+                {
+                    "ticker": "PLUG",
+                    "category": "sure_bet",
+                    "entry": 2.66,
+                    "exit_target": 2.88,
+                    "stop_loss": 2.52,
+                    "actual_result": "miss",
+                    "actual_exit": 0.0,
+                    "profit": 0.0,
+                    "allocation": 45.0,
+                    "notes": "Entry never triggered. Day range $2.69\u2013$2.87 never traded through the planned buy level of $2.66."
+                },
+                {
+                    "ticker": "MVIS",
+                    "category": "maverick",
+                    "entry": 0.59,
+                    "exit_target": 0.68,
+                    "stop_loss": 0.54,
+                    "actual_result": "partial",
+                    "actual_exit": 0.6188,
+                    "profit": 0.82,
+                    "allocation": 15.0,
+                    "notes": "Entry triggered, target missed, and it closed at $0.6188 for a partial gain."
+                }
+            ],
+            "cash_allocation": 10.0,
+            "daily_total": 2.5,
+            "allocation_rationale": "45% to PLUG because liquidity and execution quality matter when the rest of the board looks like it was assembled by caffeinated raccoons, 30% to ONCY because it has the strongest upside asymmetry with a verifiable pre-market move and real biotech sponsorship, 15% to MVIS as the smaller narrative flyer, and 10% left in cash because cash is a position, not a moral failing."
         }
     ],
-    "last_updated": "2026-04-10T17:00:00-04:00",
+    "last_updated": "2026-04-13T17:00:00-04:00",
     "allocation_strategy": "confidence-weighted",
     "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }

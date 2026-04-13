@@ -721,7 +721,15 @@
                     "StockAnalysis premarket gainers fetched 2026-04-13 (ONCY +11.83% at $1.04)",
                     "StockAnalysis ONCY overview fetched 2026-04-13 (Roche collaboration context; analyst consensus Strong Buy, target $7.33)",
                     "Reddit scan across r/pennystocks, r/wallstreetbets, r/smallstreetbets, r/RaceToTenMillion, r/Shortsqueeze showed no dominant ticker consensus"
-                ]
+                ],
+                "actual_open": 0.955,
+                "actual_high": 1.05,
+                "actual_low": 0.9301,
+                "actual_close": 1.05,
+                "result": "partial",
+                "actual_exit": 1.05,
+                "profit": 1.68,
+                "notes": "Entry triggered, target missed, and it closed at $1.05 for a partial gain."
             },
             "sure_bet": {
                 "ticker": "PLUG",
@@ -740,7 +748,15 @@
                     "StockAnalysis active penny-stocks list fetched 2026-04-13 (PLUG $2.74, heavy volume)",
                     "StockAnalysis PLUG overview fetched 2026-04-13 (RBC non-deal roadshow; traders revisiting 275-megawatt GenEco electrolyzer award)",
                     "Major exchange verification: NASDAQ"
-                ]
+                ],
+                "actual_open": 2.73,
+                "actual_high": 2.87,
+                "actual_low": 2.69,
+                "actual_close": 2.77,
+                "result": "miss",
+                "actual_exit": 0.0,
+                "profit": 0.0,
+                "notes": "Entry never triggered. Day range $2.69\u2013$2.87 never traded through the planned buy level of $2.66."
             },
             "maverick": {
                 "ticker": "MVIS",
@@ -759,11 +775,21 @@
                     "StockAnalysis active penny-stocks list fetched 2026-04-13 (MVIS $0.607)",
                     "StockAnalysis MVIS overview fetched 2026-04-13 (CEO, directors, and executives buy MVIS stock headline from Mar. 16, 2026)",
                     "Major exchange verification: NASDAQ"
-                ]
+                ],
+                "actual_open": 0.6045,
+                "actual_high": 0.625,
+                "actual_low": 0.59,
+                "actual_close": 0.6188,
+                "result": "partial",
+                "actual_exit": 0.6188,
+                "profit": 0.82,
+                "notes": "Entry triggered, target missed, and it closed at $0.6188 for a partial gain."
             },
             "cash_allocation": 10.0,
             "allocation_rationale": "45% to PLUG because liquidity and execution quality matter when the rest of the board looks like it was assembled by caffeinated raccoons, 30% to ONCY because it has the strongest upside asymmetry with a verifiable pre-market move and real biotech sponsorship, 15% to MVIS as the smaller narrative flyer, and 10% left in cash because cash is a position, not a moral failing.",
-            "daily_balance": 112.11
+            "daily_balance": 112.11,
+            "daily_profit": 2.5,
+            "daily_balance_end": 114.61
         }
     ]
 }
