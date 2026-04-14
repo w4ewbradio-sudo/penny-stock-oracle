@@ -1,406 +1,450 @@
 {
-    "starting_balance": 100,
-    "current_balance": 114.61,
-    "stake_per_pick": 38.71,
-    "total_trades": 27,
-    "wins": 3,
-    "losses": 5,
-    "partials": 8,
-    "misses": 11,
-    "win_rate": 0.1875,
-    "best_day": {
-        "date": "2026-03-31",
-        "profit": 18.59
-    },
-    "worst_day": {
-        "date": "2026-04-10",
-        "profit": -4.03
-    },
-    "avg_daily_return": 1.62,
-    "trades": [
+  "starting_balance": 100,
+  "current_balance": 110.6,
+  "stake_per_pick": 38.71,
+  "total_trades": 30,
+  "wins": 3,
+  "losses": 7,
+  "partials": 8,
+  "misses": 12,
+  "win_rate": 0.1667,
+  "best_day": {
+    "date": "2026-03-31",
+    "profit": 18.59
+  },
+  "worst_day": {
+    "date": "2026-04-10",
+    "profit": -4.03
+  },
+  "avg_daily_return": 1.06,
+  "trades": [
+    {
+      "date": "2026-03-31",
+      "picks": [
         {
-            "date": "2026-03-31",
-            "picks": [
-                {
-                    "ticker": "BFRG",
-                    "category": "high_risk",
-                    "entry": 1.35,
-                    "exit_target": 1.75,
-                    "stop_loss": 1.15,
-                    "actual_result": "win",
-                    "actual_exit": 1.75,
-                    "profit": 9.88,
-                    "notes": "Entry hit at open range, target hit intraday \u2014 stock reached $1.96 high"
-                },
-                {
-                    "ticker": "CTXR",
-                    "category": "sure_bet",
-                    "entry": 0.78,
-                    "exit_target": 0.9,
-                    "stop_loss": 0.7,
-                    "actual_result": "win",
-                    "actual_exit": 0.9,
-                    "profit": 5.13,
-                    "notes": "Entry hit as stock pulled back from open, target hit \u2014 LYMPHIR news drove momentum"
-                },
-                {
-                    "ticker": "BYND",
-                    "category": "maverick",
-                    "entry": 0.65,
-                    "exit_target": 0.8,
-                    "stop_loss": 0.55,
-                    "actual_result": "partial",
-                    "actual_exit": 0.72,
-                    "profit": 3.59,
-                    "notes": "Entry hit, but target of $0.80 not reached \u2014 high was only $0.73. Closed at $0.72 for partial gain."
-                }
-            ],
-            "daily_total": 18.59
+          "ticker": "BFRG",
+          "category": "high_risk",
+          "entry": 1.35,
+          "exit_target": 1.75,
+          "stop_loss": 1.15,
+          "actual_result": "win",
+          "actual_exit": 1.75,
+          "profit": 9.88,
+          "notes": "Entry hit at open range, target hit intraday \u2014 stock reached $1.96 high"
         },
         {
-            "date": "2026-04-01",
-            "picks": [
-                {
-                    "ticker": "AIFF",
-                    "category": "high_risk",
-                    "entry": 2.32,
-                    "exit_target": 2.78,
-                    "stop_loss": 2.12,
-                    "actual_result": "partial",
-                    "actual_exit": 2.24,
-                    "profit": -1.36,
-                    "notes": "Entry triggered, target missed, and it faded into the close at $2.24."
-                },
-                {
-                    "ticker": "DH",
-                    "category": "sure_bet",
-                    "entry": 1.32,
-                    "exit_target": 1.4,
-                    "stop_loss": 1.24,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "notes": "Entry never triggered. Day range $1.09\u2013$1.22 stayed above/below the planned buy level of $1.32."
-                },
-                {
-                    "ticker": "KULR",
-                    "category": "maverick",
-                    "entry": 2.05,
-                    "exit_target": 2.28,
-                    "stop_loss": 1.92,
-                    "actual_result": "partial",
-                    "actual_exit": 2.01,
-                    "profit": -0.77,
-                    "notes": "Entry triggered, target missed, and it faded into the close at $2.01."
-                }
-            ],
-            "daily_total": -2.13
+          "ticker": "CTXR",
+          "category": "sure_bet",
+          "entry": 0.78,
+          "exit_target": 0.9,
+          "stop_loss": 0.7,
+          "actual_result": "win",
+          "actual_exit": 0.9,
+          "profit": 5.13,
+          "notes": "Entry hit as stock pulled back from open, target hit \u2014 LYMPHIR news drove momentum"
         },
         {
-            "date": "2026-04-02",
-            "picks": [
-                {
-                    "ticker": "MOBX",
-                    "category": "high_risk",
-                    "entry": 0.3,
-                    "exit_target": 0.36,
-                    "stop_loss": 0.27,
-                    "actual_result": "win",
-                    "actual_exit": 0.36,
-                    "profit": 7.76,
-                    "notes": "Entry triggered and target hit intraday. Day range $0.26\u2013$0.36 reached the $0.36 target."
-                },
-                {
-                    "ticker": "USEG",
-                    "category": "sure_bet",
-                    "entry": 0.91,
-                    "exit_target": 1.02,
-                    "stop_loss": 0.84,
-                    "actual_result": "loss",
-                    "actual_exit": 0.84,
-                    "profit": -2.99,
-                    "notes": "Entry triggered but stop loss was hit. Day low of $0.82 broke the $0.84 stop before the target was reached."
-                },
-                {
-                    "ticker": "BFRG",
-                    "category": "maverick",
-                    "entry": 1.42,
-                    "exit_target": 1.68,
-                    "stop_loss": 1.3,
-                    "actual_result": "loss",
-                    "actual_exit": 1.3,
-                    "profit": -3.28,
-                    "notes": "Entry triggered but stop loss was hit. Day low of $1.13 broke the $1.30 stop before the target was reached."
-                }
-            ],
-            "daily_total": 1.49
-        },
-        {
-            "date": "2026-04-06",
-            "picks": [
-                {
-                    "ticker": "KULR",
-                    "category": "high_risk",
-                    "entry": 1.92,
-                    "exit_target": 2.24,
-                    "stop_loss": 1.76,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 25,
-                    "notes": "Entry never triggered. Day range $2.10\u2013$2.30 never traded down to the planned buy level of $1.92."
-                },
-                {
-                    "ticker": "USEG",
-                    "category": "sure_bet",
-                    "entry": 0.88,
-                    "exit_target": 0.97,
-                    "stop_loss": 0.82,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 45,
-                    "notes": "Entry never triggered. Day range $0.82\u2013$0.86 never traded down to the planned buy level of $0.88."
-                },
-                {
-                    "ticker": "SGMO",
-                    "category": "maverick",
-                    "entry": 0.27,
-                    "exit_target": 0.32,
-                    "stop_loss": 0.24,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 15,
-                    "notes": "Entry never triggered. Day range $0.28\u2013$0.31 never traded down to the planned buy level of $0.27."
-                }
-            ],
-            "cash_allocation": 15,
-            "daily_total": 0.0,
-            "allocation_rationale": "45% USEG as the steadiest thesis on a thin board, 25% KULR for tradable momentum, 15% SGMO as a small biotech flyer, and 15% held in cash because conviction was limited."
-        },
-        {
-            "date": "2026-04-07",
-            "picks": [
-                {
-                    "ticker": "ORGO",
-                    "category": "high_risk",
-                    "entry": 2.86,
-                    "exit_target": 3.32,
-                    "stop_loss": 2.63,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 30.0,
-                    "notes": "Entry never triggered. Day range $2.24\u2013$2.63 never traded up/down through the planned buy level of $2.86."
-                },
-                {
-                    "ticker": "PLUG",
-                    "category": "sure_bet",
-                    "entry": 2.61,
-                    "exit_target": 2.82,
-                    "stop_loss": 2.48,
-                    "actual_result": "loss",
-                    "actual_exit": 2.48,
-                    "profit": -2.64,
-                    "allocation": 45.0,
-                    "notes": "Entry triggered but stop loss was hit. Day low of $2.45 broke the $2.48 stop before the target was reached."
-                },
-                {
-                    "ticker": "SPCE",
-                    "category": "maverick",
-                    "entry": 3.15,
-                    "exit_target": 3.48,
-                    "stop_loss": 2.97,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 15.0,
-                    "notes": "Entry never triggered. Day range $2.74\u2013$3.13 never traded up/down through the planned buy level of $3.15."
-                }
-            ],
-            "cash_allocation": 10,
-            "daily_total": -2.64,
-            "allocation_rationale": "45% PLUG as the highest-conviction liquid setup, 30% ORGO for the strongest verified upside catalyst, 15% SPCE as the smaller high-beta flyer, and 10% held in cash because conviction was decent, not divine."
-        },
-        {
-            "date": "2026-04-08",
-            "picks": [
-                {
-                    "ticker": "SES",
-                    "category": "high_risk",
-                    "entry": 0.92,
-                    "exit_target": 1.08,
-                    "stop_loss": 0.84,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 35.0,
-                    "notes": "Entry never triggered. Day range $1.00\u2013$1.06 never traded through the planned buy level of $0.92."
-                },
-                {
-                    "ticker": "PLUG",
-                    "category": "sure_bet",
-                    "entry": 2.44,
-                    "exit_target": 2.72,
-                    "stop_loss": 2.28,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 40.0,
-                    "notes": "Entry never triggered. Day range $2.60\u2013$2.77 never traded through the planned buy level of $2.44."
-                },
-                {
-                    "ticker": "ONDS",
-                    "category": "maverick",
-                    "entry": 4.78,
-                    "exit_target": 5.42,
-                    "stop_loss": 4.38,
-                    "actual_result": "miss",
-                    "actual_exit": 0,
-                    "profit": 0.0,
-                    "allocation": 15.0,
-                    "notes": "Entry never triggered. Day range $9.35\u2013$10.36 never traded through the planned buy level of $4.78."
-                }
-            ],
-            "cash_allocation": 10,
-            "daily_total": 0.0,
-            "allocation_rationale": "40% to PLUG as the most liquid and least feral setup, 35% to SES because the Reddit-plus-catalyst combo gives it the best upside asymmetry, 15% to ONDS as the smaller narrative flyer, and 10% left in cash because discipline is cheaper than regret."
-        },
-        {
-            "date": "2026-04-09",
-            "picks": [
-                {
-                    "ticker": "COCP",
-                    "category": "high_risk",
-                    "entry": 1.38,
-                    "exit_target": 1.62,
-                    "stop_loss": 1.26,
-                    "actual_result": "partial",
-                    "actual_exit": 1.43,
-                    "profit": 1.46,
-                    "allocation": 35.0,
-                    "notes": "Entry triggered, target missed, and it closed at $1.43 for a partial gain."
-                },
-                {
-                    "ticker": "PLUG",
-                    "category": "sure_bet",
-                    "entry": 2.56,
-                    "exit_target": 2.79,
-                    "stop_loss": 2.39,
-                    "actual_result": "miss",
-                    "actual_exit": 0.0,
-                    "profit": 0.0,
-                    "allocation": 40.0,
-                    "notes": "Entry never triggered. Day range $2.62\u2013$2.84 never traded through the planned buy level of $2.56."
-                },
-                {
-                    "ticker": "HUMA",
-                    "category": "maverick",
-                    "entry": 0.63,
-                    "exit_target": 0.74,
-                    "stop_loss": 0.57,
-                    "actual_result": "partial",
-                    "actual_exit": 0.607,
-                    "profit": -0.63,
-                    "allocation": 15.0,
-                    "notes": "Entry triggered, target missed, and it closed at $0.61 for a partial loss."
-                }
-            ],
-            "cash_allocation": 10.0,
-            "daily_total": 0.83,
-            "allocation_rationale": "40% to PLUG for liquidity and cleaner execution, 35% to COCP because the FDA Fast Track catalyst is the strongest verifiable spark on the board, 15% to HUMA as the smaller speculative biotech swing, and 10% left in cash because not every morning deserves full commitment."
-        },
-        {
-            "date": "2026-04-10",
-            "picks": [
-                {
-                    "ticker": "ONCY",
-                    "category": "high_risk",
-                    "entry": 1.01,
-                    "exit_target": 1.19,
-                    "stop_loss": 0.93,
-                    "actual_result": "loss",
-                    "actual_exit": 0.93,
-                    "profit": -3.22,
-                    "allocation": 35.0,
-                    "notes": "Entry triggered but stop loss was hit. Day low of $0.92 broke the $0.93 stop before the target was reached."
-                },
-                {
-                    "ticker": "EVGO",
-                    "category": "sure_bet",
-                    "entry": 1.94,
-                    "exit_target": 2.14,
-                    "stop_loss": 1.84,
-                    "actual_result": "partial",
-                    "actual_exit": 1.95,
-                    "profit": 0.24,
-                    "allocation": 40.0,
-                    "notes": "Entry triggered, target missed, and it closed at $1.95 for a partial gain."
-                },
-                {
-                    "ticker": "CDXS",
-                    "category": "maverick",
-                    "entry": 2.33,
-                    "exit_target": 2.58,
-                    "stop_loss": 2.19,
-                    "actual_result": "loss",
-                    "actual_exit": 2.19,
-                    "profit": -1.05,
-                    "allocation": 15.0,
-                    "notes": "Entry triggered but stop loss was hit. Day low of $2.16 broke the $2.19 stop before the target was reached."
-                }
-            ],
-            "cash_allocation": 10.0,
-            "daily_total": -4.03,
-            "allocation_rationale": "40% to EVGO because liquidity and execution quality still matter, 35% to ONCY because the biotech tape plus analyst backing gives it the strongest upside asymmetry, 15% to CDXS as the smaller off-consensus quality flyer, and 10% left in cash because discipline is cheaper than pretending every board is full of gifts."
-        },
-        {
-            "date": "2026-04-13",
-            "picks": [
-                {
-                    "ticker": "ONCY",
-                    "category": "high_risk",
-                    "entry": 1.0,
-                    "exit_target": 1.18,
-                    "stop_loss": 0.92,
-                    "actual_result": "partial",
-                    "actual_exit": 1.05,
-                    "profit": 1.68,
-                    "allocation": 30.0,
-                    "notes": "Entry triggered, target missed, and it closed at $1.05 for a partial gain."
-                },
-                {
-                    "ticker": "PLUG",
-                    "category": "sure_bet",
-                    "entry": 2.66,
-                    "exit_target": 2.88,
-                    "stop_loss": 2.52,
-                    "actual_result": "miss",
-                    "actual_exit": 0.0,
-                    "profit": 0.0,
-                    "allocation": 45.0,
-                    "notes": "Entry never triggered. Day range $2.69\u2013$2.87 never traded through the planned buy level of $2.66."
-                },
-                {
-                    "ticker": "MVIS",
-                    "category": "maverick",
-                    "entry": 0.59,
-                    "exit_target": 0.68,
-                    "stop_loss": 0.54,
-                    "actual_result": "partial",
-                    "actual_exit": 0.6188,
-                    "profit": 0.82,
-                    "allocation": 15.0,
-                    "notes": "Entry triggered, target missed, and it closed at $0.6188 for a partial gain."
-                }
-            ],
-            "cash_allocation": 10.0,
-            "daily_total": 2.5,
-            "allocation_rationale": "45% to PLUG because liquidity and execution quality matter when the rest of the board looks like it was assembled by caffeinated raccoons, 30% to ONCY because it has the strongest upside asymmetry with a verifiable pre-market move and real biotech sponsorship, 15% to MVIS as the smaller narrative flyer, and 10% left in cash because cash is a position, not a moral failing."
+          "ticker": "BYND",
+          "category": "maverick",
+          "entry": 0.65,
+          "exit_target": 0.8,
+          "stop_loss": 0.55,
+          "actual_result": "partial",
+          "actual_exit": 0.72,
+          "profit": 3.59,
+          "notes": "Entry hit, but target of $0.80 not reached \u2014 high was only $0.73. Closed at $0.72 for partial gain."
         }
-    ],
-    "last_updated": "2026-04-13T17:00:00-04:00",
-    "allocation_strategy": "confidence-weighted",
-    "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
+      ],
+      "daily_total": 18.59
+    },
+    {
+      "date": "2026-04-01",
+      "picks": [
+        {
+          "ticker": "AIFF",
+          "category": "high_risk",
+          "entry": 2.32,
+          "exit_target": 2.78,
+          "stop_loss": 2.12,
+          "actual_result": "partial",
+          "actual_exit": 2.24,
+          "profit": -1.36,
+          "notes": "Entry triggered, target missed, and it faded into the close at $2.24."
+        },
+        {
+          "ticker": "DH",
+          "category": "sure_bet",
+          "entry": 1.32,
+          "exit_target": 1.4,
+          "stop_loss": 1.24,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "notes": "Entry never triggered. Day range $1.09\u2013$1.22 stayed above/below the planned buy level of $1.32."
+        },
+        {
+          "ticker": "KULR",
+          "category": "maverick",
+          "entry": 2.05,
+          "exit_target": 2.28,
+          "stop_loss": 1.92,
+          "actual_result": "partial",
+          "actual_exit": 2.01,
+          "profit": -0.77,
+          "notes": "Entry triggered, target missed, and it faded into the close at $2.01."
+        }
+      ],
+      "daily_total": -2.13
+    },
+    {
+      "date": "2026-04-02",
+      "picks": [
+        {
+          "ticker": "MOBX",
+          "category": "high_risk",
+          "entry": 0.3,
+          "exit_target": 0.36,
+          "stop_loss": 0.27,
+          "actual_result": "win",
+          "actual_exit": 0.36,
+          "profit": 7.76,
+          "notes": "Entry triggered and target hit intraday. Day range $0.26\u2013$0.36 reached the $0.36 target."
+        },
+        {
+          "ticker": "USEG",
+          "category": "sure_bet",
+          "entry": 0.91,
+          "exit_target": 1.02,
+          "stop_loss": 0.84,
+          "actual_result": "loss",
+          "actual_exit": 0.84,
+          "profit": -2.99,
+          "notes": "Entry triggered but stop loss was hit. Day low of $0.82 broke the $0.84 stop before the target was reached."
+        },
+        {
+          "ticker": "BFRG",
+          "category": "maverick",
+          "entry": 1.42,
+          "exit_target": 1.68,
+          "stop_loss": 1.3,
+          "actual_result": "loss",
+          "actual_exit": 1.3,
+          "profit": -3.28,
+          "notes": "Entry triggered but stop loss was hit. Day low of $1.13 broke the $1.30 stop before the target was reached."
+        }
+      ],
+      "daily_total": 1.49
+    },
+    {
+      "date": "2026-04-06",
+      "picks": [
+        {
+          "ticker": "KULR",
+          "category": "high_risk",
+          "entry": 1.92,
+          "exit_target": 2.24,
+          "stop_loss": 1.76,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 25,
+          "notes": "Entry never triggered. Day range $2.10\u2013$2.30 never traded down to the planned buy level of $1.92."
+        },
+        {
+          "ticker": "USEG",
+          "category": "sure_bet",
+          "entry": 0.88,
+          "exit_target": 0.97,
+          "stop_loss": 0.82,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 45,
+          "notes": "Entry never triggered. Day range $0.82\u2013$0.86 never traded down to the planned buy level of $0.88."
+        },
+        {
+          "ticker": "SGMO",
+          "category": "maverick",
+          "entry": 0.27,
+          "exit_target": 0.32,
+          "stop_loss": 0.24,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 15,
+          "notes": "Entry never triggered. Day range $0.28\u2013$0.31 never traded down to the planned buy level of $0.27."
+        }
+      ],
+      "cash_allocation": 15,
+      "daily_total": 0.0,
+      "allocation_rationale": "45% USEG as the steadiest thesis on a thin board, 25% KULR for tradable momentum, 15% SGMO as a small biotech flyer, and 15% held in cash because conviction was limited."
+    },
+    {
+      "date": "2026-04-07",
+      "picks": [
+        {
+          "ticker": "ORGO",
+          "category": "high_risk",
+          "entry": 2.86,
+          "exit_target": 3.32,
+          "stop_loss": 2.63,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 30.0,
+          "notes": "Entry never triggered. Day range $2.24\u2013$2.63 never traded up/down through the planned buy level of $2.86."
+        },
+        {
+          "ticker": "PLUG",
+          "category": "sure_bet",
+          "entry": 2.61,
+          "exit_target": 2.82,
+          "stop_loss": 2.48,
+          "actual_result": "loss",
+          "actual_exit": 2.48,
+          "profit": -2.64,
+          "allocation": 45.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $2.45 broke the $2.48 stop before the target was reached."
+        },
+        {
+          "ticker": "SPCE",
+          "category": "maverick",
+          "entry": 3.15,
+          "exit_target": 3.48,
+          "stop_loss": 2.97,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 15.0,
+          "notes": "Entry never triggered. Day range $2.74\u2013$3.13 never traded up/down through the planned buy level of $3.15."
+        }
+      ],
+      "cash_allocation": 10,
+      "daily_total": -2.64,
+      "allocation_rationale": "45% PLUG as the highest-conviction liquid setup, 30% ORGO for the strongest verified upside catalyst, 15% SPCE as the smaller high-beta flyer, and 10% held in cash because conviction was decent, not divine."
+    },
+    {
+      "date": "2026-04-08",
+      "picks": [
+        {
+          "ticker": "SES",
+          "category": "high_risk",
+          "entry": 0.92,
+          "exit_target": 1.08,
+          "stop_loss": 0.84,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 35.0,
+          "notes": "Entry never triggered. Day range $1.00\u2013$1.06 never traded through the planned buy level of $0.92."
+        },
+        {
+          "ticker": "PLUG",
+          "category": "sure_bet",
+          "entry": 2.44,
+          "exit_target": 2.72,
+          "stop_loss": 2.28,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 40.0,
+          "notes": "Entry never triggered. Day range $2.60\u2013$2.77 never traded through the planned buy level of $2.44."
+        },
+        {
+          "ticker": "ONDS",
+          "category": "maverick",
+          "entry": 4.78,
+          "exit_target": 5.42,
+          "stop_loss": 4.38,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 15.0,
+          "notes": "Entry never triggered. Day range $9.35\u2013$10.36 never traded through the planned buy level of $4.78."
+        }
+      ],
+      "cash_allocation": 10,
+      "daily_total": 0.0,
+      "allocation_rationale": "40% to PLUG as the most liquid and least feral setup, 35% to SES because the Reddit-plus-catalyst combo gives it the best upside asymmetry, 15% to ONDS as the smaller narrative flyer, and 10% left in cash because discipline is cheaper than regret."
+    },
+    {
+      "date": "2026-04-09",
+      "picks": [
+        {
+          "ticker": "COCP",
+          "category": "high_risk",
+          "entry": 1.38,
+          "exit_target": 1.62,
+          "stop_loss": 1.26,
+          "actual_result": "partial",
+          "actual_exit": 1.43,
+          "profit": 1.46,
+          "allocation": 35.0,
+          "notes": "Entry triggered, target missed, and it closed at $1.43 for a partial gain."
+        },
+        {
+          "ticker": "PLUG",
+          "category": "sure_bet",
+          "entry": 2.56,
+          "exit_target": 2.79,
+          "stop_loss": 2.39,
+          "actual_result": "miss",
+          "actual_exit": 0.0,
+          "profit": 0.0,
+          "allocation": 40.0,
+          "notes": "Entry never triggered. Day range $2.62\u2013$2.84 never traded through the planned buy level of $2.56."
+        },
+        {
+          "ticker": "HUMA",
+          "category": "maverick",
+          "entry": 0.63,
+          "exit_target": 0.74,
+          "stop_loss": 0.57,
+          "actual_result": "partial",
+          "actual_exit": 0.607,
+          "profit": -0.63,
+          "allocation": 15.0,
+          "notes": "Entry triggered, target missed, and it closed at $0.61 for a partial loss."
+        }
+      ],
+      "cash_allocation": 10.0,
+      "daily_total": 0.83,
+      "allocation_rationale": "40% to PLUG for liquidity and cleaner execution, 35% to COCP because the FDA Fast Track catalyst is the strongest verifiable spark on the board, 15% to HUMA as the smaller speculative biotech swing, and 10% left in cash because not every morning deserves full commitment."
+    },
+    {
+      "date": "2026-04-10",
+      "picks": [
+        {
+          "ticker": "ONCY",
+          "category": "high_risk",
+          "entry": 1.01,
+          "exit_target": 1.19,
+          "stop_loss": 0.93,
+          "actual_result": "loss",
+          "actual_exit": 0.93,
+          "profit": -3.22,
+          "allocation": 35.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $0.92 broke the $0.93 stop before the target was reached."
+        },
+        {
+          "ticker": "EVGO",
+          "category": "sure_bet",
+          "entry": 1.94,
+          "exit_target": 2.14,
+          "stop_loss": 1.84,
+          "actual_result": "partial",
+          "actual_exit": 1.95,
+          "profit": 0.24,
+          "allocation": 40.0,
+          "notes": "Entry triggered, target missed, and it closed at $1.95 for a partial gain."
+        },
+        {
+          "ticker": "CDXS",
+          "category": "maverick",
+          "entry": 2.33,
+          "exit_target": 2.58,
+          "stop_loss": 2.19,
+          "actual_result": "loss",
+          "actual_exit": 2.19,
+          "profit": -1.05,
+          "allocation": 15.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $2.16 broke the $2.19 stop before the target was reached."
+        }
+      ],
+      "cash_allocation": 10.0,
+      "daily_total": -4.03,
+      "allocation_rationale": "40% to EVGO because liquidity and execution quality still matter, 35% to ONCY because the biotech tape plus analyst backing gives it the strongest upside asymmetry, 15% to CDXS as the smaller off-consensus quality flyer, and 10% left in cash because discipline is cheaper than pretending every board is full of gifts."
+    },
+    {
+      "date": "2026-04-13",
+      "picks": [
+        {
+          "ticker": "ONCY",
+          "category": "high_risk",
+          "entry": 1.0,
+          "exit_target": 1.18,
+          "stop_loss": 0.92,
+          "actual_result": "partial",
+          "actual_exit": 1.05,
+          "profit": 1.68,
+          "allocation": 30.0,
+          "notes": "Entry triggered, target missed, and it closed at $1.05 for a partial gain."
+        },
+        {
+          "ticker": "PLUG",
+          "category": "sure_bet",
+          "entry": 2.66,
+          "exit_target": 2.88,
+          "stop_loss": 2.52,
+          "actual_result": "miss",
+          "actual_exit": 0.0,
+          "profit": 0.0,
+          "allocation": 45.0,
+          "notes": "Entry never triggered. Day range $2.69\u2013$2.87 never traded through the planned buy level of $2.66."
+        },
+        {
+          "ticker": "MVIS",
+          "category": "maverick",
+          "entry": 0.59,
+          "exit_target": 0.68,
+          "stop_loss": 0.54,
+          "actual_result": "partial",
+          "actual_exit": 0.6188,
+          "profit": 0.82,
+          "allocation": 15.0,
+          "notes": "Entry triggered, target missed, and it closed at $0.6188 for a partial gain."
+        }
+      ],
+      "cash_allocation": 10.0,
+      "daily_total": 2.5,
+      "allocation_rationale": "45% to PLUG because liquidity and execution quality matter when the rest of the board looks like it was assembled by caffeinated raccoons, 30% to ONCY because it has the strongest upside asymmetry with a verifiable pre-market move and real biotech sponsorship, 15% to MVIS as the smaller narrative flyer, and 10% left in cash because cash is a position, not a moral failing."
+    },
+    {
+      "date": "2026-04-14",
+      "picks": [
+        {
+          "ticker": "SANA",
+          "category": "high_risk",
+          "entry": 3.72,
+          "exit_target": 4.18,
+          "stop_loss": 3.48,
+          "actual_result": "loss",
+          "actual_exit": 3.48,
+          "profit": -2.59,
+          "allocation": 35.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $3.41 broke the $3.48 stop before the target was reached."
+        },
+        {
+          "ticker": "PLUG",
+          "category": "sure_bet",
+          "entry": 2.7,
+          "exit_target": 2.94,
+          "stop_loss": 2.56,
+          "actual_result": "miss",
+          "actual_exit": 0.0,
+          "profit": 0.0,
+          "allocation": 40.0,
+          "notes": "Entry never triggered. Day range $2.87\u2013$3.01 never traded through the planned buy level of $2.70."
+        },
+        {
+          "ticker": "GPRO",
+          "category": "maverick",
+          "entry": 1.09,
+          "exit_target": 1.26,
+          "stop_loss": 1.0,
+          "actual_result": "loss",
+          "actual_exit": 1.0,
+          "profit": -1.42,
+          "allocation": 15.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $0.87 broke the $1.00 stop before the target was reached."
+        }
+      ],
+      "cash_allocation": 10.0,
+      "daily_total": -4.01,
+      "allocation_rationale": "40% to PLUG because liquidity and execution quality still matter when the rest of the board is doing interpretive dance, 35% to SANA because it has the strongest verifiable catalyst and pre-market thrust, 15% to GPRO as the smaller narrative flyer, and 10% left in cash because cash remains the only asset class that does not wake up and issue a surprise offering."
+    }
+  ],
+  "last_updated": "2026-04-14T17:00:00-04:00",
+  "allocation_strategy": "confidence-weighted",
+  "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
