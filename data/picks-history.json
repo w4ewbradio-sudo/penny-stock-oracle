@@ -880,6 +880,66 @@
       "daily_balance": 114.61,
       "daily_profit": -4.01,
       "daily_balance_end": 110.6
+    },
+    {
+      "date": "2026-04-15",
+      "high_risk": {
+        "ticker": "OPTT",
+        "company": "Ocean Power Technologies, Inc.",
+        "exchange": "NYSE American",
+        "current_price": 0.3835,
+        "entry": 0.38,
+        "exit": 0.46,
+        "stop_loss": 0.34,
+        "confidence": 8,
+        "risk": 8,
+        "allocation": 20,
+        "reasoning": "OPTT is the proper goblin candidate today: sub-$0.40, fresh Homeland Security deployment headlines, and a same-day Water Tower Research appearance that gives traders an actual calendar hook. The setup is speculative, but at least the story exists outside a Reddit fever dream.",
+        "catalyst": "Homeland Security PowerBuoy deployment announcement plus April 15 conference appearance.",
+        "sources": [
+          "Yahoo Finance news feed",
+          "Yahoo Finance chart snapshot",
+          "NYSE American listing verification"
+        ]
+      },
+      "sure_bet": {
+        "ticker": "DNN",
+        "company": "Denison Mines Corp.",
+        "exchange": "NYSE American",
+        "current_price": 3.76,
+        "entry": 3.72,
+        "exit": 4.02,
+        "stop_loss": 3.54,
+        "confidence": 7,
+        "risk": 5,
+        "allocation": 45,
+        "reasoning": "DNN gets the biggest slice because uranium remains a real theme, the chart is pressing near recent highs, and the name trades with enough liquidity that fills are less likely to become a hostage situation. It is still a penny-style trade, just one wearing a collared shirt.",
+        "catalyst": "Ongoing uranium strength and recent bullish coverage after a huge one-year run; strong major-exchange liquidity.",
+        "sources": [
+          "Yahoo Finance news feed",
+          "Yahoo Finance chart snapshot",
+          "NYSE American listing verification"
+        ]
+      },
+      "maverick": {
+        "ticker": "CABA",
+        "company": "Cabaletta Bio, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 3.35,
+        "entry": 3.24,
+        "exit": 3.68,
+        "stop_loss": 3.02,
+        "confidence": 7,
+        "risk": 7,
+        "allocation": 25,
+        "reasoning": "CABA is the maverick because the cell-therapy manufacturing update is real, the stock is pushing the top of its recent range, and biotech traders love a fresh \u201cfirst patients dosed\u201d headline almost as much as they love disappointing everyone later. This is the interesting one, not the safe one.",
+        "catalyst": "First patients dosed with rese-cel manufactured on Cellares automated platform.",
+        "sources": [
+          "Yahoo Finance news feed",
+          "Yahoo Finance chart snapshot",
+          "NASDAQ listing verification"
+        ]
+      }
     }
   ]
 }
