@@ -940,6 +940,69 @@
           "NASDAQ listing verification"
         ]
       }
+    },
+    {
+      "date": "2026-04-16",
+      "high_risk": {
+        "ticker": "OPTT",
+        "company": "Ocean Power Technologies, Inc.",
+        "exchange": "NYSE American",
+        "current_price": 0.38,
+        "entry": 0.37,
+        "exit": 0.44,
+        "stop_loss": 0.34,
+        "confidence": 8,
+        "risk": 8,
+        "allocation": 25,
+        "reasoning": "OPTT still has a live Homeland Security / maritime-domain-awareness narrative, and unlike a lot of sub-dollar junk this one has an actual string of recent company releases behind it. The chart is thin and weird, which is exactly why it belongs in the high-risk chair, but the catalyst is verifiable and still fresh enough to matter.",
+        "catalyst": "Fresh April 13 Homeland Security PowerBuoy deployment release, following March contract-shipment and Coast Guard order updates.",
+        "sources": [
+          "StockAnalysis OPTT overview/news page fetched 2026-04-16",
+          "GlobeNewswire: Ocean Power Technologies Deploys Autonomous PowerBuoy Supporting Persistent Maritime Domain Awareness for U.S. Homeland Security Operations (Apr 13, 2026)",
+          "GlobeNewswire: Advances U.S. Homeland Security Contract with Shipment of First PowerBuoy (Mar 24, 2026)",
+          "NYSE American listing verification"
+        ]
+      },
+      "sure_bet": {
+        "ticker": "SLDP",
+        "company": "Solid Power, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 3.77,
+        "entry": 3.68,
+        "exit": 4.02,
+        "stop_loss": 3.46,
+        "confidence": 7,
+        "risk": 4,
+        "allocation": 45,
+        "reasoning": "SLDP gets the biggest slice because it has a real pre-market move, a major-exchange listing, and analyst sponsorship that suggests there is at least a functioning adult somewhere near the building. It is still speculative battery-tech theater, but compared with the average penny-stock goblin, this is positively civilized.",
+        "catalyst": "~15% pre-market gain on StockMarketWatch plus ongoing solid-state battery narrative and StockAnalysis analyst consensus of Strong Buy.",
+        "sources": [
+          "StockMarketWatch premarket gainers fetched 2026-04-16 6:00 AM EDT (SLDP +15% near $3.77)",
+          "StockAnalysis SLDP overview fetched 2026-04-16",
+          "NASDAQ listing verification"
+        ]
+      },
+      "maverick": {
+        "ticker": "PDSB",
+        "company": "PDS Biotechnology Corporation",
+        "exchange": "NASDAQ",
+        "current_price": 1.35,
+        "entry": 1.31,
+        "exit": 1.52,
+        "stop_loss": 1.19,
+        "confidence": 7,
+        "risk": 7,
+        "allocation": 20,
+        "reasoning": "PDSB is the maverick because the stock just had a nasty momentum burst yesterday and is slightly softer pre-market today, which creates the classic question: dead bounce or second leg? I like it enough for a smaller swing because the move is backed by a real tape expansion and the risk can be defined tightly without pretending the thing is trustworthy.",
+        "catalyst": "28.3% prior-day surge with continued pre-market attention; biotech speculation backed by strong analyst target support on StockAnalysis.",
+        "sources": [
+          "StockAnalysis PDSB overview fetched 2026-04-16",
+          "StockMarketWatch active penny-stock / mover cross-reference",
+          "NASDAQ listing verification"
+        ]
+      },
+      "cash_allocation": 10,
+      "allocation_rationale": "45% to SLDP because it is the cleanest liquid setup with less feral price behavior, 25% to OPTT because the Homeland Security catalyst is the strongest verifiable story on the board, 20% to PDSB as the smaller biotech flyer, and 10% left in cash because discipline remains cheaper than pretending every pre-market twitch deserves full commitment."
     }
   ]
 }

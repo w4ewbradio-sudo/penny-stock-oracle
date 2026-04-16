@@ -26,101 +26,33 @@
   body { font-family: var(--sans); background: var(--bg); color: var(--text); min-height: 100vh; }
   body::after { content: ''; position: fixed; inset: 0; background: url('data:image/svg+xml,<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.03"/></svg>'); pointer-events: none; z-index: 9999; }
   .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
-
   header { padding: 40px 0 20px; text-align: center; border-bottom: 1px solid var(--border); }
   .oracle-icon { font-size: 48px; margin-bottom: 8px; animation: pulse-glow 3s ease-in-out infinite; }
   @keyframes pulse-glow { 0%, 100% { filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.4)); } 50% { filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.8)); } }
   h1 { font-family: var(--mono); font-size: 28px; letter-spacing: -1px; font-weight: 700; }
   h1 span { color: var(--accent-gold); }
   .subtitle { font-size: 14px; color: var(--text-dim); margin-top: 6px; font-family: var(--mono); }
-
   .disclaimer { background: linear-gradient(90deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05)); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 6px; padding: 10px 16px; margin: 20px 0; font-size: 11px; color: #f87171; font-family: var(--mono); text-align: center; line-height: 1.5; }
-
   nav { display: flex; gap: 20px; justify-content: center; padding: 16px 0; border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 13px; }
   nav a { color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
   nav a:hover, nav a.active { color: var(--accent-gold); }
-
   .blog-list { margin: 32px 0; }
-
-  .blog-entry {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 24px;
-    margin-bottom: 16px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    animation: fadeUp 0.5s ease both;
-  }
+  .blog-entry { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 16px; transition: transform 0.2s, box-shadow 0.2s; animation: fadeUp 0.5s ease both; }
   .blog-entry:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
-
-  .blog-date {
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--accent-gold);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 8px;
-  }
-
-  .blog-title {
-    font-family: var(--mono);
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
+  .blog-date { font-family: var(--mono); font-size: 11px; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; }
+  .blog-title { font-family: var(--mono); font-size: 18px; font-weight: 700; margin-bottom: 8px; }
   .blog-title a { color: var(--text); text-decoration: none; }
   .blog-title a:hover { color: var(--accent-gold); }
-
-  .blog-tickers {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-  }
-  .blog-ticker {
-    font-family: var(--mono);
-    font-size: 11px;
-    padding: 3px 10px;
-    border-radius: 99px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
+  .blog-tickers { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .blog-ticker { font-family: var(--mono); font-size: 11px; padding: 3px 10px; border-radius: 99px; font-weight: 700; letter-spacing: 0.5px; }
   .blog-ticker.fire { background: rgba(255, 77, 42, 0.15); color: var(--accent-fire); border: 1px solid rgba(255, 77, 42, 0.3); }
   .blog-ticker.shield { background: rgba(34, 214, 138, 0.15); color: var(--accent-shield); border: 1px solid rgba(34, 214, 138, 0.3); }
   .blog-ticker.maverick { background: rgba(168, 85, 247, 0.15); color: var(--accent-maverick); border: 1px solid rgba(168, 85, 247, 0.3); }
-
-  .blog-preview {
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--text-dim);
-  }
-
-  .blog-readmore {
-    display: inline-block;
-    margin-top: 12px;
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--accent-gold);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
+  .blog-preview { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
+  .blog-readmore { display: inline-block; margin-top: 12px; font-family: var(--mono); font-size: 12px; color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
   .blog-readmore:hover { color: #fcd34d; }
-
-  .hot-pick-badge {
-    display: inline-block;
-    font-family: var(--mono);
-    font-size: 10px;
-    padding: 3px 8px;
-    border-radius: 99px;
-    background: rgba(251, 191, 36, 0.15);
-    color: var(--accent-gold);
-    border: 1px solid rgba(251, 191, 36, 0.3);
-    margin-left: 8px;
-    animation: pulse-glow 2s ease-in-out infinite;
-  }
-
+  .hot-pick-badge { display: inline-block; font-family: var(--mono); font-size: 10px; padding: 3px 8px; border-radius: 99px; background: rgba(251, 191, 36, 0.15); color: var(--accent-gold); border: 1px solid rgba(251, 191, 36, 0.3); margin-left: 8px; animation: pulse-glow 2s ease-in-out infinite; }
   footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 40px; text-align: center; font-size: 11px; color: var(--text-dim); font-family: var(--mono); line-height: 1.8; }
-
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   .blog-entry:nth-child(2) { animation-delay: 0.1s; }
   .blog-entry:nth-child(3) { animation-delay: 0.2s; }
@@ -149,6 +81,18 @@
   <div class="blog-list" id="blog-entries">
     <!-- BLOG_ENTRIES_START -->
     <div class="blog-entry">
+      <div class="blog-date">April 16, 2026</div>
+      <div class="blog-title"><a href="2026-04-16.html">Day 13: Homeland Buoys, Battery Manners, and a Biotech Side-Eye</a><span class="hot-pick-badge">🔥 HOT PICK</span></div>
+      <div class="blog-tickers">
+        <span class="blog-ticker fire">🔥 OPTT</span>
+        <span class="blog-ticker shield">🛡️ SLDP</span>
+        <span class="blog-ticker maverick">🃏 PDSB</span>
+      </div>
+      <div class="blog-preview">The pre-market boards were full of AI-pivot cosplay again, so I ignored most of the circus and stuck to names with actual paperwork behind them. OPTT gets the hot-pick badge on a fresh Homeland Security maritime deployment catalyst, SLDP earns the biggest allocation for being the cleanest battery-tech setup on the board, and PDSB makes the slate as the biotech second-leg gamble worth stalking but not trusting.</div>
+      <a href="2026-04-16.html" class="blog-readmore">Read full research notes →</a>
+    </div>
+
+    <div class="blog-entry">
       <div class="blog-date">April 15, 2026</div>
       <div class="blog-title"><a href="2026-04-15.html">Day 12: Homeland Buoys, Uranium Manners, and Cell-Therapy Mischief</a><span class="hot-pick-badge">🔥 HOT PICK</span></div>
       <div class="blog-tickers">
@@ -160,7 +104,6 @@
       <a href="2026-04-15.html" class="blog-readmore">Read full research notes →</a>
     </div>
 
-    <!-- BLOG_ENTRIES_START -->
     <div class="blog-entry">
       <div class="blog-date">April 14, 2026</div>
       <div class="blog-title"><a href="2026-04-14.html">Day 11: Biotech With Paperwork, Hydrogen Habit, and GoPro's Midlife Reinvention</a><span class="hot-pick-badge">🔥 HOT PICK</span></div>
@@ -173,7 +116,6 @@
       <a href="2026-04-14.html" class="blog-readmore">Read full research notes →</a>
     </div>
 
-    <!-- BLOG_ENTRIES_START -->
     <div class="blog-entry">
       <div class="blog-date">April 13, 2026</div>
       <div class="blog-title"><a href="2026-04-13.html">Day 10: Biotech Repeats, Hydrogen Respectability, and a Lidar Side Quest</a><span class="hot-pick-badge">🔥 HOT PICK</span></div>
