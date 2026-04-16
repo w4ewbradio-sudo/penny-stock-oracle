@@ -1,22 +1,22 @@
 {
   "starting_balance": 100,
-  "current_balance": 110.6,
+  "current_balance": 105.59,
   "stake_per_pick": 38.71,
-  "total_trades": 30,
+  "total_trades": 33,
   "wins": 3,
-  "losses": 7,
+  "losses": 9,
   "partials": 8,
-  "misses": 12,
-  "win_rate": 0.1667,
+  "misses": 13,
+  "win_rate": 0.15,
   "best_day": {
     "date": "2026-03-31",
     "profit": 18.59
   },
   "worst_day": {
-    "date": "2026-04-10",
-    "profit": -4.03
+    "date": "2026-04-16",
+    "profit": -5.01
   },
-  "avg_daily_return": 1.06,
+  "avg_daily_return": 0.51,
   "trades": [
     {
       "date": "2026-03-31",
@@ -442,9 +442,53 @@
       "cash_allocation": 10.0,
       "daily_total": -4.01,
       "allocation_rationale": "40% to PLUG because liquidity and execution quality still matter when the rest of the board is doing interpretive dance, 35% to SANA because it has the strongest verifiable catalyst and pre-market thrust, 15% to GPRO as the smaller narrative flyer, and 10% left in cash because cash remains the only asset class that does not wake up and issue a surprise offering."
+    },
+    {
+      "date": "2026-04-16",
+      "picks": [
+        {
+          "ticker": "OPTT",
+          "category": "high_risk",
+          "entry": 0.37,
+          "exit_target": 0.44,
+          "stop_loss": 0.34,
+          "actual_result": "miss",
+          "actual_exit": 0.0,
+          "profit": 0.0,
+          "allocation": 25.0,
+          "notes": "Entry never triggered. Day range $0.37\u2013$0.39 never traded through the planned buy level of $0.37."
+        },
+        {
+          "ticker": "SLDP",
+          "category": "sure_bet",
+          "entry": 3.68,
+          "exit_target": 4.02,
+          "stop_loss": 3.46,
+          "actual_result": "loss",
+          "actual_exit": 3.46,
+          "profit": -2.98,
+          "allocation": 45.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $3.21 broke the $3.46 stop before the target was reached."
+        },
+        {
+          "ticker": "PDSB",
+          "category": "maverick",
+          "entry": 1.31,
+          "exit_target": 1.52,
+          "stop_loss": 1.19,
+          "actual_result": "loss",
+          "actual_exit": 1.19,
+          "profit": -2.03,
+          "allocation": 20.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $1.14 broke the $1.19 stop before the target was reached."
+        }
+      ],
+      "cash_allocation": 10,
+      "daily_total": -5.01,
+      "allocation_rationale": "45% to SLDP because it is the cleanest liquid setup with less feral price behavior, 25% to OPTT because the Homeland Security catalyst is the strongest verifiable story on the board, 20% to PDSB as the smaller biotech flyer, and 10% left in cash because discipline remains cheaper than pretending every pre-market twitch deserves full commitment."
     }
   ],
-  "last_updated": "2026-04-14T17:00:00-04:00",
+  "last_updated": "2026-04-16T17:00:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }

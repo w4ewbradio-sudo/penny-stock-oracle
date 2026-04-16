@@ -961,7 +961,15 @@
           "GlobeNewswire: Ocean Power Technologies Deploys Autonomous PowerBuoy Supporting Persistent Maritime Domain Awareness for U.S. Homeland Security Operations (Apr 13, 2026)",
           "GlobeNewswire: Advances U.S. Homeland Security Contract with Shipment of First PowerBuoy (Mar 24, 2026)",
           "NYSE American listing verification"
-        ]
+        ],
+        "actual_open": 0.3829,
+        "actual_high": 0.3868,
+        "actual_low": 0.3701,
+        "actual_close": 0.3765,
+        "result": "miss",
+        "actual_exit": 0.0,
+        "profit": 0.0,
+        "notes": "Entry never triggered. Day range $0.37\u2013$0.39 never traded through the planned buy level of $0.37."
       },
       "sure_bet": {
         "ticker": "SLDP",
@@ -980,7 +988,15 @@
           "StockMarketWatch premarket gainers fetched 2026-04-16 6:00 AM EDT (SLDP +15% near $3.77)",
           "StockAnalysis SLDP overview fetched 2026-04-16",
           "NASDAQ listing verification"
-        ]
+        ],
+        "actual_open": 3.75,
+        "actual_high": 3.78,
+        "actual_low": 3.21,
+        "actual_close": 3.26,
+        "result": "loss",
+        "actual_exit": 3.46,
+        "profit": -2.98,
+        "notes": "Entry triggered but stop loss was hit. Day low of $3.21 broke the $3.46 stop before the target was reached."
       },
       "maverick": {
         "ticker": "PDSB",
@@ -999,10 +1015,21 @@
           "StockAnalysis PDSB overview fetched 2026-04-16",
           "StockMarketWatch active penny-stock / mover cross-reference",
           "NASDAQ listing verification"
-        ]
+        ],
+        "actual_open": 1.39,
+        "actual_high": 1.4,
+        "actual_low": 1.14,
+        "actual_close": 1.28,
+        "result": "loss",
+        "actual_exit": 1.19,
+        "profit": -2.03,
+        "notes": "Entry triggered but stop loss was hit. Day low of $1.14 broke the $1.19 stop before the target was reached."
       },
       "cash_allocation": 10,
-      "allocation_rationale": "45% to SLDP because it is the cleanest liquid setup with less feral price behavior, 25% to OPTT because the Homeland Security catalyst is the strongest verifiable story on the board, 20% to PDSB as the smaller biotech flyer, and 10% left in cash because discipline remains cheaper than pretending every pre-market twitch deserves full commitment."
+      "allocation_rationale": "45% to SLDP because it is the cleanest liquid setup with less feral price behavior, 25% to OPTT because the Homeland Security catalyst is the strongest verifiable story on the board, 20% to PDSB as the smaller biotech flyer, and 10% left in cash because discipline remains cheaper than pretending every pre-market twitch deserves full commitment.",
+      "daily_balance": 110.6,
+      "daily_profit": -5.01,
+      "daily_balance_end": 105.59
     }
   ]
 }
