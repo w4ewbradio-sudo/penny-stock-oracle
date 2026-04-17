@@ -1,13 +1,13 @@
 {
   "starting_balance": 100,
-  "current_balance": 105.59,
-  "stake_per_pick": 38.71,
-  "total_trades": 33,
+  "current_balance": 101.51,
+  "stake_per_pick": "variable",
+  "total_trades": 39,
   "wins": 3,
-  "losses": 9,
-  "partials": 8,
-  "misses": 13,
-  "win_rate": 0.15,
+  "losses": 10,
+  "partials": 10,
+  "misses": 16,
+  "win_rate": 0.13,
   "best_day": {
     "date": "2026-03-31",
     "profit": 18.59
@@ -16,7 +16,7 @@
     "date": "2026-04-16",
     "profit": -5.01
   },
-  "avg_daily_return": 0.51,
+  "avg_daily_return": 0.12,
   "trades": [
     {
       "date": "2026-03-31",
@@ -486,9 +486,97 @@
       "cash_allocation": 10,
       "daily_total": -5.01,
       "allocation_rationale": "45% to SLDP because it is the cleanest liquid setup with less feral price behavior, 25% to OPTT because the Homeland Security catalyst is the strongest verifiable story on the board, 20% to PDSB as the smaller biotech flyer, and 10% left in cash because discipline remains cheaper than pretending every pre-market twitch deserves full commitment."
+    },
+    {
+      "date": "2026-04-15",
+      "picks": [
+        {
+          "ticker": "OPTT",
+          "category": "high_risk",
+          "entry": 0.38,
+          "exit_target": 0.46,
+          "stop_loss": 0.34,
+          "actual_result": "partial",
+          "actual_exit": 0.3801,
+          "profit": 0.01,
+          "allocation": 20.0,
+          "notes": "Entry triggered, target missed, closed at $0.3801 for essentially breakeven."
+        },
+        {
+          "ticker": "DNN",
+          "category": "sure_bet",
+          "entry": 3.72,
+          "exit_target": 4.02,
+          "stop_loss": 3.54,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 45.0,
+          "notes": "Entry never triggered. Day range $3.76-$4.02 never traded down to the planned buy level of $3.72."
+        },
+        {
+          "ticker": "CABA",
+          "category": "maverick",
+          "entry": 3.24,
+          "exit_target": 3.68,
+          "stop_loss": 3.02,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 25.0,
+          "notes": "Entry never triggered. Day range $3.29-$3.41 never traded down to the planned buy level of $3.24."
+        }
+      ],
+      "cash_allocation": 10,
+      "daily_total": 0.01,
+      "allocation_rationale": "45% DNN as uranium with the best liquidity, 25% CABA for the biotech catalyst, 20% OPTT as the speculative goblin, 10% cash."
+    },
+    {
+      "date": "2026-04-17",
+      "picks": [
+        {
+          "ticker": "EVTL",
+          "category": "high_risk",
+          "entry": 3.35,
+          "exit_target": 3.85,
+          "stop_loss": 3.05,
+          "actual_result": "loss",
+          "actual_exit": 3.05,
+          "profit": -3.78,
+          "allocation": 40.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $2.925 broke the $3.05 stop. Classic Friday post-catalyst profit-taking fade."
+        },
+        {
+          "ticker": "SILO",
+          "category": "sure_bet",
+          "entry": 0.48,
+          "exit_target": 0.56,
+          "stop_loss": 0.43,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 35.0,
+          "notes": "Entry never triggered. Day range $0.49-$0.54 never traded down to $0.48."
+        },
+        {
+          "ticker": "GXAI",
+          "category": "maverick",
+          "entry": 1.28,
+          "exit_target": 1.52,
+          "stop_loss": 1.14,
+          "actual_result": "partial",
+          "actual_exit": 1.255,
+          "profit": -0.31,
+          "allocation": 15.0,
+          "notes": "Entry triggered as stock faded through $1.28. Target never threatened. Closed at $1.255 for a small partial loss."
+        }
+      ],
+      "cash_allocation": 10,
+      "daily_total": -4.09,
+      "allocation_rationale": "40% EVTL for the strongest verified catalyst, 35% SILO as disciplined psychedelic-theme exposure, 15% GXAI as a small Reddit flyer, 10% cash for Friday discipline."
     }
   ],
-  "last_updated": "2026-04-16T17:00:00-04:00",
+  "last_updated": "2026-04-17T17:00:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
