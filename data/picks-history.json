@@ -1030,6 +1030,71 @@
       "daily_balance": 110.6,
       "daily_profit": -5.01,
       "daily_balance_end": 105.59
+    },
+    {
+      "date": "2026-04-17",
+      "high_risk": {
+        "ticker": "EVTL",
+        "company": "Vertical Aerospace Ltd.",
+        "exchange": "NYSE",
+        "current_price": 3.46,
+        "entry": 3.35,
+        "exit": 3.85,
+        "stop_loss": 3.05,
+        "confidence": 8,
+        "risk": 7,
+        "allocation": 40,
+        "reasoning": "EVTL has the single cleanest verifiable catalyst on today's board: a Businesswire release announcing a world-first two-way piloted transition flight of the VX4. Thursday closed +26% on ~17M shares (roughly 7-8x recent volume) and pre-market is indicated ~4% higher near $3.46. Rare penny-range setup where the news is real, the tape confirms it, and the move is not yet parabolic.",
+        "catalyst": "World-first two-way piloted transition flight of the VX4 announced Apr. 16, 2026.",
+        "sources": [
+          "Businesswire: 'Vertical Aerospace Achieves World-First Two-Way Piloted Transition Flight' (Apr. 16, 2026)",
+          "Yahoo Finance EVTL 1-day + 5-day chart/volume (fetched 2026-04-17 ~06:00 ET)",
+          "r/Shortsqueeze EVTL thread referencing ~$6B pre-order book",
+          "NYSE listing verification"
+        ]
+      },
+      "sure_bet": {
+        "ticker": "SILO",
+        "company": "Silo Pharma, Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 0.509,
+        "entry": 0.48,
+        "exit": 0.56,
+        "stop_loss": 0.43,
+        "confidence": 7,
+        "risk": 6,
+        "allocation": 35,
+        "reasoning": "SILO is the cleanest way to rent the ibogaine/psychedelic executive-order theme. NASDAQ-listed, closed +24% on 3.87M shares (roughly 5-7x its recent baseline), and unlike PBM it hasn't already quadrupled overnight. CBS News confirmed a pending White House executive order funding ibogaine research, which gives the whole cohort a real narrative anchor rather than pure Reddit fumes.",
+        "catalyst": "CBS News report of pending Trump executive order on federal ibogaine / psychedelic PTSD research funding (Apr. 16, 2026).",
+        "sources": [
+          "CBS News: 'Trump to sign executive order on psychedelic drug used abroad to treat PTSD' (Apr. 16, 2026)",
+          "r/pennystocks top-of-day thread naming CMND / PBM / SILO as direct beneficiaries",
+          "Yahoo Finance SILO quote + 5-day volume (fetched 2026-04-17 ~06:00 ET)",
+          "NASDAQ listing verification"
+        ]
+      },
+      "maverick": {
+        "ticker": "GXAI",
+        "company": "Gaxos.ai Inc.",
+        "exchange": "NASDAQ",
+        "current_price": 1.42,
+        "entry": 1.28,
+        "exit": 1.52,
+        "stop_loss": 1.14,
+        "confidence": 6,
+        "risk": 8,
+        "allocation": 15,
+        "reasoning": "Fresh r/pennystocks DD post overnight on a tiny $13M-cap AI + gaming micro. Thursday closed only +2.5% but did it on 10.7M shares versus a prior four-session range of 264K-547K - a 20-25x volume expansion. Pre-market indicated ~15% higher near $1.42. Classic Reddit-liquidity flyer: possible coiled accumulation or possible distribution into hype. Small size and a tight stop are mandatory.",
+        "catalyst": "Reddit DD momentum plus 25x volume expansion on Apr. 16 and pre-market strength around $1.42.",
+        "sources": [
+          "r/pennystocks DD thread: 'GXAI (Gaxos.ai) - Explosive AI Growth in Health & Gaming at Market Cap ~$13M'",
+          "Yahoo Finance GXAI 5-day volume history (fetched 2026-04-17 ~06:00 ET)",
+          "NASDAQ listing verification"
+        ]
+      },
+      "cash_allocation": 10,
+      "allocation_rationale": "40% EVTL because the aerospace milestone is verifiable and the tape already confirmed it. 35% SILO as the disciplined way to rent the psychedelic executive-order theme without chasing PBM's parabolic pre-market. 15% GXAI as a deliberately small Reddit-liquidity flyer with a tight stop. 10% cash because Fridays on momentum names have a habit of unwinding into the close.",
+      "daily_balance": 105.59
     }
   ]
 }
