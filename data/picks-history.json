@@ -11,7 +11,7 @@
                 "stop_loss": 1.15,
                 "confidence": 7,
                 "risk": 8,
-                "reasoning": "BFRG announced a commercial agreement with a top-5 global pharmaceutical company to apply its bfLEAP AI platform to MDD drug target discovery. Stock surged 151% yesterday on the news and Reddit mentions jumped from 3 to 21 in 24 hours across r/pennystocks. The webinar with Xtalks on March 27 showcased a new AI engine, and the pharma deal validates the tech. Volume was 192M today \u2014 massive for a stock that normally trades under 1M. Entry at a pullback from the $1.96 high to test $1.35 support.",
+                "reasoning": "BFRG announced a commercial agreement with a top-5 global pharmaceutical company to apply its bfLEAP AI platform to MDD drug target discovery. Stock surged 151% yesterday on the news and Reddit mentions jumped from 3 to 21 in 24 hours across r/pennystocks. The webinar with Xtalks on March 27 showcased a new AI engine, and the pharma deal validates the tech. Volume was 192M today — massive for a stock that normally trades under 1M. Entry at a pullback from the $1.96 high to test $1.35 support.",
                 "catalyst": "Top-5 pharma commercial agreement for bfLEAP AI platform (MDD targets)",
                 "sources": [
                     "r/pennystocks (21 mentions)",
@@ -27,7 +27,7 @@
                 "actual_close": 1.67,
                 "actual_exit": 1.75,
                 "profit": 9.88,
-                "notes": "Entry hit at open range, target hit intraday \u2014 stock reached $1.96 high"
+                "notes": "Entry hit at open range, target hit intraday — stock reached $1.96 high"
             },
             "sure_bet": {
                 "ticker": "CTXR",
@@ -38,8 +38,8 @@
                 "stop_loss": 0.7,
                 "confidence": 7,
                 "risk": 5,
-                "reasoning": "Citius subsidiary Citius Oncology released a LYMPHIR commercial update today showing strong early traction \u2014 83% of target accounts progressing through formulary review, ~135 health plans covering ~80% of lives, and zero reimbursement denials. Positive Phase 1 gynecologic cancer data released March 10 adds pipeline depth. CTXR closed up 32% today on the news. Listed on NASDAQ with institutional coverage. Entry near the $0.78 pullback level with a conservative exit at $0.90.",
-                "catalyst": "LYMPHIR commercial launch update \u2014 strong payer adoption metrics",
+                "reasoning": "Citius subsidiary Citius Oncology released a LYMPHIR commercial update today showing strong early traction — 83% of target accounts progressing through formulary review, ~135 health plans covering ~80% of lives, and zero reimbursement denials. Positive Phase 1 gynecologic cancer data released March 10 adds pipeline depth. CTXR closed up 32% today on the news. Listed on NASDAQ with institutional coverage. Entry near the $0.78 pullback level with a conservative exit at $0.90.",
+                "catalyst": "LYMPHIR commercial launch update — strong payer adoption metrics",
                 "sources": [
                     "Yahoo Finance PR",
                     "StockTitan",
@@ -53,7 +53,7 @@
                 "actual_close": 0.9,
                 "actual_exit": 0.9,
                 "profit": 5.13,
-                "notes": "Entry hit as stock pulled back from open, target hit \u2014 LYMPHIR news drove momentum"
+                "notes": "Entry hit as stock pulled back from open, target hit — LYMPHIR news drove momentum"
             },
             "maverick": {
                 "ticker": "BYND",
@@ -64,7 +64,7 @@
                 "stop_loss": 0.55,
                 "confidence": 5,
                 "risk": 7,
-                "reasoning": "The ultimate contrarian play. Beyond Meat is down 75% over the past year and now trades under $1 \u2014 a former IPO darling at $234/share now in penny stock territory. The company delayed its annual filing (red flag), BUT it also announced a major product line expansion that popped the stock 15% in late February. Reddit mentions spiked today (+400% on ChartExchange). This is a 'dead cat bounce or phoenix rising' bet \u2014 the brand recognition alone might be worth more than the current market cap. Today's 18% gain on 52M volume shows life. Classic maverick territory.",
+                "reasoning": "The ultimate contrarian play. Beyond Meat is down 75% over the past year and now trades under $1 — a former IPO darling at $234/share now in penny stock territory. The company delayed its annual filing (red flag), BUT it also announced a major product line expansion that popped the stock 15% in late February. Reddit mentions spiked today (+400% on ChartExchange). This is a 'dead cat bounce or phoenix rising' bet — the brand recognition alone might be worth more than the current market cap. Today's 18% gain on 52M volume shows life. Classic maverick territory.",
                 "catalyst": "Delayed earnings filing + new product expansion + extreme oversold bounce potential",
                 "sources": [
                     "r/pennystocks (5 mentions, +400%)",
@@ -80,7 +80,7 @@
                 "actual_close": 0.72,
                 "actual_exit": 0.72,
                 "profit": 3.59,
-                "notes": "Entry hit, but target of $0.80 not reached \u2014 high was only $0.73. Closed at $0.72 for partial gain."
+                "notes": "Entry hit, but target of $0.80 not reached — high was only $0.73. Closed at $0.72 for partial gain."
             },
             "daily_balance": 100,
             "daily_profit": 18.59,
@@ -140,7 +140,7 @@
                 "actual_close": 1.13,
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $1.09\u2013$1.22 stayed above/below the planned buy level of $1.32."
+                "notes": "Entry never triggered. Day range $1.09–$1.22 stayed above/below the planned buy level of $1.32."
             },
             "maverick": {
                 "ticker": "KULR",
@@ -152,7 +152,7 @@
                 "stop_loss": 1.92,
                 "confidence": 5,
                 "risk": 6,
-                "reasoning": "KULR landed on the pre-market loser list around $2.11, down roughly 11%, which makes it the contrarian bounce candidate of the morning. This is the maverick pick because the setup is not \u201ceveryone loves it\u201d; it is \u201ceveryone just smacked it pre-market and sometimes that creates a tradable snapback if support near $2 holds.\u201d",
+                "reasoning": "KULR landed on the pre-market loser list around $2.11, down roughly 11%, which makes it the contrarian bounce candidate of the morning. This is the maverick pick because the setup is not “everyone loves it”; it is “everyone just smacked it pre-market and sometimes that creates a tradable snapback if support near $2 holds.”",
                 "catalyst": "Oversold pre-market flush (~-11%) creating a potential mean-reversion bounce setup.",
                 "sources": [
                     "StockMarketWatch pre-market losers (10:00 UTC snapshot)",
@@ -200,7 +200,7 @@
                 "result": "win",
                 "actual_exit": 0.36,
                 "profit": 7.76,
-                "notes": "Entry triggered and target hit intraday. Day range $0.26\u2013$0.36 reached the $0.36 target."
+                "notes": "Entry triggered and target hit intraday. Day range $0.26–$0.36 reached the $0.36 target."
             },
             "sure_bet": {
                 "ticker": "USEG",
@@ -287,7 +287,7 @@
                 "actual_close": 2.19,
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $2.10\u2013$2.30 never traded down to the planned buy level of $1.92."
+                "notes": "Entry never triggered. Day range $2.10–$2.30 never traded down to the planned buy level of $1.92."
             },
             "sure_bet": {
                 "ticker": "USEG",
@@ -313,7 +313,7 @@
                 "actual_close": 0.85,
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $0.82\u2013$0.86 never traded down to the planned buy level of $0.88."
+                "notes": "Entry never triggered. Day range $0.82–$0.86 never traded down to the planned buy level of $0.88."
             },
             "maverick": {
                 "ticker": "SGMO",
@@ -339,7 +339,7 @@
                 "actual_close": 0.28,
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $0.28\u2013$0.31 never traded down to the planned buy level of $0.27."
+                "notes": "Entry never triggered. Day range $0.28–$0.31 never traded down to the planned buy level of $0.27."
             },
             "cash_allocation": 15,
             "daily_balance": 117.95,
@@ -373,7 +373,7 @@
                 "result": "miss",
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $2.24\u2013$2.63 never traded up/down through the planned buy level of $2.86."
+                "notes": "Entry never triggered. Day range $2.24–$2.63 never traded up/down through the planned buy level of $2.86."
             },
             "sure_bet": {
                 "ticker": "PLUG",
@@ -413,7 +413,7 @@
                 "confidence": 6,
                 "risk": 7,
                 "allocation": 15,
-                "reasoning": "SPCE is the maverick because the story is always half gravity, half delusion, but the tape was real: TradingView showed it up about 6.8% pre-market near $3.28. This is the sort of name retail loves when it wakes up, and that makes it tradable \u2014 just not trustworthy enough to size aggressively.",
+                "reasoning": "SPCE is the maverick because the story is always half gravity, half delusion, but the tape was real: TradingView showed it up about 6.8% pre-market near $3.28. This is the sort of name retail loves when it wakes up, and that makes it tradable — just not trustworthy enough to size aggressively.",
                 "catalyst": "Pre-market strength in a high-beta space name with persistent retail attention and enough liquidity to matter.",
                 "sources": [
                     "TradingView pre-market gainers snapshot (10:00 UTC)",
@@ -427,7 +427,7 @@
                 "result": "miss",
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $2.74\u2013$3.13 never traded up/down through the planned buy level of $3.15."
+                "notes": "Entry never triggered. Day range $2.74–$3.13 never traded up/down through the planned buy level of $3.15."
             },
             "cash_allocation": 10,
             "daily_balance": 117.95,
@@ -462,7 +462,7 @@
                 "result": "miss",
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $1.00\u2013$1.06 never traded through the planned buy level of $0.92."
+                "notes": "Entry never triggered. Day range $1.00–$1.06 never traded through the planned buy level of $0.92."
             },
             "sure_bet": {
                 "ticker": "PLUG",
@@ -489,7 +489,7 @@
                 "result": "miss",
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $2.60\u2013$2.77 never traded through the planned buy level of $2.44."
+                "notes": "Entry never triggered. Day range $2.60–$2.77 never traded through the planned buy level of $2.44."
             },
             "maverick": {
                 "ticker": "ONDS",
@@ -516,7 +516,7 @@
                 "result": "miss",
                 "actual_exit": 0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $9.35\u2013$10.36 never traded through the planned buy level of $4.78."
+                "notes": "Entry never triggered. Day range $9.35–$10.36 never traded through the planned buy level of $4.78."
             },
             "cash_allocation": 10,
             "daily_balance": 115.31,
@@ -578,7 +578,7 @@
                 "actual_close": 2.74,
                 "actual_exit": 0.0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $2.62\u2013$2.84 never traded through the planned buy level of $2.56."
+                "notes": "Entry never triggered. Day range $2.62–$2.84 never traded through the planned buy level of $2.56."
             },
             "maverick": {
                 "ticker": "HUMA",
@@ -756,7 +756,7 @@
                 "result": "miss",
                 "actual_exit": 0.0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $2.69\u2013$2.87 never traded through the planned buy level of $2.66."
+                "notes": "Entry never triggered. Day range $2.69–$2.87 never traded through the planned buy level of $2.66."
             },
             "maverick": {
                 "ticker": "MVIS",
@@ -846,7 +846,7 @@
                 "actual_close": 2.94,
                 "actual_exit": 0.0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $2.87\u2013$3.01 never traded through the planned buy level of $2.70."
+                "notes": "Entry never triggered. Day range $2.87–$3.01 never traded through the planned buy level of $2.70."
             },
             "maverick": {
                 "ticker": "GPRO",
@@ -948,7 +948,7 @@
                 "confidence": 7,
                 "risk": 7,
                 "allocation": 25,
-                "reasoning": "CABA is the maverick because the cell-therapy manufacturing update is real, the stock is pushing the top of its recent range, and biotech traders love a fresh \u201cfirst patients dosed\u201d headline almost as much as they love disappointing everyone later. This is the interesting one, not the safe one.",
+                "reasoning": "CABA is the maverick because the cell-therapy manufacturing update is real, the stock is pushing the top of its recent range, and biotech traders love a fresh “first patients dosed” headline almost as much as they love disappointing everyone later. This is the interesting one, not the safe one.",
                 "catalyst": "First patients dosed with rese-cel manufactured on Cellares automated platform.",
                 "sources": [
                     "Yahoo Finance news feed",
@@ -996,7 +996,7 @@
                 "result": "miss",
                 "actual_exit": 0.0,
                 "profit": 0.0,
-                "notes": "Entry never triggered. Day range $0.37\u2013$0.39 never traded through the planned buy level of $0.37."
+                "notes": "Entry never triggered. Day range $0.37–$0.39 never traded through the planned buy level of $0.37."
             },
             "sure_bet": {
                 "ticker": "SLDP",
@@ -1162,7 +1162,7 @@
                 "confidence": 8,
                 "risk": 7,
                 "allocation": 40,
-                "reasoning": "Friday printed a structural breakout in HIVE: 72.7M shares vs a prior five-session average ~17.8M (4x expansion), closing at $2.51 within 3% of the intraday high. The move is sector-wide, not idiosyncratic \u2014 MARA, RIOT, CIFR, WULF all closed green on heavy volume as BTC stabilized near $75K into the weekend. HIVE is the cleanest penny-range vehicle for that repricing: NASDAQ-listed, still below its prior breakout zone, with room for a ~15% continuation before hitting prior swing resistance.",
+                "reasoning": "Friday printed a structural breakout in HIVE: 72.7M shares vs a prior five-session average ~17.8M (4x expansion), closing at $2.51 within 3% of the intraday high. The move is sector-wide, not idiosyncratic — MARA, RIOT, CIFR, WULF all closed green on heavy volume as BTC stabilized near $75K into the weekend. HIVE is the cleanest penny-range vehicle for that repricing: NASDAQ-listed, still below its prior breakout zone, with room for a ~15% continuation before hitting prior swing resistance.",
                 "catalyst": "Friday volume breakout on a Bitcoin miner coincident with BTC holding $75K over the weekend; broad miner-cohort strength into Monday open.",
                 "sources": [
                     "Yahoo Finance HIVE 10-day chart and volume profile (fetched 2026-04-20 ~06:00 ET)",
@@ -1217,7 +1217,7 @@
                 "confidence": 6,
                 "risk": 9,
                 "allocation": 15,
-                "reasoning": "Weird tape with real disclosures underneath. AGAE printed 481M shares on Apr. 15 in a $0.28\u2192$0.96 intraday range then decayed volume in a controlled way into Friday's $0.69 close. DD on r/Shortsqueeze cites 17.28M float, $53M cash vs $20M market cap, and a pending M&A update expected by end of April with a board-stated $2/share floor. Numbers check out; outcome is binary. Small size, tight stop under the $0.55 shelf.",
+                "reasoning": "Weird tape with real disclosures underneath. AGAE printed 481M shares on Apr. 15 in a $0.28→$0.96 intraday range then decayed volume in a controlled way into Friday's $0.69 close. DD on r/Shortsqueeze cites 17.28M float, $53M cash vs $20M market cap, and a pending M&A update expected by end of April with a board-stated $2/share floor. Numbers check out; outcome is binary. Small size, tight stop under the $0.55 shelf.",
                 "catalyst": "Reported pending M&A update by end of April 2026 against cash position ($53M) nearly 3x market cap (~$20M); Reddit-liquidity momentum.",
                 "sources": [
                     "r/Shortsqueeze DD thread on AGAE (posted Apr. 18, 2026) outlining M&A thesis",
@@ -1238,7 +1238,7 @@
             "daily_balance": 101.51,
             "daily_profit": 2.19,
             "daily_balance_end": 103.7,
-            "result_summary": "All three entries triggered, all three partials. HIVE continued its BTC-miner momentum but couldn't reach the $2.85 target. JOBY barely moved after entry. AGAE opened right at entry and ran to $0.74 but fell short of $0.82. A green day \u2014 modest but honest."
+            "result_summary": "All three entries triggered, all three partials. HIVE continued its BTC-miner momentum but couldn't reach the $2.85 target. JOBY barely moved after entry. AGAE opened right at entry and ran to $0.74 but fell short of $0.82. A green day — modest but honest."
         },
         {
             "date": "2026-04-21",
@@ -1252,7 +1252,7 @@
                 "confidence": 8,
                 "risk": 8,
                 "allocation": 45,
-                "reasoning": "Carbon County (PA) Planning Commission votes today at 2:00 PM ET on Panther Creek \u2014 a 350MW PJM-connected data center / power generation facility owned by KEEL Infrastructure (rebranded from Bitfarms/$BITF). The March 17 planning commission Zoom had Carolyn McGee of Nelson Mullins (major US energy-infrastructure law firm) and T5 Data Centers on the call. Primary source: Carbon County PA government YouTube channel, 28-min mark of the 3/17 meeting. Stock already quietly moved from $1.84 (3/30) to $2.88 (4/20) on rising volume, so a clean vote is the press-release catalyst that can push through the $3-handle to test the prior $3.35 swing high.",
+                "reasoning": "Carbon County (PA) Planning Commission votes today at 2:00 PM ET on Panther Creek — a 350MW PJM-connected data center / power generation facility owned by KEEL Infrastructure (rebranded from Bitfarms/$BITF). The March 17 planning commission Zoom had Carolyn McGee of Nelson Mullins (major US energy-infrastructure law firm) and T5 Data Centers on the call. Primary source: Carbon County PA government YouTube channel, 28-min mark of the 3/17 meeting. Stock already quietly moved from $1.84 (3/30) to $2.88 (4/20) on rising volume, so a clean vote is the press-release catalyst that can push through the $3-handle to test the prior $3.35 swing high.",
                 "catalyst": "Carbon County Planning Commission vote on Panther Creek 350MW PJM-connected data center, 2:00 PM ET 2026-04-21",
                 "sources": [
                     "r/pennystocks DD (43 upvotes, 0.92 ratio)",
@@ -1306,7 +1306,7 @@
                 "risk": 8,
                 "allocation": 15,
                 "reasoning": "Pick-and-shovel play on the BTC miner cohort. Canaan sells ASIC mining hardware; when miners get a bid (HIVE, MARA, RIOT, WULF, CIFR all green into Monday with BTC holding $76K), ASIC demand is the second-derivative trade that typically lags. Closed $0.571 on 13M shares, well off $3.79 52-week high. Reddit isn't on it yet, which is part of the maverick thesis. Tight stop below psychological $0.50.",
-                "catalyst": "Second-derivative BTC miner trade \u2014 ASIC supplier lagging the miner cohort bid into a stable $76K BTC tape",
+                "catalyst": "Second-derivative BTC miner trade — ASIC supplier lagging the miner cohort bid into a stable $76K BTC tape",
                 "sources": [
                     "Yahoo Finance CAN 10-day chart",
                     "Yahoo Finance BTC-USD and miner complex (HIVE, MARA, RIOT, WULF)",
@@ -1326,7 +1326,77 @@
             "daily_balance": 103.7,
             "daily_profit": 1.3,
             "daily_balance_end": 105.0,
-            "result_summary": "BBAI was the hero today \u2014 the defense-AI continuation trade hit its target cleanly for a WIN. KEEL disappointed despite the Carbon County catalyst, fading all day to close at $2.80. CAN got caught in a BTC miner selloff. Net positive thanks to BBAI's disciplined setup."
+            "result_summary": "BBAI was the hero today — the defense-AI continuation trade hit its target cleanly for a WIN. KEEL disappointed despite the Carbon County catalyst, fading all day to close at $2.80. CAN got caught in a BTC miner selloff. Net positive thanks to BBAI's disciplined setup."
+        },
+        {
+            "date": "2026-04-22",
+            "high_risk": {
+                "ticker": "NVTS",
+                "company": "Navitas Semiconductor Corp.",
+                "exchange": "NASDAQ",
+                "current_price": 17.15,
+                "entry": 16.8,
+                "exit": 18.5,
+                "stop_loss": 15.9,
+                "confidence": 7,
+                "risk": 8,
+                "allocation": 45,
+                "reasoning": "GaN/SiC power-management IC maker riding the AI-datacenter picks-and-shovels narrative. Ten-session move from $9.42 to $15.33 on accelerating volume, capped by an 87.5M-share +16% day Monday. Pre-market this morning is $17.05-$17.30 (+12% gap) on a wave of analyst/media pieces (Insider Monkey 'Climbs 16% Ahead of Q1 Earnings', 24/7 Wall St. 'Behind-the-Scenes AI Chip Stock Few Investors Know', Motley Fool two pieces in 48h). Zero r/pennystocks chatter on the week — institutional flow without retail overshoot yet. Entry $16.80 catches a modest give-back from pre-market; target $18.50 is ~10% above entry, below parabola-risk zone; stop $15.90 puts me back at yesterday's close if the gap fills.",
+                "catalyst": "Q1 2026 earnings run-up + tier-2 media analyst swarm calling NVTS the hidden AI-datacenter power-chip play; 4x volume breakout",
+                "sources": [
+                    "Insider Monkey: Navitas (NVTS) Climbs 16% Ahead of Q1 Earnings",
+                    "24/7 Wall St.: The 'Behind-the-Scenes' AI Chip Stock Few Investors Know",
+                    "Motley Fool: Why Navitas Semiconductor Rallied Today + Most Investors Have Never Heard of This Semiconductor Stock",
+                    "Simply Wall St.: Board governance note on Gregory M. Fischer",
+                    "Yahoo Finance NVTS 10-day daily + 1-day 5-min charts (fetched 2026-04-22 ~06:00 ET)",
+                    "NASDAQ Global Market listing verification"
+                ]
+            },
+            "sure_bet": {
+                "ticker": "SLDP",
+                "company": "Solid Power, Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 3.85,
+                "entry": 3.78,
+                "exit": 4.1,
+                "stop_loss": 3.55,
+                "confidence": 7,
+                "risk": 5,
+                "allocation": 30,
+                "reasoning": "Solid-state battery developer with a real Joint Evaluation Agreement with Samsung SDI and BMW actively advancing. Insider Monkey published a $7 price target this week citing the JEA and electrolyte commercialization. Business Wire confirmed Q1 2026 earnings date. Stock had been rangebound $3.20-$3.50 for weeks; pre-market is printing $3.85 (+13% vs $3.40 close) on a clean technical break. Entry $3.78 below pre-market catches first-hour profit-taking, target $4.10 reclaims the March pivot, stop $3.55 back inside old range if break fails. Three stacked catalysts, unambiguous technicals, institutional-tilted shareholder base.",
+                "catalyst": "Samsung SDI + BMW Joint Evaluation Agreement advancing + fresh $7 analyst price target + Q1 2026 earnings release scheduled",
+                "sources": [
+                    "Business Wire: Solid Power Announces Timing of First Quarter 2026 Earnings Release",
+                    "Insider Monkey: Solid Power (SLDP) Earns $7 Price Target as Next-Gen Battery Play",
+                    "Insider Monkey: Joint Evaluation Agreement With Samsung SDI and BMW Supports Solid Power",
+                    "Yahoo Finance SLDP 10-day + 1-day 5-min charts (fetched 2026-04-22 ~06:00 ET)",
+                    "NASDAQ Global Select listing verification"
+                ]
+            },
+            "maverick": {
+                "ticker": "FLWS",
+                "company": "1-800-FLOWERS.COM, Inc.",
+                "exchange": "NASDAQ",
+                "current_price": 4.2,
+                "entry": 4.05,
+                "exit": 4.75,
+                "stop_loss": 3.7,
+                "confidence": 6,
+                "risk": 7,
+                "allocation": 15,
+                "reasoning": "r/Shortsqueeze's favorite setup of the day with numbers that check out. FLWS popped 20% Monday to $4.46, gave back 10% to $4.00 Tuesday (7.1M then 4.4M share volume — real flow). On the Reg SHO SSR list today, so no shorting at the bid. Fintel reportedly shows 104% of available float short after the 52% insider block and Fund 1 Investments' 5.3M lockup. $193M cash vs $256M market cap, book value ~$4.22, slashed $25M marketing spend and still surprise-beat EPS last quarter, Instacart nationwide partnership, earnings May 7. Entry $4.05 above today's close without chasing, target $4.75 is 17% and takes out Monday high. Sized small (15%) because crowded squeeze trades shake out late entrants.",
+                "catalyst": "Reg SHO SSR list for 2026-04-22 (no shorting at bid) + 104% short-of-float + Instacart nationwide partnership + May 7 earnings print",
+                "sources": [
+                    "r/Shortsqueeze DD: 'FLWS - low float, under book value' (32 upvotes, 0.92 ratio)",
+                    "Business Wire: 1-800-FLOWERS to Release Q3 2026 Results on May 7, 2026",
+                    "StockStory: 1-800-FLOWERS (NASDAQ:FLWS) Simply the Best Q4 earnings recap",
+                    "Yahoo Finance FLWS 10-day + 1-day 5-min charts (fetched 2026-04-22 ~06:00 ET)",
+                    "NASDAQ Global Select listing verification"
+                ]
+            },
+            "cash_allocation": 10,
+            "allocation_rationale": "45/30/15/10. NVTS gets the heaviest weight because tape + analyst flow + earnings timing is the 'this is happening today' setup — 82% run in 10 sessions on 4x volume with retail not yet arrived. SLDP gets 30% on three independent catalysts and a clean technical break. FLWS gets 15% because meme-coded squeeze trades need small size even when the math works. 10% cash because NVTS is vertical and a fade-to-reload is a real scenario.",
+            "daily_balance": 105.0
         }
     ]
 }
