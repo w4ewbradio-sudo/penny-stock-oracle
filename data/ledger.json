@@ -1,22 +1,22 @@
 {
   "starting_balance": 100,
-  "current_balance": 110.97,
+  "current_balance": 105.81,
   "stake_per_pick": "variable",
-  "total_trades": 48,
+  "total_trades": 51,
   "wins": 5,
-  "losses": 10,
+  "losses": 12,
   "partials": 17,
-  "misses": 16,
-  "win_rate": 0.16,
+  "misses": 17,
+  "win_rate": 0.15,
   "best_day": {
     "date": "2026-03-31",
     "profit": 18.59
   },
   "worst_day": {
-    "date": "2026-04-16",
-    "profit": -5.01
+    "date": "2026-04-23",
+    "profit": -5.16
   },
-  "avg_daily_return": 0.69,
+  "avg_daily_return": 0.34,
   "trades": [
     {
       "date": "2026-03-31",
@@ -706,9 +706,53 @@
       "cash_allocation": 10,
       "daily_total": 5.97,
       "allocation_rationale": "45% NVTS for the strongest tape+catalyst combo, 30% SLDP on three independent catalysts and clean break, 15% FLWS as the smaller squeeze flyer, 10% cash."
+    },
+    {
+      "date": "2026-04-23",
+      "picks": [
+        {
+          "ticker": "TLRY",
+          "category": "high_risk",
+          "entry": 8.00,
+          "exit_target": 9.20,
+          "stop_loss": 7.40,
+          "actual_result": "loss",
+          "actual_exit": 7.40,
+          "profit": -3.75,
+          "allocation": 45,
+          "notes": "Entry triggered on the fade from $9.30 open. Classic sell-the-news: cannabis reclassification became official but the sector had already priced it in over two days. Stop loss hit as TLRY cratered to $6.82."
+        },
+        {
+          "ticker": "HITI",
+          "category": "sure_bet",
+          "entry": 2.55,
+          "exit_target": 2.78,
+          "stop_loss": 2.42,
+          "actual_result": "loss",
+          "actual_exit": 2.42,
+          "profit": -1.41,
+          "allocation": 25,
+          "notes": "Entry triggered as stock faded from $2.67 open through $2.55. Rotation thesis failed — HITI sold off with the sector on sell-the-news dynamics. Stop hit at $2.42."
+        },
+        {
+          "ticker": "BYND",
+          "category": "maverick",
+          "entry": 1.12,
+          "exit_target": 1.32,
+          "stop_loss": 1.00,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 10,
+          "notes": "Entry never triggered. Day high of $1.10 never reached the planned buy level of $1.12. BYND gapped down and sold off to $0.95."
+        }
+      ],
+      "cash_allocation": 20,
+      "daily_total": -5.16,
+      "allocation_rationale": "45% TLRY as the direct-catalyst play, 25% HITI as the lagging rotation candidate, 10% BYND as a small volatility probe, 20% cash because a two-day sector run into a known catalyst is textbook sell-the-news territory."
     }
   ],
-  "last_updated": "2026-04-22T17:01:00-04:00",
+  "last_updated": "2026-04-23T17:01:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
