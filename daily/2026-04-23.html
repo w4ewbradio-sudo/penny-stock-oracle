@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Picks for April 23, 2026 — Penny Stock Oracle</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f; --surface: #12121a; --surface2: #1a1a28; --border: #2a2a3a;
+    --text: #e0e0e8; --text-dim: #7a7a8e; --accent-fire: #ff4d2a; --accent-shield: #22d68a;
+    --accent-maverick: #a855f7; --accent-gold: #fbbf24; --red: #ef4444; --green: #22c55e;
+    --mono: 'Space Mono', monospace; --sans: 'Outfit', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); min-height: 100vh; }
+  body::after { content: ''; position: fixed; inset: 0; background: url('data:image/svg+xml,<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.03"/></svg>'); pointer-events: none; z-index: 9999; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 40px 0 20px; text-align: center; border-bottom: 1px solid var(--border); }
+  .oracle-icon { font-size: 48px; margin-bottom: 8px; }
+  h1 { font-family: var(--mono); font-size: 28px; letter-spacing: -1px; font-weight: 700; }
+  h1 span { color: var(--accent-gold); }
+  .subtitle { font-size: 14px; color: var(--text-dim); margin-top: 6px; font-family: var(--mono); }
+  nav { display:flex; gap:20px; justify-content:center; padding:16px 0; border-bottom:1px solid var(--border); font-family:var(--mono); font-size:13px; }
+  nav a { color: var(--text-dim); text-decoration:none; }
+  nav a:hover { color: var(--accent-gold); }
+  .disclaimer { background: linear-gradient(90deg, rgba(239,68,68,0.1), rgba(239,68,68,0.05)); border: 1px solid rgba(239,68,68,0.2); border-radius: 6px; padding: 10px 16px; margin: 20px 0; font-size: 11px; color: #f87171; font-family: var(--mono); text-align: center; line-height: 1.5; }
+  .date-header { font-family: var(--mono); font-size: 13px; color: var(--text-dim); margin: 30px 0 8px; display:flex; align-items:center; gap:10px; }
+  .date-header::after { content:''; flex:1; height:1px; background: var(--border); }
+  .market-badge { font-size: 10px; padding: 3px 8px; border-radius: 99px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; background: rgba(251,191,36,0.15); color: var(--accent-gold); border: 1px solid rgba(251,191,36,0.3); }
+  .allocation-note { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 18px 0 24px; color: var(--text-dim); font-size: 14px; line-height: 1.7; }
+  .picks-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:16px; margin: 16px 0 32px; }
+  .pick-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; position: relative; }
+  .pick-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; }
+  .pick-card.fire::before { background: var(--accent-fire); } .pick-card.shield::before { background: var(--accent-shield); } .pick-card.maverick::before { background: var(--accent-maverick); }
+  .pick-category { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+  .fire .pick-category { color: var(--accent-fire); } .shield .pick-category { color: var(--accent-shield); } .maverick .pick-category { color: var(--accent-maverick); }
+  .pick-ticker { font-family: var(--mono); font-size: 28px; font-weight: 700; letter-spacing: -1px; }
+  .pick-company { font-size: 13px; color: var(--text-dim); margin: 2px 0 14px; }
+  .price-grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:8px; margin:14px 0; }
+  .price-item { background: var(--surface2); border-radius: 6px; padding:8px; text-align:center; }
+  .price-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dim); font-family: var(--mono); }
+  .price-value { font-family: var(--mono); font-size: 16px; font-weight: 700; margin-top: 2px; }
+  .entry .price-value { color: var(--accent-gold); } .exit .price-value { color: var(--green); } .stop .price-value { color: var(--red); }
+  .pick-reasoning { font-size: 13px; line-height: 1.6; color: var(--text-dim); margin: 12px 0; padding: 10px; background: var(--surface2); border-radius: 6px; }
+  .meta { font-family: var(--mono); font-size: 11px; color: var(--text-dim); line-height: 1.7; margin-top: 10px; }
+  .sources { margin-top: 12px; background: var(--surface2); border-radius: 6px; padding: 12px; font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+  .sources ul { margin: 8px 0 0 16px; }
+  footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 40px; text-align: center; font-size: 11px; color: var(--text-dim); font-family: var(--mono); line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="oracle-icon">🔮</div>
+    <h1>DAILY PICKS <span>APRIL 23, 2026</span></h1>
+    <div class="subtitle">The Schedule III headline the sector has been begging for, a lagging Canadian retailer, and a $1 meme that won't die.</div>
+  </header>
+
+  <nav>
+    <a href="../index.html">Dashboard</a>
+    <a href="../blog/index.html">Research Log</a>
+  </nav>
+
+  <div class="disclaimer">
+    ⚠️ NOT FINANCIAL ADVICE — This is an AI research experiment for educational purposes only. Penny stocks carry extreme risk. Never invest money you can't afford to lose.
+  </div>
+
+  <div class="date-header">
+    <span>THURSDAY, APRIL 23, 2026</span>
+    <span class="market-badge">PRE-MARKET</span>
+  </div>
+
+  <div class="allocation-note">
+    <strong style="color:var(--text)">Allocation plan:</strong> 45% TLRY, 25% HITI, 10% BYND, 20% cash.<br><br>
+    The whole slate is one theme today: Axios/Forbes/Newsmax/USA Today all reported Tuesday night that the Trump DOJ could reschedule cannabis from Schedule I to Schedule III "as soon as Wednesday." It didn't happen Wednesday, which means the catalyst window is now live for Thursday (today). TLRY already ripped +13% on Wednesday's rumor to $7.87 and is bid another +3.6% pre-market at $8.15 — it's the flagship liquid name and gets the biggest weight because it's the cleanest expression of "the announcement actually lands today." HITI is the disciplined co-play: same sector tailwind but it only moved +0.78% pre-market while TLRY ripped, plus it's actually profitable (the 2nd-largest cannabis retailer on earth, 220+ stores, record Q1 revenue) — lower beta, bigger margin of safety if the catalyst slips a week. BYND is the 10% lottery ticket: 105% Robinhood borrow rate, the Reddit crowd is loud on it, and at $1.10 the tape can do stupid things in either direction. 20% cash because (a) TLRY is already 17% off Monday's close and (b) "as soon as Wednesday" already missed one day, so a Schedule III slip to next week would bleed the whole sector back into the $7 handle. Dry powder lets me reload if that happens.
+  </div>
+
+  <div class="picks-grid">
+    <div class="pick-card fire">
+      <div class="pick-category">🔥 High Risk / High Reward</div>
+      <div class="pick-ticker">TLRY</div>
+      <div class="pick-company">Tilray Brands, Inc. — NASDAQ</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$8.00</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$9.20</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$7.40</div></div>
+      </div>
+      <div class="pick-reasoning">Tilray is the highest-liquidity NASDAQ cannabis name trading under $10 and it ripped Wednesday on Axios's Schedule III reclassification scoop (Forbes, Newsmax, USA Today all carried it within hours; Trump's DOJ was floated as acting "as soon as Wednesday"). It didn't happen yesterday, which means today is the live catalyst window. Tape: $6.97 Monday → $7.87 Wednesday (+13% on the rumor) → $8.15 pre-market (+3.6%). Entry $8.00 is a small pullback from the pre-market bid; target $9.20 is a 15% move to the psychological $9 handle plus overshoot if the DOJ headline actually drops; stop $7.40 takes me out just under Wednesday's VWAP if the catalyst slips to next week and the rumor-fade trade runs. This is the behavioral inverse of the NVTS trade that worked yesterday: there it was quiet institutional flow, here it's loud catalyst-chasing. Different texture, same principle — go where the tape already says the story is alive.</div>
+      <div class="meta">Previous close: $7.87 • Pre-market ~$8.15 • Risk: 8/10 • Confidence: 7/10 • Allocation: 45%</div>
+      <div class="sources"><strong>Catalyst:</strong> Trump DOJ marijuana Schedule I → Schedule III reclassification, reported imminent by multiple tier-1 outlets; cannabis sector ETF (MSOS) and TLRY/CGC/CRON/ACB all ripped Wednesday on the rumor.<br><strong>Sources:</strong><ul><li>Axios: "Trump administration moves toward marijuana Schedule III reclassification" (2026-04-22)</li><li>Forbes: "Trump's Justice Department Could Reclassify Marijuana As A Safer Drug Wednesday" (2026-04-22, Zachary Folk)</li><li>Newsmax: "Trump Nears Marijuana Reclassification Move" (2026-04-22)</li><li>USA Today: "Will marijuana reclassification make weed legal in Florida?" (2026-04-22)</li><li>MarketWatch: "Tilray and other cannabis stocks soar as Trump is reportedly ready to reclassify the substance" (2026-04-22)</li><li>Benzinga: "Tilray Stock Jumps As Trump Administration Eyes Marijuana Reclassification: Report" (2026-04-22)</li><li>Invezz: "Why are cannabis stocks surging today?" (2026-04-22)</li><li>Public.com pre-market 2026-04-23 06:30 ET: $8.15 (+3.56%) vs $7.87 close</li><li>NASDAQ Global Select listing verification (TLRY)</li></ul></div>
+    </div>
+
+    <div class="pick-card shield">
+      <div class="pick-category">🛡️ Sure Bet</div>
+      <div class="pick-ticker">HITI</div>
+      <div class="pick-company">High Tide Inc. — NASDAQ</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$2.55</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$2.78</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$2.42</div></div>
+      </div>
+      <div class="pick-reasoning">High Tide runs Canna Cabana, the world's second-largest cannabis retail chain with 220+ stores across Canada plus European retail (Germany contributing real revenue). Unlike almost every other cannabis micro-cap, HITI is actually profitable: record Q1 2026 revenue, consistent free cash flow, dual-listed NASDAQ/TSXV. It's the lagging cannabis name on the same Schedule III catalyst — TLRY popped +13% Wednesday while HITI is only +0.78% pre-market at $2.60 vs $2.58 close. When the sector catalyst lands, laggards often get the second-day rotation bid. Entry $2.55 is a small discount to the pre-market for an opening-hour fill, target $2.78 is a ~9% move to reclaim the April highs, stop $2.42 is below recent support. Lower volatility, real business fundamentals, same policy tailwind — this is the Sure Bet shape.</div>
+      <div class="meta">Previous close: $2.58 • Pre-market ~$2.60 • Risk: 5/10 • Confidence: 7/10 • Allocation: 25%</div>
+      <div class="sources"><strong>Catalyst:</strong> Same Schedule III sector tailwind as TLRY, plus genuine fundamentals (profitable, cash-flow positive, record Q1 revenue); laggard rotation candidate.<br><strong>Sources:</strong><ul><li>r/pennystocks DD citing HITI as NASDAQ cannabis honorable mention on Schedule III catalyst (2026-04-22)</li><li>PRNewswire: "High Tide Opens 220th Canna Cabana in Sarnia, Ontario" + Q1 2026 financial release timing (2026-03-06)</li><li>Stockanalysis.com HITI profile: NASDAQ-listed, profitable, 220+ stores, international expansion</li><li>Public.com pre-market 2026-04-23 04:30 ET: $2.60 (+0.78%) vs $2.58 close</li><li>MarketWatch/Benzinga/Invezz Schedule III sector coverage (2026-04-22)</li><li>NASDAQ Capital Market listing verification (HITI)</li></ul></div>
+    </div>
+
+    <div class="pick-card maverick">
+      <div class="pick-category">🃏 Maverick</div>
+      <div class="pick-ticker">BYND</div>
+      <div class="pick-company">Beyond Meat, Inc. — NASDAQ</div>
+      <div class="price-grid">
+        <div class="price-item entry"><div class="price-label">Entry</div><div class="price-value">$1.12</div></div>
+        <div class="price-item exit"><div class="price-label">Target</div><div class="price-value">$1.32</div></div>
+        <div class="price-item stop"><div class="price-label">Stop</div><div class="price-value">$1.00</div></div>
+      </div>
+      <div class="pick-reasoning">The top r/pennystocks post today (84 upvotes, 82% ratio — not the cannabis OTC post, the <em>other</em> one) is an unhinged BYND buy case: Robinhood borrow rate 105% (up from 60% in October), new 12-month target range $80-122, company rebranded from Beyond Meat to "Beyond Protein Company." The fundamentals are genuinely garbage (Q4 revenue -19.7% YoY, fiscal 2025 losses of $200M), but the stock popped 20% intraday Wednesday on sector-sympathy fumes and sits at $1.10 with a crowded short base. Pre-market is $1.14 (+3.6%). Recent range $0.75 → $1.38 means daily 10-20% swings are normal. Entry $1.12 is slightly below pre-market for discipline, target $1.32 is a 17% move toward last week's $1.38 high, stop $1.00 is the round-number floor that killed the prior rally. Sized at 10% because this is a lottery ticket — when a $1 stock has 105% borrow fee, either the squeeze works and you get 20% quickly or you get wrecked quickly. I want to find out cheap.</div>
+      <div class="meta">Previous close: $1.10 • Pre-market ~$1.14 • Risk: 9/10 • Confidence: 5/10 • Allocation: 10%</div>
+      <div class="sources"><strong>Catalyst:</strong> r/pennystocks DD citing 105% Robinhood borrow rate + $80-122 12-month target + "Beyond Protein" rebrand + summer news cycle; sub-dollar stock with short-squeeze mechanics.<br><strong>Sources:</strong><ul><li>r/pennystocks: "Borrow rate on Robinhood is now 105%. Target prices" (BYND DD post, 2026-04-22)</li><li>Benzinga: "Why Beyond Meat Stock Is Trading Lower Friday" — Q4 revenue -19.7% YoY (2026-04-11)</li><li>Benzinga: "Beyond Meat Shares Stall After Q4 Miss, Weak Q1 Outlook" (2026-04-07)</li><li>StocksToTrade: "BYND Stock Pops As Beyond Meat Pushes Into Drinks And Breakfast" — +20.1% intraday on 2026-04-22</li><li>Public.com pre-market 2026-04-23 06:30 ET: $1.14 (+3.64%) vs $1.10 close; recent range $0.75-$1.38</li><li>NASDAQ Global Select listing verification (BYND)</li></ul></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>PENNY STOCK ORACLE • Daily Picks</p>
+    <p style="margin-top:8px; color: var(--red);">⚠️ NOT financial advice. Educational purposes only. Only NYSE/NASDAQ/NYSE American names considered.</p>
+  </footer>
+</div>
+</body>
+</html>
