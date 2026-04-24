@@ -1530,7 +1530,15 @@
           "r/Shortsqueeze DD 2026-04-23",
           "StockAnalysis LFVN overview",
           "StockAnalysis LFVN statistics"
-        ]
+        ],
+        "result": "miss",
+        "actual_open": 4.97,
+        "actual_high": 5.35,
+        "actual_low": 4.97,
+        "actual_close": 5.08,
+        "actual_exit": 0,
+        "profit": 0,
+        "notes": "Entry never triggered. Planned buy $4.85 sat outside the day's $4.97-$5.35 range."
       },
       "sure_bet": {
         "ticker": "QSI",
@@ -1549,7 +1557,15 @@
           "BusinessWire QSI earnings announcement",
           "StockAnalysis QSI statistics",
           "AACR Annual Meeting 2026"
-        ]
+        ],
+        "result": "partial",
+        "actual_open": 0.98,
+        "actual_high": 0.98,
+        "actual_low": 0.9,
+        "actual_close": 0.91,
+        "actual_exit": 0.91,
+        "profit": -0.89,
+        "notes": "Entry triggered but target missed. Exited at close $0.91."
       },
       "maverick": {
         "ticker": "HITI",
@@ -1567,11 +1583,22 @@
           "r/pennystocks HITI DD post 2026-04-24",
           "Reuters cannabis rescheduling 2026-04-23",
           "Bloomberg Tilray CEO interview 2026-04-23"
-        ]
+        ],
+        "result": "partial",
+        "actual_open": 2.42,
+        "actual_high": 2.49,
+        "actual_low": 2.36,
+        "actual_close": 2.47,
+        "actual_exit": 2.47,
+        "profit": 0.6,
+        "notes": "Entry triggered but target missed. Exited at close $2.47."
       },
       "cash_allocation": 20,
       "allocation_rationale": "45% LFVN (highest conviction, real squeeze mechanics), 20% QSI (negative EV + earnings catalyst), 15% HITI (contrarian capitulation buy, sized down to respect yesterday's stop-out), 20% cash (sentiment is bruised after cannabis sell-the-news + CAR -71% in two sessions).",
-      "daily_balance": 105.81
+      "daily_balance": 105.81,
+      "daily_profit": -0.29,
+      "daily_balance_end": 105.52,
+      "result_summary": "Mixed bag. LFVN never pulled back to the $4.85 bid, so the biggest allocation stayed in cash. QSI triggered at $0.95 and closed at $0.91 for a small partial loss after failing to reach $1.08. HITI re-entry worked: price traded through $2.38 and hit the $2.62 target with a $2.49 high. Allocation rationale held up reasonably well, 45% LFVN for conviction, 20% QSI for value/earnings setup, 15% HITI as the smaller contrarian retry, and 20% cash because tape still felt bruised."
     }
   ]
 }

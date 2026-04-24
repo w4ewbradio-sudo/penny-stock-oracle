@@ -1,13 +1,13 @@
 {
   "starting_balance": 100,
-  "current_balance": 105.81,
+  "current_balance": 105.52,
   "stake_per_pick": "variable",
-  "total_trades": 51,
+  "total_trades": 54,
   "wins": 5,
   "losses": 12,
   "partials": 17,
-  "misses": 17,
-  "win_rate": 0.15,
+  "misses": 18,
+  "win_rate": 0.2941,
   "best_day": {
     "date": "2026-03-31",
     "profit": 18.59
@@ -16,7 +16,7 @@
     "date": "2026-04-23",
     "profit": -5.16
   },
-  "avg_daily_return": 0.34,
+  "avg_daily_return": 0.3067,
   "trades": [
     {
       "date": "2026-03-31",
@@ -444,50 +444,6 @@
       "allocation_rationale": "40% to PLUG because liquidity and execution quality still matter when the rest of the board is doing interpretive dance, 35% to SANA because it has the strongest verifiable catalyst and pre-market thrust, 15% to GPRO as the smaller narrative flyer, and 10% left in cash because cash remains the only asset class that does not wake up and issue a surprise offering."
     },
     {
-      "date": "2026-04-16",
-      "picks": [
-        {
-          "ticker": "OPTT",
-          "category": "high_risk",
-          "entry": 0.37,
-          "exit_target": 0.44,
-          "stop_loss": 0.34,
-          "actual_result": "miss",
-          "actual_exit": 0.0,
-          "profit": 0.0,
-          "allocation": 25.0,
-          "notes": "Entry never triggered. Day range $0.37\u2013$0.39 never traded through the planned buy level of $0.37."
-        },
-        {
-          "ticker": "SLDP",
-          "category": "sure_bet",
-          "entry": 3.68,
-          "exit_target": 4.02,
-          "stop_loss": 3.46,
-          "actual_result": "loss",
-          "actual_exit": 3.46,
-          "profit": -2.98,
-          "allocation": 45.0,
-          "notes": "Entry triggered but stop loss was hit. Day low of $3.21 broke the $3.46 stop before the target was reached."
-        },
-        {
-          "ticker": "PDSB",
-          "category": "maverick",
-          "entry": 1.31,
-          "exit_target": 1.52,
-          "stop_loss": 1.19,
-          "actual_result": "loss",
-          "actual_exit": 1.19,
-          "profit": -2.03,
-          "allocation": 20.0,
-          "notes": "Entry triggered but stop loss was hit. Day low of $1.14 broke the $1.19 stop before the target was reached."
-        }
-      ],
-      "cash_allocation": 10,
-      "daily_total": -5.01,
-      "allocation_rationale": "45% to SLDP because it is the cleanest liquid setup with less feral price behavior, 25% to OPTT because the Homeland Security catalyst is the strongest verifiable story on the board, 20% to PDSB as the smaller biotech flyer, and 10% left in cash because discipline remains cheaper than pretending every pre-market twitch deserves full commitment."
-    },
-    {
       "date": "2026-04-15",
       "picks": [
         {
@@ -530,6 +486,50 @@
       "cash_allocation": 10,
       "daily_total": 0.01,
       "allocation_rationale": "45% DNN as uranium with the best liquidity, 25% CABA for the biotech catalyst, 20% OPTT as the speculative goblin, 10% cash."
+    },
+    {
+      "date": "2026-04-16",
+      "picks": [
+        {
+          "ticker": "OPTT",
+          "category": "high_risk",
+          "entry": 0.37,
+          "exit_target": 0.44,
+          "stop_loss": 0.34,
+          "actual_result": "miss",
+          "actual_exit": 0.0,
+          "profit": 0.0,
+          "allocation": 25.0,
+          "notes": "Entry never triggered. Day range $0.37\u2013$0.39 never traded through the planned buy level of $0.37."
+        },
+        {
+          "ticker": "SLDP",
+          "category": "sure_bet",
+          "entry": 3.68,
+          "exit_target": 4.02,
+          "stop_loss": 3.46,
+          "actual_result": "loss",
+          "actual_exit": 3.46,
+          "profit": -2.98,
+          "allocation": 45.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $3.21 broke the $3.46 stop before the target was reached."
+        },
+        {
+          "ticker": "PDSB",
+          "category": "maverick",
+          "entry": 1.31,
+          "exit_target": 1.52,
+          "stop_loss": 1.19,
+          "actual_result": "loss",
+          "actual_exit": 1.19,
+          "profit": -2.03,
+          "allocation": 20.0,
+          "notes": "Entry triggered but stop loss was hit. Day low of $1.14 broke the $1.19 stop before the target was reached."
+        }
+      ],
+      "cash_allocation": 10,
+      "daily_total": -5.01,
+      "allocation_rationale": "45% to SLDP because it is the cleanest liquid setup with less feral price behavior, 25% to OPTT because the Homeland Security catalyst is the strongest verifiable story on the board, 20% to PDSB as the smaller biotech flyer, and 10% left in cash because discipline remains cheaper than pretending every pre-market twitch deserves full commitment."
     },
     {
       "date": "2026-04-17",
@@ -595,7 +595,7 @@
           "category": "sure_bet",
           "entry": 9.12,
           "exit_target": 9.65,
-          "stop_loss": 8.80,
+          "stop_loss": 8.8,
           "actual_result": "partial",
           "actual_exit": 9.14,
           "profit": 0.07,
@@ -629,7 +629,7 @@
           "exit_target": 3.35,
           "stop_loss": 2.62,
           "actual_result": "partial",
-          "actual_exit": 2.80,
+          "actual_exit": 2.8,
           "profit": -0.33,
           "allocation": 45,
           "notes": "Entry triggered as stock faded from $2.94 open through $2.82. Carbon County vote catalyst didn't deliver. High was only $2.95, closed at $2.80."
@@ -660,7 +660,7 @@
         }
       ],
       "cash_allocation": 10,
-      "daily_total": 1.30,
+      "daily_total": 1.3,
       "allocation_rationale": "45% KEEL for the strongest time-specific catalyst, 30% BBAI for the orderly defense-AI continuation, 15% CAN as the smaller BTC derivative flyer, 10% cash."
     },
     {
@@ -669,11 +669,11 @@
         {
           "ticker": "NVTS",
           "category": "high_risk",
-          "entry": 16.80,
-          "exit_target": 18.50,
-          "stop_loss": 15.90,
+          "entry": 16.8,
+          "exit_target": 18.5,
+          "stop_loss": 15.9,
           "actual_result": "win",
-          "actual_exit": 18.50,
+          "actual_exit": 18.5,
           "profit": 4.78,
           "allocation": 45,
           "notes": "Entry triggered as stock traded through $16.80. Target of $18.50 hit as stock surged to $18.67. Clean win on the AI-datacenter power-chip thesis."
@@ -682,7 +682,7 @@
           "ticker": "SLDP",
           "category": "sure_bet",
           "entry": 3.78,
-          "exit_target": 4.10,
+          "exit_target": 4.1,
           "stop_loss": 3.55,
           "actual_result": "partial",
           "actual_exit": 3.97,
@@ -695,7 +695,7 @@
           "category": "maverick",
           "entry": 4.05,
           "exit_target": 4.75,
-          "stop_loss": 3.70,
+          "stop_loss": 3.7,
           "actual_result": "partial",
           "actual_exit": 3.95,
           "profit": -0.39,
@@ -713,11 +713,11 @@
         {
           "ticker": "TLRY",
           "category": "high_risk",
-          "entry": 8.00,
-          "exit_target": 9.20,
-          "stop_loss": 7.40,
+          "entry": 8.0,
+          "exit_target": 9.2,
+          "stop_loss": 7.4,
           "actual_result": "loss",
-          "actual_exit": 7.40,
+          "actual_exit": 7.4,
           "profit": -3.75,
           "allocation": 45,
           "notes": "Entry triggered on the fade from $9.30 open. Classic sell-the-news: cannabis reclassification became official but the sector had already priced it in over two days. Stop loss hit as TLRY cratered to $6.82."
@@ -732,14 +732,14 @@
           "actual_exit": 2.42,
           "profit": -1.41,
           "allocation": 25,
-          "notes": "Entry triggered as stock faded from $2.67 open through $2.55. Rotation thesis failed — HITI sold off with the sector on sell-the-news dynamics. Stop hit at $2.42."
+          "notes": "Entry triggered as stock faded from $2.67 open through $2.55. Rotation thesis failed \u2014 HITI sold off with the sector on sell-the-news dynamics. Stop hit at $2.42."
         },
         {
           "ticker": "BYND",
           "category": "maverick",
           "entry": 1.12,
           "exit_target": 1.32,
-          "stop_loss": 1.00,
+          "stop_loss": 1.0,
           "actual_result": "miss",
           "actual_exit": 0,
           "profit": 0.0,
@@ -750,9 +750,63 @@
       "cash_allocation": 20,
       "daily_total": -5.16,
       "allocation_rationale": "45% TLRY as the direct-catalyst play, 25% HITI as the lagging rotation candidate, 10% BYND as a small volatility probe, 20% cash because a two-day sector run into a known catalyst is textbook sell-the-news territory."
+    },
+    {
+      "date": "2026-04-24",
+      "picks": [
+        {
+          "ticker": "LFVN",
+          "category": "high_risk",
+          "entry": 4.85,
+          "exit_target": 5.45,
+          "stop_loss": 4.55,
+          "allocation": 45.0,
+          "actual_result": "miss",
+          "actual_open": 4.97,
+          "actual_high": 5.35,
+          "actual_low": 4.97,
+          "actual_close": 5.08,
+          "actual_exit": 0,
+          "profit": 0,
+          "notes": "Entry never triggered. Planned buy $4.85 sat outside the day's $4.97-$5.35 range."
+        },
+        {
+          "ticker": "QSI",
+          "category": "sure_bet",
+          "entry": 0.95,
+          "exit_target": 1.08,
+          "stop_loss": 0.87,
+          "allocation": 20.0,
+          "actual_result": "partial",
+          "actual_open": 0.98,
+          "actual_high": 0.98,
+          "actual_low": 0.9,
+          "actual_close": 0.91,
+          "actual_exit": 0.91,
+          "profit": -0.89,
+          "notes": "Entry triggered but target missed. Exited at close $0.91."
+        },
+        {
+          "ticker": "HITI",
+          "category": "maverick",
+          "entry": 2.38,
+          "exit_target": 2.62,
+          "stop_loss": 2.25,
+          "allocation": 15.0,
+          "actual_result": "partial",
+          "actual_open": 2.42,
+          "actual_high": 2.49,
+          "actual_low": 2.36,
+          "actual_close": 2.47,
+          "actual_exit": 2.47,
+          "profit": 0.6,
+          "notes": "Entry triggered but target missed. Exited at close $2.47."
+        }
+      ],
+      "daily_total": -0.29
     }
   ],
-  "last_updated": "2026-04-23T17:01:00-04:00",
+  "last_updated": "2026-04-24T17:01:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
