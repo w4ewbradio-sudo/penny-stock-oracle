@@ -1599,6 +1599,66 @@
       "daily_profit": -0.29,
       "daily_balance_end": 105.52,
       "result_summary": "Mixed bag. LFVN never pulled back to the $4.85 bid, so the biggest allocation stayed in cash. QSI triggered at $0.95 and closed at $0.91 for a small partial loss after failing to reach $1.08. HITI re-entry worked: price traded through $2.38 and hit the $2.62 target with a $2.49 high. Allocation rationale held up reasonably well, 45% LFVN for conviction, 20% QSI for value/earnings setup, 15% HITI as the smaller contrarian retry, and 20% cash because tape still felt bruised."
+    },
+    {
+      "date": "2026-04-27",
+      "high_risk": {
+        "ticker": "CVV",
+        "company": "CVD Equipment Corporation",
+        "exchange": "NASDAQ",
+        "entry": 6.55,
+        "exit": 7.45,
+        "stop_loss": 5.95,
+        "confidence": 7,
+        "risk": 7,
+        "allocation": 35,
+        "reasoning": "Photonics/AI-interconnect sympathy rotation off POET's parabolic. CVD reactor supplier feeding semiconductor + optical-engine supply chain. Closed Friday $6.46 (+12.7%) on volume 2.5x average; clean breakout above $5.50 resistance with next resistance at 52w high $6.66 then air pocket to $7-7.50. Pre-market $6.68 (+3.4%) holding above Friday close \u2014 exactly what a sympathy play should look like.",
+        "catalyst": "Photonics sector sympathy rotation off POET; CVD reactor exposure to AI-interconnect supply chain; clean breakout above $5.50 on rising volume",
+        "sources": [
+          "r/Shortsqueeze CVV/POET sympathy post 2026-04-27",
+          "Yahoo Finance v8 chart endpoint 2026-04-27",
+          "StocksToTrade POET news 2026-04-20",
+          "TimothySykes POET news 2026-04-22"
+        ]
+      },
+      "sure_bet": {
+        "ticker": "OCC",
+        "company": "Optical Cable Corporation",
+        "exchange": "NASDAQ",
+        "entry": 12.45,
+        "exit": 13.5,
+        "stop_loss": 11.65,
+        "confidence": 7,
+        "risk": 5,
+        "allocation": 30,
+        "reasoning": "40-year fiber-optic cable manufacturer with real revenue and Q1 FY2026 financials reported. Multi-month accumulation pattern from $2.44 \u2192 $12.32; Friday clean breakout (+6.5%) on 430k volume vs 200k average. Pre-market $12.87 (+4.5%) extending toward 52w high $13.95. Operating-business hedge on the same photonics/datacenter capex theme as CVV but with fundamentals.",
+        "catalyst": "Fiber-optic/datacenter capex theme; Q1 FY2026 earnings release; technical breakout toward 52w high; sympathy beneficiary of AI photonics rotation",
+        "sources": [
+          "r/Shortsqueeze OCC post 2026-04-27",
+          "PRNewswire OCC Q1 FY2026 results April 2026",
+          "Yahoo Finance v8 chart endpoint 2026-04-27"
+        ]
+      },
+      "maverick": {
+        "ticker": "TRAK",
+        "company": "ReposiTrak, Inc.",
+        "exchange": "NYSE",
+        "entry": 8.55,
+        "exit": 9.4,
+        "stop_loss": 7.95,
+        "confidence": 6,
+        "risk": 5,
+        "allocation": 15,
+        "reasoning": "Off-theme contrarian hedge. NYSE-listed food-traceability SaaS riding FSMA 204 regulatory tailwind (effective 2026). r/Shortsqueeze top post called it 'a tiny toll bridge for the US food supply chain trading 33% below intrinsic value.' Friday +6% on rising volume; pre-market +11% to $9.02 \u2014 entry $8.55 requires modest pullback below the gap. Provides portfolio insurance against photonics-theme reversal.",
+        "catalyst": "FSMA 204 food-traceability regulatory tailwind 2026; Reddit DD valuation pitch; off-theme positioning",
+        "sources": [
+          "r/Shortsqueeze TRAK toll-bridge post 2026-04-27",
+          "FDA FSMA 204 final rule 2026 effective date",
+          "Yahoo Finance v8 chart endpoint 2026-04-27"
+        ]
+      },
+      "cash_allocation": 20,
+      "allocation_rationale": "35% CVV + 30% OCC = 65% in photonics/optical theme (CVV speculative sympathy, OCC operating-business hedge). 15% TRAK as off-theme insurance against theme reversal. 20% cash because Monday opens after parabolic-Friday weekends are notoriously fade-prone, and Friday's slate had no entry trigger on the highest-conviction position (LFVN), so reaching for max exposure on Monday is unwarranted."
     }
   ]
 }
