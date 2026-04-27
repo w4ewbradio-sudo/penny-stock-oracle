@@ -1,13 +1,13 @@
 {
   "starting_balance": 100,
-  "current_balance": 105.52,
+  "current_balance": 103.15,
   "stake_per_pick": "variable",
-  "total_trades": 54,
+  "total_trades": 57,
   "wins": 5,
-  "losses": 12,
-  "partials": 17,
-  "misses": 18,
-  "win_rate": 0.2941,
+  "losses": 13,
+  "partials": 18,
+  "misses": 19,
+  "win_rate": 0.2778,
   "best_day": {
     "date": "2026-03-31",
     "profit": 18.59
@@ -16,7 +16,7 @@
     "date": "2026-04-23",
     "profit": -5.16
   },
-  "avg_daily_return": 0.3067,
+  "avg_daily_return": 0.1658,
   "trades": [
     {
       "date": "2026-03-31",
@@ -804,9 +804,53 @@
         }
       ],
       "daily_total": -0.29
+    },
+    {
+      "date": "2026-04-27",
+      "picks": [
+        {
+          "ticker": "CVV",
+          "category": "high_risk",
+          "entry": 6.55,
+          "exit_target": 7.45,
+          "stop_loss": 5.95,
+          "actual_result": "partial",
+          "actual_exit": 6.49,
+          "profit": -0.34,
+          "allocation": 35,
+          "notes": "Entry triggered as stock traded through $6.55 on the way to $6.96 high. Target $7.45 never threatened. Stock collapsed to $6.05 but survived $5.95 stop. Closed at $6.49."
+        },
+        {
+          "ticker": "OCC",
+          "category": "sure_bet",
+          "entry": 12.45,
+          "exit_target": 13.50,
+          "stop_loss": 11.65,
+          "actual_result": "loss",
+          "actual_exit": 11.65,
+          "profit": -2.03,
+          "allocation": 30,
+          "notes": "Entry triggered, stop loss hit. Stock cratered from $12.70 high to $10.58 low, blowing through $11.65 stop. Post-parabolic Monday fade."
+        },
+        {
+          "ticker": "TRAK",
+          "category": "maverick",
+          "entry": 8.55,
+          "exit_target": 9.40,
+          "stop_loss": 7.95,
+          "actual_result": "miss",
+          "actual_exit": 0,
+          "profit": 0.0,
+          "allocation": 15,
+          "notes": "Entry never triggered. Stock opened at $9.69, sold off to $8.75 but never reached $8.55 entry."
+        }
+      ],
+      "cash_allocation": 20,
+      "daily_total": -2.37,
+      "allocation_rationale": "35% CVV + 30% OCC = 65% photonics/optical theme, 15% TRAK off-theme hedge, 20% cash for Monday-after-parabolic-Friday discipline."
     }
   ],
-  "last_updated": "2026-04-24T17:01:00-04:00",
+  "last_updated": "2026-04-27T17:00:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
