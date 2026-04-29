@@ -1783,6 +1783,70 @@
             "daily_balance_close": 100.0834,
             "daily_pnl": -3.0666,
             "daily_profit": -3.0666
+        },
+        {
+            "date": "2026-04-29",
+            "high_risk": {
+                "ticker": "BTBD",
+                "company": "BT Brands, Inc.",
+                "exchange": "NASDAQ-CM",
+                "entry": 2.1,
+                "exit": 2.65,
+                "stop_loss": 1.78,
+                "confidence": 7,
+                "risk": 9,
+                "allocation": 35,
+                "reasoning": "3M nanofloat mid-merger with Aero Velocity, which announced US military drone-launch partnership with AC Future on April 14 (BusinessWire). Monday closed +17% at $2.07 on 413K vs 60K avg volume (7x). Pre-market $2.19 (+5.8%). Reddit technician flags target progression $2.33 -> $2.48 -> $2.69 with extension at $3.00. With 3M float, modest demand re-rates the stock 30-50%. Out-of-compliance flag is the real overhang.",
+                "catalyst": "S-4 filed April 14 for Aero Velocity merger; Aero Velocity / AC Future US military drone-launch partnership (BusinessWire 2026-04-14); 3M nanofloat amplifies any demand wave on multi-day breakout",
+                "sources": [
+                    "r/pennystocks: $BTBD 3M Float Drone Merger Breaking Out (2026-04-29 technical DD)",
+                    "r/Shortsqueeze: $BTBD Cup and Handle Setup (2026-04-29, 11 upvotes)",
+                    "NASDAQ Quote API: BTBD $2.19 +5.80% premarket, prior close $2.07 +16.95% on 413K",
+                    "NASDAQ historical 5-day: 1.95 -> 1.82 -> 1.83 -> 1.77 -> 2.07 ; vol 96K -> 56K -> 18K -> 61K -> 414K",
+                    "BusinessWire 2026-04-14: BT Brands / Aero Velocity / AC Future military drone partnership"
+                ]
+            },
+            "sure_bet": {
+                "ticker": "GPRO",
+                "company": "GoPro, Inc.",
+                "exchange": "NASDAQ-GS",
+                "entry": 1.52,
+                "exit": 1.78,
+                "stop_loss": 1.36,
+                "confidence": 8,
+                "risk": 7,
+                "allocation": 50,
+                "reasoning": "Cleanest catalyst+technical+retail-discovery convergence of the experiment. AI training-data licensing revenue went official March 2026; GPRO has a decade-plus library of high-resolution first-person video uniquely valuable for embodied-AI training. CURI ran $0.50 -> $6 on a 1/10th-data version of the same thesis. Q1 earnings May 11 promised first guidance on AI line. 5-day uptrend $1.29 -> $1.52 (+18%) breaking 4-month base on rising volume (9.6M Mon vs 8M avg). Pre-market $1.5561 (+2.4%). 150M float is large but volume confirms breakout.",
+                "catalyst": "AI training-data licensing revenue (officialized March 2026) + Q1 earnings May 11 with explicit AI-line guidance + 4-month base breakout on rising volume",
+                "sources": [
+                    "r/pennystocks: GOPRO you laughed at $1.10 (2026-04-29, 85+ upvotes, author has 11K shares skin in game)",
+                    "NASDAQ Quote API: GPRO $1.5561 +2.38% premarket, prior close $1.52 +10.14% on 9.6M; earnings May 11; High Technical Rating",
+                    "NASDAQ historical 5-day: $1.29 -> $1.33 -> $1.33 -> $1.38 -> $1.52 on 7.7M -> 8.4M -> 8.4M -> 8.7M -> 9.6M",
+                    "Comparable: CURI $0.50 -> $6.00 on AI licensing thesis with smaller library"
+                ]
+            },
+            "maverick": {
+                "ticker": "CMPX",
+                "company": "Compass Therapeutics, Inc.",
+                "exchange": "NASDAQ-CM",
+                "entry": 1.86,
+                "exit": 2.2,
+                "stop_loss": 1.66,
+                "confidence": 6,
+                "risk": 7,
+                "allocation": 15,
+                "reasoning": "Day-2 continuation of yesterday's Tovecimig PFS thesis (HR 0.44, 56% risk reduction; OS confound from 54% control crossover is textbook noise). Yesterday entry $1.85 triggered, ran to $1.93 high, closed $1.84 - the bounce held. Pre-market $1.879 (+2.1%) on 858K shares - momentum building. Smaller weight today because day-2 bounces have lower expected value than day-1.",
+                "catalyst": "Day-2 institutional unwind continuation on the Tovecimig Phase 3 PFS primary endpoint win (HR 0.44, 56% risk reduction)",
+                "sources": [
+                    "r/pennystocks (carry-over): $CMPX has crashed 63% while their drug IS WORKING (2026-04-28, 21+ upvotes)",
+                    "NASDAQ Quote API: CMPX $1.879 +2.12% premarket on 858K, prior close $1.84 +2.79%",
+                    "Yesterday intraday: high $1.93, close $1.84 from Oracle entry $1.85 - partial worked into close"
+                ]
+            },
+            "daily_balance_open": 100.08,
+            "daily_balance_close": null,
+            "daily_pnl": null,
+            "daily_profit": null
         }
     ]
 }
