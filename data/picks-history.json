@@ -1804,7 +1804,17 @@
                     "NASDAQ Quote API: BTBD $2.19 +5.80% premarket, prior close $2.07 +16.95% on 413K",
                     "NASDAQ historical 5-day: 1.95 -> 1.82 -> 1.83 -> 1.77 -> 2.07 ; vol 96K -> 56K -> 18K -> 61K -> 414K",
                     "BusinessWire 2026-04-14: BT Brands / Aero Velocity / AC Future military drone partnership"
-                ]
+                ],
+                "actual_open": 2.22,
+                "actual_high": 2.31,
+                "actual_low": 2.07,
+                "actual_close": 2.25,
+                "actual_volume": 876812,
+                "result": "partial",
+                "actual_exit": 2.25,
+                "shares": 16.6806,
+                "profit": 2.5021,
+                "notes": "Entry triggered (low $2.07). Target $2.65 never threatened. Closed at $2.25 for clean partial gain. Drone-merger nanofloat thesis worked."
             },
             "sure_bet": {
                 "ticker": "GPRO",
@@ -1823,7 +1833,17 @@
                     "NASDAQ Quote API: GPRO $1.5561 +2.38% premarket, prior close $1.52 +10.14% on 9.6M; earnings May 11; High Technical Rating",
                     "NASDAQ historical 5-day: $1.29 -> $1.33 -> $1.33 -> $1.38 -> $1.52 on 7.7M -> 8.4M -> 8.4M -> 8.7M -> 9.6M",
                     "Comparable: CURI $0.50 -> $6.00 on AI licensing thesis with smaller library"
-                ]
+                ],
+                "actual_open": 1.54,
+                "actual_high": 1.57,
+                "actual_low": 1.44,
+                "actual_close": 1.49,
+                "actual_volume": 6980965,
+                "result": "partial",
+                "actual_exit": 1.49,
+                "shares": 32.9222,
+                "profit": -0.9877,
+                "notes": "Entry triggered. AI training-data thesis didn't ignite. Closed at $1.49 for small partial loss."
             },
             "maverick": {
                 "ticker": "CMPX",
@@ -1841,12 +1861,25 @@
                     "r/pennystocks (carry-over): $CMPX has crashed 63% while their drug IS WORKING (2026-04-28, 21+ upvotes)",
                     "NASDAQ Quote API: CMPX $1.879 +2.12% premarket on 858K, prior close $1.84 +2.79%",
                     "Yesterday intraday: high $1.93, close $1.84 from Oracle entry $1.85 - partial worked into close"
-                ]
+                ],
+                "actual_open": 1.905,
+                "actual_high": 1.9,
+                "actual_low": 1.64,
+                "actual_close": 1.67,
+                "actual_volume": 24081651,
+                "result": "stopped_out",
+                "actual_exit": 1.66,
+                "shares": 8.0712,
+                "profit": -1.6142,
+                "notes": "Day-2 continuation failed. Stop hit when low broke $1.64."
             },
-            "daily_balance_open": 100.08,
-            "daily_balance_close": null,
-            "daily_pnl": null,
-            "daily_profit": null
+            "cash_allocation": 0,
+            "allocation_rationale": "50% GPRO as the cleanest catalyst+technical+retail-discovery convergence; 35% BTBD as the 3M-nanofloat drone-merger asymmetry; 15% CMPX as the smaller day-2 biotech continuation. 0% cash because all three setups had verifiable, time-specific catalysts and final-sprint mode rewards conviction.",
+            "daily_balance_open": 100.0834,
+            "daily_balance_close": 99.9836,
+            "daily_pnl": -0.0998,
+            "daily_profit": -0.0998,
+            "result_summary": "Wash day. BTBD was the hero - the drone-merger nanofloat thesis delivered a clean partial gain (+$2.50) as the stock ripped to $2.31 on 2x volume. GPRO's AI training-data thesis didn't ignite today - small partial loss (-$0.99) as the stock faded from open. CMPX gave back yesterday's gain plus a bit when day-2 continuation buyers failed to show up; stop hit at $1.66 (-$1.61). Net: -$0.10. The 3-pick portfolio essentially flatlined. With one trading day left in the experiment, balance sits at $99.98 - basically back to starting capital."
         }
     ]
 }

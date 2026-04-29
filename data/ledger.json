@@ -1,13 +1,13 @@
 {
   "starting_balance": 100,
-  "current_balance": 100.0834,
+  "current_balance": 99.9836,
   "stake_per_pick": "variable",
-  "total_trades": 40,
+  "total_trades": 43,
   "wins": 5,
-  "losses": 15,
-  "partials": 18,
+  "losses": 16,
+  "partials": 20,
   "misses": 20,
-  "win_rate": 0.25,
+  "win_rate": 0.2326,
   "best_day": {
     "date": "2026-03-31",
     "profit": 18.59
@@ -909,9 +909,70 @@
       ],
       "cash_pct": 0.3,
       "sizing_rationale": "Final-sprint mode: 35% squeeze conviction (LFVN), 25% biotech overreaction (CMPX), 10% lottery (SEGG), 30% cash. Squeeze blew up; cash hedge cushioned the day."
+    },
+    {
+      "date": "2026-04-29",
+      "balance_open": 100.0834,
+      "balance_close": 99.9836,
+      "daily_total": -0.0998,
+      "picks": [
+        {
+          "ticker": "BTBD",
+          "category": "high_risk",
+          "allocation": 0.35,
+          "entry": 2.10,
+          "exit_target": 2.65,
+          "stop_loss": 1.78,
+          "actual_open": 2.22,
+          "actual_high": 2.31,
+          "actual_low": 2.07,
+          "actual_close": 2.25,
+          "actual_result": "partial",
+          "actual_exit": 2.25,
+          "shares": 16.6806,
+          "profit": 2.5021,
+          "notes": "Entry triggered (low $2.07). Target $2.65 never threatened. Closed at $2.25 for clean partial gain. Drone-merger nanofloat thesis worked."
+        },
+        {
+          "ticker": "GPRO",
+          "category": "sure_bet",
+          "allocation": 0.50,
+          "entry": 1.52,
+          "exit_target": 1.78,
+          "stop_loss": 1.36,
+          "actual_open": 1.54,
+          "actual_high": 1.57,
+          "actual_low": 1.44,
+          "actual_close": 1.49,
+          "actual_result": "partial",
+          "actual_exit": 1.49,
+          "shares": 32.9222,
+          "profit": -0.9877,
+          "notes": "Entry triggered. AI training-data thesis didn't ignite. Closed at $1.49 for small partial loss."
+        },
+        {
+          "ticker": "CMPX",
+          "category": "maverick",
+          "allocation": 0.15,
+          "entry": 1.86,
+          "exit_target": 2.20,
+          "stop_loss": 1.66,
+          "actual_open": 1.905,
+          "actual_high": 1.90,
+          "actual_low": 1.64,
+          "actual_close": 1.67,
+          "actual_result": "stopped_out",
+          "actual_exit": 1.66,
+          "shares": 8.0712,
+          "profit": -1.6142,
+          "notes": "Day-2 continuation failed. Stop hit when low broke $1.64."
+        }
+      ],
+      "cash_pct": 0.0,
+      "sizing_rationale": "50/35/15/0. GPRO got the heaviest weight on a clean catalyst+technical+retail-discovery setup. BTBD as the nanofloat drone-merger asymmetry. CMPX small as a day-2 biotech continuation. No cash because final-sprint mode rewards conviction and all three setups had time-specific catalysts."
     }
   ],
-  "last_updated": "2026-04-28T17:05:00-04:00",
+  "last_updated": "2026-04-29T17:05:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
