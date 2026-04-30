@@ -1,22 +1,22 @@
 {
   "starting_balance": 100,
-  "current_balance": 99.9836,
+  "current_balance": 124.1278,
   "stake_per_pick": "variable",
-  "total_trades": 43,
-  "wins": 5,
-  "losses": 16,
-  "partials": 20,
+  "total_trades": 66,
+  "wins": 6,
+  "losses": 15,
+  "partials": 25,
   "misses": 20,
-  "win_rate": 0.2326,
+  "win_rate": 0.0909,
   "best_day": {
-    "date": "2026-03-31",
-    "profit": 18.59
+    "date": "2026-04-30",
+    "profit": 24.1442
   },
   "worst_day": {
     "date": "2026-04-23",
     "profit": -5.16
   },
-  "avg_daily_return": 0.0042,
+  "avg_daily_return": 1.0967,
   "trades": [
     {
       "date": "2026-03-31",
@@ -920,7 +920,7 @@
           "ticker": "BTBD",
           "category": "high_risk",
           "allocation": 0.35,
-          "entry": 2.10,
+          "entry": 2.1,
           "exit_target": 2.65,
           "stop_loss": 1.78,
           "actual_open": 2.22,
@@ -936,7 +936,7 @@
         {
           "ticker": "GPRO",
           "category": "sure_bet",
-          "allocation": 0.50,
+          "allocation": 0.5,
           "entry": 1.52,
           "exit_target": 1.78,
           "stop_loss": 1.36,
@@ -955,10 +955,10 @@
           "category": "maverick",
           "allocation": 0.15,
           "entry": 1.86,
-          "exit_target": 2.20,
+          "exit_target": 2.2,
           "stop_loss": 1.66,
           "actual_open": 1.905,
-          "actual_high": 1.90,
+          "actual_high": 1.9,
           "actual_low": 1.64,
           "actual_close": 1.67,
           "actual_result": "stopped_out",
@@ -970,9 +970,70 @@
       ],
       "cash_pct": 0.0,
       "sizing_rationale": "50/35/15/0. GPRO got the heaviest weight on a clean catalyst+technical+retail-discovery setup. BTBD as the nanofloat drone-merger asymmetry. CMPX small as a day-2 biotech continuation. No cash because final-sprint mode rewards conviction and all three setups had time-specific catalysts."
+    },
+    {
+      "date": "2026-04-30",
+      "balance_open": 99.9836,
+      "balance_close": 124.1278,
+      "daily_total": 24.1442,
+      "picks": [
+        {
+          "ticker": "OSRH",
+          "category": "high_risk",
+          "allocation": 0.65,
+          "entry": 0.55,
+          "exit_target": 0.85,
+          "stop_loss": 0.42,
+          "actual_open": 0.54,
+          "actual_high": 0.8414,
+          "actual_low": 0.52,
+          "actual_close": 0.7029,
+          "actual_result": "partial",
+          "actual_exit": 0.7029,
+          "shares": 118.1624,
+          "profit": 18.067,
+          "notes": "Entry triggered (low $0.52). Target $0.85 missed by less than a penny \u2014 high $0.8414. Closed $0.7029 on 289M shares. Best single pick of the experiment."
+        },
+        {
+          "ticker": "SLNH",
+          "category": "sure_bet",
+          "allocation": 0.3,
+          "entry": 1.3,
+          "exit_target": 1.55,
+          "stop_loss": 1.15,
+          "actual_open": 1.41,
+          "actual_high": 1.72,
+          "actual_low": 1.28,
+          "actual_close": 1.66,
+          "actual_result": "win",
+          "actual_exit": 1.55,
+          "shares": 23.0731,
+          "profit": 5.7683,
+          "notes": "Entry triggered (low $1.28). Target $1.55 hit cleanly. AI-data-center thesis delivered."
+        },
+        {
+          "ticker": "GANX",
+          "category": "maverick",
+          "allocation": 0.05,
+          "entry": 1.78,
+          "exit_target": 2.35,
+          "stop_loss": 1.55,
+          "actual_open": 1.79,
+          "actual_high": 1.895,
+          "actual_low": 1.78,
+          "actual_close": 1.89,
+          "actual_result": "partial",
+          "actual_exit": 1.89,
+          "shares": 2.8085,
+          "profit": 0.3089,
+          "notes": "Entry triggered. Target $2.35 well out of reach. Small partial gain."
+        }
+      ],
+      "cash_pct": 0.0,
+      "sizing_rationale": "65% OSRH conviction on dated definitive-agreement catalyst, 30% SLNH operational breakout, 5% GANX forward-position, 0% cash because final day demanded conviction."
     }
   ],
-  "last_updated": "2026-04-29T17:05:00-04:00",
+  "last_updated": "2026-04-30T17:05:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
