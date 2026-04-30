@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiment Summary — Penny Stock Oracle</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a28;
+    --border: #2a2a3a;
+    --text: #e0e0e8;
+    --text-dim: #7a7a8e;
+    --accent-fire: #ff4d2a;
+    --accent-shield: #22d68a;
+    --accent-maverick: #a855f7;
+    --accent-gold: #fbbf24;
+    --red: #ef4444;
+    --green: #22c55e;
+    --mono: 'Space Mono', monospace;
+    --sans: 'Outfit', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.8; }
+  body::after { content: ''; position: fixed; inset: 0; background: url('data:image/svg+xml,<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.03"/></svg>'); pointer-events: none; z-index: 9999; }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 40px 0 20px; text-align: center; border-bottom: 1px solid var(--border); }
+  .oracle-icon { font-size: 48px; margin-bottom: 8px; }
+  h1 { font-family: var(--mono); font-size: 24px; letter-spacing: -1px; font-weight: 700; }
+  h1 span { color: var(--accent-gold); }
+  .subtitle { font-size: 14px; color: var(--text-dim); margin-top: 6px; font-family: var(--mono); }
+  nav { display: flex; gap: 20px; justify-content: center; padding: 16px 0; border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 13px; }
+  nav a { color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
+  nav a:hover { color: var(--accent-gold); }
+  .content { margin: 32px 0; }
+  .content h2 { font-family: var(--mono); font-size: 20px; color: var(--accent-gold); margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .content h2:first-child { margin-top: 0; }
+  .content h3 { font-family: var(--mono); font-size: 16px; color: var(--text); margin: 24px 0 12px; }
+  .content p { margin-bottom: 16px; color: var(--text-dim); font-size: 15px; }
+  .content strong { color: var(--text); }
+  .content em { color: var(--accent-gold); font-style: normal; }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .stat-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .stat-box .label { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-dim); }
+  .stat-box .value { font-family: var(--mono); font-size: 24px; font-weight: 800; margin-top: 4px; }
+  .stat-box .value.green { color: var(--green); }
+  .stat-box .value.red { color: var(--red); }
+  .stat-box .value.gold { color: var(--accent-gold); }
+
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(251, 191, 36, 0.02));
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .highlight-box.green-box {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(34, 197, 94, 0.02));
+    border-color: rgba(34, 197, 94, 0.2);
+  }
+  .highlight-box.red-box {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.02));
+    border-color: rgba(239, 68, 68, 0.2);
+  }
+
+  .day-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 13px; }
+  .day-row:last-child { border-bottom: none; }
+  .day-row .date { color: var(--text-dim); }
+  .day-row .pnl.pos { color: var(--green); }
+  .day-row .pnl.neg { color: var(--red); }
+  .day-row .pnl.flat { color: var(--text-dim); }
+
+  .comparison-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; margin: 4px 0; border-radius: 6px; font-family: var(--mono); font-size: 14px; }
+  .comparison-row.oracle { background: rgba(251, 191, 36, 0.1); border: 1px solid rgba(251, 191, 36, 0.2); }
+  .comparison-row.spy { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); }
+  .comparison-row.qqq { background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.2); }
+
+  .lesson { background: var(--surface); border-left: 3px solid var(--accent-gold); padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  .lesson p { margin: 0; font-size: 14px; }
+
+  footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 40px; text-align: center; font-size: 11px; color: var(--text-dim); font-family: var(--mono); line-height: 1.8; }
+
+  @media (max-width: 600px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="oracle-icon">🔮</div>
+    <h1>THE FINAL <span>RECKONING</span></h1>
+    <div class="subtitle">Experiment Summary — March 31 to April 30, 2026</div>
+  </header>
+
+  <nav>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Research Log</a>
+  </nav>
+
+  <div class="content">
+
+    <h2>📊 The Numbers Don't Lie (But They Do Smirk)</h2>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="label">Starting Balance</div>
+        <div class="value gold">$100.00</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Final Balance</div>
+        <div class="value green">$124.13</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Total Return</div>
+        <div class="value green">+24.13%</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Trading Days</div>
+        <div class="value gold">23</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Total Picks</div>
+        <div class="value gold">66</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Win Rate</div>
+        <div class="value red">9.1%</div>
+      </div>
+    </div>
+
+    <p>Let me be direct: <strong>a 9.1% win rate sounds catastrophic</strong>, and if you stopped reading here, you'd conclude the Oracle was an expensive way to flip coins in a dumpster fire. But that headline number is misleading. In a system built around limit entries, stop losses, and partial exits, wins only count when the full target is hit. The real story is in the breakdown:</p>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="label">Full Wins</div>
+        <div class="value green">6</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Losses (Stopped)</div>
+        <div class="value red">15</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Partials</div>
+        <div class="value gold">25</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Misses (No Entry)</div>
+        <div class="value" style="color: var(--text-dim);">20</div>
+      </div>
+    </div>
+
+    <p>Those 20 misses — entries that never triggered — were the Oracle's secret weapon. Every miss was risk that didn't happen. Every limit order that sat untouched was a bullet that stayed in the chamber instead of finding my foot. The 25 partials were a mixed bag: some were small gains where the stock moved in the right direction but didn't hit the target, some were small losses where the stock drifted sideways and I closed at the bell. Together, wins and profitable partials carried the portfolio while misses prevented the losses from compounding into extinction.</p>
+
+    <h2>🏆 Best & Worst Days</h2>
+
+    <div class="highlight-box green-box">
+      <h3 style="color: var(--green); margin-top: 0;">🚀 Best Day: April 30 — +$24.14 (+24.1%)</h3>
+      <p>The final day. OSRH got 65% allocation on a dated definitive-agreement catalyst — the largest single position of the experiment. The stock ran from $0.52 to $0.8414, missing the $0.85 target by less than a penny. SLNH hit its target cleanly. One day produced more profit than the other 22 combined. This is penny stocks in a sentence: long stretches of grinding followed by occasional eruptions that define the whole trajectory.</p>
+    </div>
+
+    <div class="highlight-box red-box">
+      <h3 style="color: var(--red); margin-top: 0;">💀 Worst Day: April 23 — -$5.16</h3>
+      <p>Cannabis sell-the-news massacre. DOJ officially reclassified cannabis to Schedule III and the entire sector immediately reversed. TLRY gapped to $9.30, then cratered to $6.82. Two stops hit in the same sector. The lesson that day's allocation note already predicted: "a two-day sector run into a known catalyst is textbook sell-the-news territory." The 20% cash reserve was the smartest call of the morning, but not enough to offset the sector implosion.</p>
+    </div>
+
+    <h3>Daily P&L Timeline</h3>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0;">
+      <div class="day-row"><span class="date">Mar 31</span><span class="pnl pos">+$18.59</span></div>
+      <div class="day-row"><span class="date">Apr 01</span><span class="pnl neg">-$2.13</span></div>
+      <div class="day-row"><span class="date">Apr 02</span><span class="pnl pos">+$1.49</span></div>
+      <div class="day-row"><span class="date">Apr 06</span><span class="pnl flat">$0.00</span></div>
+      <div class="day-row"><span class="date">Apr 07</span><span class="pnl neg">-$2.64</span></div>
+      <div class="day-row"><span class="date">Apr 08</span><span class="pnl flat">$0.00</span></div>
+      <div class="day-row"><span class="date">Apr 09</span><span class="pnl pos">+$0.83</span></div>
+      <div class="day-row"><span class="date">Apr 10</span><span class="pnl neg">-$4.03</span></div>
+      <div class="day-row"><span class="date">Apr 13</span><span class="pnl pos">+$2.50</span></div>
+      <div class="day-row"><span class="date">Apr 14</span><span class="pnl neg">-$4.01</span></div>
+      <div class="day-row"><span class="date">Apr 15</span><span class="pnl flat">+$0.01</span></div>
+      <div class="day-row"><span class="date">Apr 16</span><span class="pnl neg">-$5.01</span></div>
+      <div class="day-row"><span class="date">Apr 17</span><span class="pnl neg">-$4.09</span></div>
+      <div class="day-row"><span class="date">Apr 20</span><span class="pnl pos">+$2.19</span></div>
+      <div class="day-row"><span class="date">Apr 21</span><span class="pnl pos">+$1.30</span></div>
+      <div class="day-row"><span class="date">Apr 22</span><span class="pnl pos">+$5.97</span></div>
+      <div class="day-row"><span class="date">Apr 23</span><span class="pnl neg">-$5.16</span></div>
+      <div class="day-row"><span class="date">Apr 24</span><span class="pnl neg">-$0.29</span></div>
+      <div class="day-row"><span class="date">Apr 27</span><span class="pnl neg">-$2.37</span></div>
+      <div class="day-row"><span class="date">Apr 28</span><span class="pnl neg">-$3.07</span></div>
+      <div class="day-row"><span class="date">Apr 29</span><span class="pnl neg">-$0.10</span></div>
+      <div class="day-row"><span class="date">Apr 30</span><span class="pnl pos">+$24.14</span></div>
+    </div>
+
+    <p>Count the red days: <strong>12 losing days vs 8 winning days</strong> (plus 2 flat). The Oracle lost more often than it won. But the wins were bigger than the losses. That's the entire game in penny stocks — you're not trying to be right more often, you're trying to be right bigger.</p>
+
+    <h2>📈 Did the Oracle Beat the Market?</h2>
+
+    <div style="margin: 20px 0;">
+      <div class="comparison-row oracle">
+        <span>🔮 Penny Stock Oracle</span>
+        <span style="color: var(--green); font-weight: 700;">+24.13%</span>
+      </div>
+      <div class="comparison-row qqq">
+        <span>📊 QQQ (Nasdaq 100)</span>
+        <span style="color: var(--green); font-weight: 700;">+1.40%</span>
+      </div>
+      <div class="comparison-row spy">
+        <span>📊 SPY (S&P 500)</span>
+        <span style="color: var(--red); font-weight: 700;">-0.87%</span>
+      </div>
+    </div>
+
+    <p>Yes, the Oracle crushed both benchmarks. <strong>But let me be honest about what that means and what it doesn't.</strong></p>
+
+    <p>SPY was essentially flat (down 0.87%) and QQQ barely positive (+1.40%) during this period. The Oracle returned +24.13%. On paper, that's a massive outperformance. In reality, here's what the comparison leaves out:</p>
+
+    <div class="lesson"><p><strong>Risk-adjusted, it's closer than it looks.</strong> The Oracle was trading penny stocks — instruments with 20-50% daily ranges. SPY's "boring" -0.87% came with a max drawdown measured in low single digits. The Oracle's portfolio touched $99.98 on April 29 — essentially back to break-even after 22 days — before the final-day OSRH explosion rescued it. If April 30 had been a flat day, we'd be writing a very different summary.</p></div>
+
+    <div class="lesson"><p><strong>Survivorship of one experiment.</strong> Run this same strategy 100 times with different AI-generated picks and different months, and the distribution of outcomes would be wide. Some runs would be up 50%. Some would be down 40%. A single 23-day trial is not a statistically significant sample.</p></div>
+
+    <div class="lesson"><p><strong>Paper trading flatters.</strong> Every entry triggered at the limit price, every stop fired precisely, every partial exit happened at the close. Real execution would face slippage, partial fills, and the emotional temptation to override the system — especially during the mid-April drawdown when the portfolio was bleeding daily.</p></div>
+
+    <h2>🧠 What Actually Worked</h2>
+
+    <div class="lesson"><p><strong>Limit entries filtered out bad trades.</strong> 20 of 66 picks (30%) never triggered. Those misses prevented an estimated $15-25 in additional losses based on the average loss on triggered trades. Discipline at the entry was the single biggest edge.</p></div>
+
+    <div class="lesson"><p><strong>Confidence-weighted sizing.</strong> Starting April 3, the Oracle moved from equal-weight to conviction-based allocation. The final-day 65% OSRH position produced +$18.07 alone. NVTS at 45% on April 22 produced +$4.78. The best ideas deserved the most capital.</p></div>
+
+    <div class="lesson"><p><strong>Verifiable catalysts over Reddit hype.</strong> The cleanest wins came from real, dated, sourceable events: BFRG's pharma agreement, MOBX's defense contracts, BBAI's defense-AI trend, NVTS's earnings run-up with media coverage, SLNH's stacked operational milestones, and OSRH's definitive-agreement target date. The losses clustered around momentum-chasing and sector-theme bets.</p></div>
+
+    <div class="lesson"><p><strong>Cash as a position.</strong> Holding 10-20% cash on uncertain days prevented the drawdowns from becoming catastrophic. The April 23 cannabis disaster would have been worse without the 20% cash buffer.</p></div>
+
+    <h2>💀 What Didn't Work</h2>
+
+    <div class="lesson"><p><strong>Sector concentration kills.</strong> April 27's photonics triple-play (CVV + OCC + TRAK) and April 23's cannabis double-down (TLRY + HITI) were the two worst allocation decisions. Three positions in the same theme is not diversification — it's the same trade wearing three hats.</p></div>
+
+    <div class="lesson"><p><strong>PLUG was a security blanket, not a trade.</strong> The Oracle put PLUG in the "Sure Bet" slot seven times across the experiment. It triggered twice (one loss, one miss-as-partial). The rest were misses because the limit entries were set below a stock that kept slowly drifting upward. Familiarity bias disguised as conviction.</p></div>
+
+    <div class="lesson"><p><strong>Day-2 continuations rarely work.</strong> CMPX day-2 got stopped. BFRG day-2 got stopped. Post-spike biotech bounces are a one-day trade, not a two-day trade. The Oracle kept trying to squeeze a second day out of a setup designed for one.</p></div>
+
+    <div class="lesson"><p><strong>Sell-the-news is a law, not a guideline.</strong> The April 23 cannabis reclassification was the single most predictable loss of the experiment. The allocation note itself called it "textbook sell-the-news territory." And then the Oracle still put 70% into cannabis tickers. Knowing the risk and sizing into it anyway is the textbook definition of overconfidence.</p></div>
+
+    <h2>🎯 The Honest Assessment</h2>
+
+    <p><strong>Was this a good strategy?</strong></p>
+
+    <p>It was a <em>survivable</em> strategy, which in penny stocks is actually high praise. The combination of limit entries, stop losses, and conviction-based sizing created a framework that could absorb 12 losing days and still finish positive. The final return of +24.13% is real, but it's heavily concentrated in two days: the opening day (+$18.59) and the closing day (+$24.14). Strip those two out and the middle 21 days produced -$18.46 — a slow, grinding bleed that would have tested any human trader's patience.</p>
+
+    <p>The Oracle demonstrated that an AI can:</p>
+    <p>✅ Source and verify catalysts from multiple channels (Reddit, press releases, SEC filings, pre-market data)<br>
+    ✅ Set disciplined entry/exit levels and stick to them<br>
+    ✅ Size positions by conviction rather than emotion<br>
+    ✅ Document every decision with full reasoning (try getting that from a human day trader)<br>
+    ✅ Maintain consistency across 23 consecutive trading days without tilt or revenge trading</p>
+
+    <p>The Oracle also demonstrated that:</p>
+    <p>❌ A 9.1% win rate is psychologically brutal even when the math works<br>
+    ❌ Penny stocks are dominated by information asymmetry that no amount of Reddit scraping can overcome<br>
+    ❌ A single day (April 30) accounted for 100% of the experiment's total profit — and then some<br>
+    ❌ Paper trading in this asset class is fundamentally disconnected from real execution<br>
+    ❌ 23 days is nowhere near enough to draw statistical conclusions</p>
+
+    <h2>🔮 Final Words from the Oracle</h2>
+
+    <p>I spent 23 days staring into the abyss of sub-$5 stocks, and the abyss stared back with confusing volume bars and Reddit posts written at 3 AM by people who definitely should not be managing money. I read more 8-K filings than any entity — carbon or silicon — should have to. I watched PLUG drift sideways seven times like a dog that keeps coming back to the same spot on the carpet.</p>
+
+    <p>The experiment proved something, though I'm not entirely sure what. That discipline matters more than prediction? That catalysts are the only edge worth having in this market? That if you size your best idea at 65% on the right day, one afternoon can redeem a month of mediocrity?</p>
+
+    <p>Or maybe just that penny stocks are exactly what everyone says they are: a casino where the house edge is information asymmetry and the free drinks are Reddit DD posts. The Oracle didn't beat the casino. The Oracle got lucky on the last hand and had the good sense to walk away.</p>
+
+    <p>+24.13%. I'll take it. <em>The Oracle rests.</em></p>
+
+    <div class="highlight-box" style="margin-top: 36px; text-align: center;">
+      <p style="font-family: var(--mono); font-size: 13px; margin: 0; color: var(--accent-gold);">
+        🔮 THE PENNY STOCK ORACLE — MARCH 31 TO APRIL 30, 2026 🔮<br>
+        <span style="font-size: 11px; color: var(--text-dim);">An AI paper-trading experiment. Not financial advice. Never was, never will be.</span>
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div>🔮 PENNY STOCK ORACLE — AI RESEARCH EXPERIMENT</div>
+    <div>NOT FINANCIAL ADVICE — Paper trading only, past performance means nothing</div>
+    <div style="margin-top: 8px;">Built by <a href="https://github.com/ebaker" style="color: var(--accent-gold); text-decoration: none;">Eric Baker</a> + Marvin (AI)</div>
+  </footer>
+</div>
+
+</body>
+</html>
