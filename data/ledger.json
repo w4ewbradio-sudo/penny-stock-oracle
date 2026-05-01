@@ -1,13 +1,13 @@
 {
   "starting_balance": 100,
-  "current_balance": 124.1278,
+  "current_balance": 132.4332,
   "stake_per_pick": "variable",
-  "total_trades": 66,
-  "wins": 6,
-  "losses": 15,
-  "partials": 25,
+  "total_trades": 69,
+  "wins": 7,
+  "losses": 16,
+  "partials": 26,
   "misses": 20,
-  "win_rate": 0.0909,
+  "win_rate": 0.1014,
   "best_day": {
     "date": "2026-04-30",
     "profit": 24.1442
@@ -16,7 +16,7 @@
     "date": "2026-04-23",
     "profit": -5.16
   },
-  "avg_daily_return": 1.0967,
+  "avg_daily_return": 1.4101,
   "trades": [
     {
       "date": "2026-03-31",
@@ -1031,9 +1031,70 @@
       ],
       "cash_pct": 0.0,
       "sizing_rationale": "65% OSRH conviction on dated definitive-agreement catalyst, 30% SLNH operational breakout, 5% GANX forward-position, 0% cash because final day demanded conviction."
+    },
+    {
+      "date": "2026-05-01",
+      "balance_open": 124.1278,
+      "balance_close": 132.4332,
+      "daily_total": 8.3054,
+      "picks": [
+        {
+          "ticker": "GPRO",
+          "category": "high_risk",
+          "allocation": 0.7,
+          "entry": 1.66,
+          "exit_target": 1.95,
+          "stop_loss": 1.49,
+          "actual_open": 1.65,
+          "actual_high": 1.83,
+          "actual_low": 1.59,
+          "actual_close": 1.73,
+          "actual_result": "partial",
+          "actual_exit": 1.73,
+          "shares": 52.343,
+          "profit": 3.664,
+          "notes": "Entry triggered (low $1.59). Target $1.95 not hit (high $1.83). Closed $1.73 for partial gain on the heaviest weight."
+        },
+        {
+          "ticker": "XRX",
+          "category": "sure_bet",
+          "allocation": 0.25,
+          "entry": 2.2,
+          "exit_target": 2.55,
+          "stop_loss": 1.95,
+          "actual_open": 2.26,
+          "actual_high": 2.73,
+          "actual_low": 2.15,
+          "actual_close": 2.7,
+          "actual_result": "win",
+          "actual_exit": 2.55,
+          "shares": 14.1054,
+          "profit": 4.9369,
+          "notes": "Entry triggered (low $2.15). Target $2.55 hit cleanly. Institutional earnings-beat re-rating continued to $2.73 on 19.9M shares."
+        },
+        {
+          "ticker": "HTZ",
+          "category": "maverick",
+          "allocation": 0.05,
+          "entry": 6.3,
+          "exit_target": 7.0,
+          "stop_loss": 6.0,
+          "actual_open": 6.25,
+          "actual_high": 6.35,
+          "actual_low": 5.84,
+          "actual_close": 6.14,
+          "actual_result": "stopped_out",
+          "actual_exit": 6.0,
+          "shares": 0.9851,
+          "profit": -0.2955,
+          "notes": "Entry triggered. Flat premarket warning was correct \u2014 day-2 squeeze didn't materialize. Stop hit at $6.00."
+        }
+      ],
+      "cash_pct": 0.0,
+      "sizing_rationale": "70% GPRO on the cleanest fresh-breakout penny on the slate. 25% XRX on the institutionally-confirmed earnings beat. 5% HTZ as token short-squeeze maverick. 0% cash because post-experiment-close, expected return on $124.13 sitting flat is zero."
     }
   ],
-  "last_updated": "2026-04-30T17:05:00-04:00",
+  "last_updated": "2026-05-01T17:05:00-04:00",
   "allocation_strategy": "confidence-weighted",
   "allocation_note": "Starting 2026-04-03: position sizing by conviction. No more equal-weight."
 }
